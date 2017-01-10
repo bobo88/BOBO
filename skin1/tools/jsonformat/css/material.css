@@ -1,0 +1,407 @@
+.CodeMirror {border-top: 1px solid #eee; border-bottom: 1px solid #eee;}
+.table th, .table td { padding: 3px 8px;}
+.table td {border-bottom: 2px #d1d1d1 solid;padding: 8px 12px;white-space:pre-wrap;}
+
+@import url(http://cdn.atool.org/res/fonts/css.css?family=Source+Sans+Pro:300,400,600,700);
+a {
+    font-size: .95em;
+    text-decoration: none;
+    color: #435275
+}
+
+a:hover {
+    color: #f77b6f;
+    text-decoration:underline;
+}
+
+::selection {
+    background: #abd1eb;
+    color: #000;
+}
+::-moz-selection {
+    background: #abd1eb;
+    color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", 'Microsoft Yahei', '寰蒋闆呴粦', sans-serif, Helvetica, 'Hiragino Sans GB', Arial;
+}
+table {
+  font-size: .95em;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto
+}
+
+.pull-left {
+    float: left
+}
+
+.pull-right {
+    float: right
+}
+
+.row {
+    min-height: 2em;
+    line-height: 2em;
+    width: 100%
+}
+
+.span {
+    float: left;
+    display: inline;
+    min-height: 1em;
+}
+
+.span:first-child {
+    margin-left: 0
+}
+
+.span:last-child {
+    margin-right: 0
+}
+
+.one {
+    width: 8%
+}
+
+.two {
+    width: 16%
+}
+
+.three {
+    width: 24%
+}
+
+.four {
+    width: 32%
+}
+
+.five {
+    width: 40%
+}
+
+.six {
+    width: 48%
+}
+
+.seven {
+    width: 56%
+}
+
+.eight {
+    width: 64%
+}
+
+.nine {
+    width: 72%
+}
+
+.ten {
+    width: 80%
+}
+
+.eleven {
+    width: 88%
+}
+
+.twelve {
+    width: 100%
+}
+
+.container:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.row:before,
+.row:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+.row:after {
+    clear: both
+}
+
+.row {
+    zoom: 1;
+    margin: 10px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500
+}
+
+h1 {
+    font-size: 2.5em
+}
+
+h2 {
+    font-size: 1.8em
+}
+
+h3 {
+    font-size: 1.4em
+}
+
+h4 {
+    font-size: 1.2em
+}
+
+h5 {
+    font-size: 1em
+}
+
+h6 {
+    font-size: .8em
+}
+
+.table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: left
+}
+
+.table th,
+.table td {
+    border-bottom: 2px #d1d1d1 solid;
+    padding: 8px 12px;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table td {
+    border-bottom: 1px #d4d4d4 solid
+}
+
+.table.table-striped tbody tr:nth-child(2n+1) {
+    background-color: #f3f3f3
+}
+
+.table.table-bordered {
+    border: 1px #CCC solid
+}
+
+.table.table-bordered td,
+.table.table-bordered th {
+    border: 1px #CCC solid
+}
+
+.button {
+    border: 0;
+    border-radius: 4px;
+    outline: 0;
+    cursor: pointer;
+}
+
+.button.small {
+    padding: 7px 10px;
+    font-size: .95em
+}
+
+.button.large {
+    padding: 15px 25px;
+    font-size: 1.1em
+}
+
+.button.primary {
+    color: #FFF;
+    background: #4ab5e3
+}
+
+.button.primary:hover {
+    background: #2ab5e3
+}
+
+.button.success {
+    color: #FFF;
+    background: #4daf7c
+}
+
+.button.success:hover {
+    background: #48a474
+}
+
+.button.danger {
+    color: #FFF;
+    background: #e6623c
+}
+
+.button.danger:hover {
+    background: #e4572e
+}
+
+.select {
+    /*width: 95%;*/
+    padding: 0 10px;
+    margin: 0 5px;
+    height: 2.3em;
+    line-height: 2.3em;
+    text-align: left;
+    border: 1px solid #CCC;
+    border-radius:5px;
+    font-size: .98em;
+}
+input {
+    text-align: left;
+    border: 1px solid #CCC;
+    border-radius:5px;
+    font-size: .98em;
+}
+.input-text {
+    width: 95%;
+    height: 2.1em;
+    line-height: 2.1em;
+    padding-left:5px;
+}
+
+.input-radio {
+    /*height: 1.5em;
+    line-height: 1.5em;*/
+}
+
+.input-file {
+    width: 95%;
+    height: 2.1em;
+    line-height: 2.1em;
+    position: relative;
+    cursor: pointer;
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+.input-file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+
+.input-file:hover {
+    color: #444;
+    background: #eee;
+    border-color: #ccc;
+    text-decoration: none
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    resize:vertical;
+    border: 1px solid #CCC;
+    /*border-radius:8px;*/
+    padding:4px;
+    box-shadow: 2px 2px 5px #d3d6da;
+    -moz-box-shadow: 2px 2px 5px #d3d6da;
+}
+
+.alert {
+    padding: 10px;
+    margin: 0;
+    border-radius: 3px
+}
+
+.alert.primary {
+    background: #e8eff3;
+    border: 1px #c5d7e3 solid
+}
+
+.alert.success {
+    background: #daeee4;
+    border: 1px #b6dfca solid
+}
+
+.alert.danger {
+    background: #fdf4f1;
+    border: 1px #f7cfc4 solid
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+    .container {
+        width: 768px
+    }
+}
+
+/*@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+    .container .table {
+        display: table
+    }
+}*/
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 98%;
+    }
+    .container .table {
+        width: 100%;
+        display: block;
+        overflow: auto
+    }
+    .xs-three {
+        width: 24%;
+    }
+    .xs-four {
+        width: 32%;
+    }
+    .xs-five {
+        width: 40%;
+    }
+    .xs-six {
+        width: 48%
+    }
+    .xs-seven {
+        width: 56%
+    }
+
+    .xs-eight {
+        width: 64%
+    }
+
+    .xs-nine {
+        width: 72%
+    }
+
+    .xs-ten {
+        width: 80%
+    }
+
+    .xs-eleven {
+        width: 88%
+    }
+
+    .xs-twelve {
+        width: 100%
+    }
+}

@@ -1,0 +1,62 @@
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"  />
+<meta content="false" id="twcClient" name="twcClient" />
+<meta content="yes" name="apple-mobile-web-app-capable"  />
+<title>专注WEB前端开发 - BOBO园博吧</title>
+<meta name="keywords" content="前端,前端开发,web前端,web前端开发,web前端工程师">
+<meta name="description" content="园博吧资源网 - 专注web前端开发，包括web前端开发教程、书籍、api手册、前端框架、前端面试题、前端问答以及一些系列前端开发资源分享，是一个专业技术交流、资源共享平台！">
+<meta name="author" content="园博吧资源网(www.yuanbo88.com)" />
+<meta name="copyright" content="www.yuanbo88.com All Rights Reserved" /> 
+<link rel="icon" href="http://www.yuanbo88.com/dist/images/favicon.ico?2016080201" type="image/x-icon"/>
+<link rel="shortcut icon" href="http://www.yuanbo88.com/dist/images/favicon.ico?2016080201" type="image/x-icon"/>
+<link rel="stylesheet" href="http://www.yuanbo88.com/dist/css/base_min.css">
+<link rel="stylesheet" href="http://www.yuanbo88.com/dist/css/common_min.css">
+<script src="http://www.yuanbo88.com/dist/minjs/jquery-1.9.1.min.js"></script>
+<script src="http://www.yuanbo88.com/dist/minjs/layer/layer.js"></script>
+<!--[if lt IE 9]>
+<script>(function(){for(var a=arguments.length,b=0;a>b;b++)document.createElement(arguments[b])})("address","article","aside","audio","canvas","details","figcaption","figure","header","footer","hgroup","menu","nav","section","summary","time","video");</script> 
+<![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77367920-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?872f5f1d52b88b61c372bbd252e7aa70";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script>
+  //加入收藏夹功能
+  function addBookmark(){
+    var title="【园博吧资源网】专注WEB前端开发";
+    var url="http://www.yuanbo88.com/";
+    if(window.sidebar){
+      window.sidebar.addPanel(title,url,'');
+    }else{
+      try{ 
+        window.external.AddFavorite(url,title);
+      }catch(e){
+        alert("您的浏览器不支持该功能,请使用Ctrl+D收藏本页");
+      }
+    }
+  }
+</script>
+
+<script>
+var DOMAIN = 'http://www.yuanbo88.com';
+var DOMAIN_URL = 'http://www.yuanbo88.com/';
+</script>

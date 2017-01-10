@@ -1,0 +1,133 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    #首页
+    RewriteRule index.html$ index.php
+
+    #公共头部
+    #RewriteRule public_top.html$ public_top.php
+
+    #用户中心公共头部
+    #RewriteRule public_user_top.html$ public_user_top.php
+
+    #公共底部
+    #RewriteRule foot.html$ foot.html
+
+    #分类页
+    RewriteRule category.html$ category.php
+
+    #微话题
+    RewriteRule catewei.html$ catewei.php
+
+    #微话题
+    RewriteRule wei.html$ wei.php
+
+    #微言大义
+    RewriteRule weiword.html$ weiword.php
+
+    #你真逗
+    RewriteRule dou.html$ dou.php
+
+    #演示案例
+    RewriteRule catedemo.html$ catedemo.php
+
+    #booklist
+    RewriteRule booklist.html$ booklist.php
+
+    #bookdetail
+    RewriteRule bookdetail.html$ bookdetail.php
+
+    #关于
+    RewriteRule about.html$ about.php
+
+    #用户中心
+    RewriteRule m-user-center.html$ user/user_center.php
+    #我的资料
+    RewriteRule my-profile.html$ user/my_profile.php
+    #文章管理
+    RewriteRule m-article-publish.html$ user/article_publish.php
+    #首页管理
+    RewriteRule m-home.html$ user/m_home.php
+    #参考书籍管理
+    RewriteRule m-ref-book.html$ user/m_refbook.php
+    #微话题管理
+    RewriteRule m-wei-topic.html$ user/m_wei.php
+    #演示案例
+    RewriteRule m-demo-case.html$ user/m_demo.php
+    #关于我
+    RewriteRule m-about-me.html$ user/m_about.php
+    #修改密码
+    RewriteRule m-change_password.html$ user/change_psw.php
+
+    #搜索
+    RewriteRule search.html$ search.php
+
+    #404
+    RewriteRule 404.html$ 404.php
+
+    #sign
+    RewriteRule sign.html$ sign.php
+
+    #article
+    RewriteRule article.html$ article.php
+
+    #logout
+    RewriteRule logout.html$ logout.php
+
+    #tools
+    RewriteRule tools/jsonformat.html$ tools/jsonformat.php
+    RewriteRule tools/js_compress.html$ tools/js_compress.php
+    RewriteRule tools/css_compress.html$ tools/css_compress.php
+
+    #demo
+    #RewriteRule demo/demo_9.html$ demo/demo_9.php
+    RewriteRule demo/([1-9][0-9]*).html$ demo/demo_$1.php
+
+
+    #ajax路径########################################
+    #注册code更新:ajaxURL
+    RewriteRule m-code-reg.html$ src_checkcode_reg.php
+    #修改个人资料code更新:ajaxURL
+    RewriteRule m-code-profile.html$ src_checkcode_myprofile.php
+    
+    #修改个人资料:ajaxURL
+    RewriteRule m-users-a-edit_profile.html$ src_profile.php
+
+    #修改密码:ajaxURL
+    RewriteRule m-users-a-change_password.html$ src_change_psw.php
+
+    #文章发表:ajaxURL
+    RewriteRule m-users-a-article_publish.html$ src_publish.php
+
+    #首页管理:ajaxURL
+    RewriteRule m-users-a-add_home_banner.html$ src_homebanner_add.php
+    RewriteRule m-users-a-change_home_banner.html$ src_homebanner_change.php
+    RewriteRule m-users-a-remove_home_banner.html$ src_homebanner_remove.php
+
+    #参考书籍管理:ajaxURL
+    RewriteRule m-users-a-add_refbook.html$ src_refbook_add.php
+    RewriteRule m-users-a-change_refbook.html$ src_refbook_change.php
+    RewriteRule m-users-a-remove_refbook.html$ src_refbook_remove.php
+
+    #微话题管理:ajaxURL
+    RewriteRule m-users-a-wei_add.html$ src_weitopic_add.php
+    RewriteRule m-users-a-wei_change.html$ src_weitopic_change.php
+    RewriteRule m-users-a-wei_remove.html$ src_weitopic_remove.php
+
+    #演示案例管理:ajaxURL
+    RewriteRule m-users-a-democase_add.html$ src_democase_add.php
+    RewriteRule m-users-a-democase_change.html$ src_democase_change.php
+    RewriteRule m-users-a-democase_remove.html$ src_democase_remove.php
+
+
+    #msg提示页面
+    RewriteRule msg.html$ msg.php
+    RewriteRule msg.htm$ msg.php
+
+    
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    #如果当前变量所代表的路径不是一个常规目录
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule (.*) /404.html
+
+</IfModule>

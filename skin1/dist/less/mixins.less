@@ -1,0 +1,155 @@
+// 所有变量，和通用样式文件
+
+@charset "utf-8";
+@color0:#000;
+@color3:#333;
+@color6:#666;
+@colord:#ddd;
+@color9:#999;
+@color_main:#d9342b;
+@color_blue:#3498db;
+
+@colorf7:#f7f7f7;
+@colorf2:#f2f2f2;
+@colorf3:#f3f3f3;
+@colorf4:#f4f4f4;
+@colorf5:#f5f5f5;
+@colorf:#fff;
+@colorc:#ccc;
+@colore4:#e4e4e4;
+@colordc:#dcdcdc;
+@colord2:#d2d2d2;
+@colore2:#e2e2e2;
+@colorb:#bbbbbb;
+
+@color_bgf:#fff;
+@color_bgf7:#f7f7f7;
+@color_bgf3:#f3f3f3;
+@color_bgf2:#f2f2f2;
+@color_bgc:#ccc;
+@color_bge:#eee;
+@color_bg3:#333;
+@color_bg6:#666;
+@color_bg9:#999;
+@color_bgmain:#d9342b;
+
+@colortr:transparent;
+@coloro:#d9342b;
+
+// 配色规范
+@color6d:#6d6d6d;
+@color_base : @color3;            // 主题配色。如：文字、价格 ==
+@color_increase:@color_blue;    // 视觉增强。如：功能图标，主要按钮 提示
+@color_increase_active:#337ab7;
+@color_assist: @colore4;          // 辅助底色。如：线条、边框、底色
+@color_mainBg:@color_bgf3;        // 主题底色。如：底色，状态栏底色
+@prompt_color:@color9;
+@cursor-disabled:no-drop;
+
+// 字体大小
+@font-12:12px;
+@font-14:14px;
+@font-16:16px;
+@font-18:18px;
+@font-20:20px;
+@font-24:24px;
+@font-36:36px;
+
+@font_main: "微软雅黑", Helvetica,Arial,"Hiragino Sans GB","Microsoft YaHei",STHeiti,"华文细黑",sans-serif;
+@font_other:Arial, Helvetica, sans-serif;
+
+.border(all,@w:1px,@color:#e4e4e4){
+  border:@w solid @color;
+}
+.border(left,@w:1px,@color:#e4e4e4){
+  border-left:@w solid @color;
+}
+.border(right,@w:1px,@color:#e4e4e4){
+  border-right:@w solid @color;
+}
+.border(top,@w:1px,@color:#e4e4e4){
+  border-top:@w solid @color;
+}
+.border(bottom,@w:1px,@color:#e4e4e4){
+  border-bottom:@w solid @color;
+}
+
+.triangle(left,@w:5px,@color:#e4e4e4){display: inline-block; width: 0; height: 0; *display: inline; *zoom:1; border-style: solid; border-color: @colortr;
+  border-width: @w @w @w 0;border-right-color: @color;
+}
+.triangle(right,@w:5px,@color:#e4e4e4){display: inline-block; width: 0; height: 0; *display: inline; *zoom:1; border-style: solid; border-color: @colortr;
+  border-width: @w 0 @w @w;border-left-color: @color;
+}
+.triangle(top,@w:5px,@color:#e4e4e4){display: inline-block; width: 0; height: 0; *display: inline; *zoom:1; border-style: solid; border-color: @colortr;
+  border-width: 0 @w @w @w;border-bottom-color: @color;
+}
+.triangle(bottom,@w:5px,@color:#e4e4e4){display: inline-block; width: 0; height: 0; *display: inline; *zoom:1; border-style: solid; border-color: @colortr;
+  border-width: @w @w 0 @w;border-top-color: @color;
+}
+
+.rounded(@radius) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+}
+.shadow(@x, @y, @blur, @color) {
+  -webkit-box-shadow: @x @y @blur @color;
+     -moz-box-shadow: @x @y @blur @color;
+          box-shadow: @x @y @blur @color;
+}
+.shadow-inset(@x, @y, @blur, @color) {
+    -webkit-box-shadow: inset @x @y @blur @color;
+       -moz-box-shadow: inset @x @y @blur @color;
+            box-shadow: inset @x @y @blur @color;
+}
+.transition(@property,@time:.2s,@delay:0s) {
+    -webkit-transition: @property @time @delay ease;
+       -moz-transition: @property @time @delay ease;
+         -o-transition: @property @time @delay ease;
+            transition: @property @time @delay ease;
+}
+.animation(@property,@time:.2s,@delay:0s) {
+  -webkit-animation: @property @time @delay ease;
+     -moz-animation: @property @time @delay ease;
+       -o-animation: @property @time @delay ease;
+          animation: @property @time @delay ease;
+}
+
+.linear-gradient(@from, @to) {
+    /* Fallback for sad browsers */
+    background-color: @to;
+    /* Mozilla Firefox */
+    background-image:-moz-linear-gradient(@from, @to);
+    /* Opera */
+    background-image:-o-linear-gradient(@from, @to);
+    /* WebKit (Chrome 11+) */
+    background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, @from), color-stop(1, @to));
+    /* WebKit (Safari 5.1+, Chrome 10+) */
+    background-image: -webkit-linear-gradient(@from, @to);
+    /* IE10 */
+    background-image: -ms-linear-gradient(@from, @to);
+    /* W3C */
+    background-image: linear-gradient(@from, @to);
+}
+.inline-block(){display: inline-block;*zoom: 1;*display: inline;}
+
+//
+//.btn{.rounded(3px); padding: 5px; text-align: center; display: inline-block; *display: inline; *zoom: 1; vertical-align: middle;
+//  &.f14{font-size: 14px;}
+//  &.f16{font-size: 16px;}
+//  &.f18{font-size: 18px;}
+//  &.f20{font-size: 20px;}
+//}
+//
+////按钮尺寸
+//.btn-sm{padding: 3px 10px; line-height: 22px;}
+//.btn-xs{padding: 1px 5px;}
+//.btn-lg{padding: 8px 12px; line-height: 22px; font-size: 16px;}
+//
+//.btnSet(@textColor,@bgColor,@bColor){
+//  color: @textColor;  border: 1px solid @bColor; background-color: @bgColor;
+//}
+////按钮样式
+//.btn-default{ .btnSet(#333,#fff,#333); }
+//
+//.btn-primary{ .btnSet(#fff,#333,#333); }

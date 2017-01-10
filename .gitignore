@@ -1,0 +1,12 @@
+skin1/db_config.php
+skin1/someSrc/*
+*.psd
+gulp/node_modules/*
+skin1/paypal/*
+skin1/other/*
+skin1/dist/video/*
+skin1/demo/psd/*
+skin1/demo/psd/*/*.psd
+skin1/demo/psd/*/*.psb
+skin1/dist/psd/*.psd
+skin1/dist/psd/*.psb
