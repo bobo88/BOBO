@@ -21,7 +21,7 @@ if(isset($_REQUEST['phone']) && isset($_REQUEST['password'])){
             while ($row = $results->fetch_array()){
                 if ($row['password'] == $pswd){
                     //仅对BOBO开放权限
-                    if($row['username'] == '18826535280'){
+                    if($row['name'] == '敲代码的怪蜀黍'){
                         $_SESSION['username'] = $row['name'];
                         $msg['msg'] = '登录成功!';
                         $msg['status'] = 1;
