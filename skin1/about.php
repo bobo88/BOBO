@@ -21,7 +21,7 @@ $link->close();
 	<div class="about-me-wrap">
 		<section class="bobo-info-wrap">
 			<div class="info-box w1200 pr">
-				<div class="bobo-img"><span><img src="dist/images/domeimg/about/bobo.jpg" width="248" height="248" alt="ABOUT BOBO"></span></div>
+				<div class="bobo-img"><span><img src="dist/images/domeimg/about/bobo2.jpg" width="248" height="248" alt="ABOUT BOBO"></span></div>
 				<div class="bobo-info">
 					<h3 class="name">I'M YUAN BO</h3>
 					<span class="line"></span>
