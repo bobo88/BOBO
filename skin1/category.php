@@ -206,7 +206,7 @@ if($isNoResult){//如果没有数据，直接到404页面
 					<p class="change-group tc js-changeGroup" data-current="0"><a href="javascript:;">换一批</a></p>
 				</div><!-- .other-keyword-wrap -->
 
-				<div class="fb-page" data-href="https://www.facebook.com/yuanboba/" data-width="250" data-height="290" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><blockquote cite="https://www.facebook.com/yuanboba/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/yuanboba/">袁波</a></blockquote></div>
+				<div class="fb-page" data-href="https://www.facebook.com/yuanboba/" data-width="250" data-height="290" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><blockquote cite="https://www.facebook.com/yuanboba/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/yuanboba/">Facebook园博吧</a></blockquote></div>
 			</div><!-- .right-content-box -->
 		</div>
 
