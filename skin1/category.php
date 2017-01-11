@@ -173,37 +173,50 @@ if($isNoResult){//如果没有数据，直接到404页面
 			?>
 
 			<!-- 热门文章 -->
-			<div class="other-keyword-wrap" id="js-otherBookList">
-				<h3>阅读排行榜</h3>
-				<ul class="keywordlist clearfix firstList">
-					<?php
-						while ($row = $results5->fetch_array()){
-					?>
-						<li><a href="http://www.yuanbo88.com/article.html?rid=<?php echo $row['id']; ?>" title="<?php echo $row['title']; ?>" target="_blank"><?php echo $row['title']; ?></a></li>
-					<?php
-						}
-					?>	
-				</ul>
-				<ul class="keywordlist clearfix none">
-					<?php
-						while ($row = $results6->fetch_array()){
-					?>
-						<li><a href="http://www.yuanbo88.com/article.html?rid=<?php echo $row['id']; ?>" title="<?php echo $row['title']; ?>" target="_blank"><?php echo $row['title']; ?></a></li>
-					<?php
-						}
-					?>
-				</ul>
-				<ul class="keywordlist clearfix none">
-					<?php
-						while ($row = $results7->fetch_array()){
-					?>
-						<li><a href="http://www.yuanbo88.com/article.html?rid=<?php echo $row['id']; ?>" title="<?php echo $row['title']; ?>" target="_blank"><?php echo $row['title']; ?></a></li>
-					<?php
-						}
-					?>
-				</ul>
-				<p class="change-group mb25 tc js-changeGroup" data-current="0"><a href="javascript:;">换一批</a></p>
-			</div><!-- .other-keyword-wrap -->
+			<div class="right-content-box">
+				<div class="other-keyword-wrap" id="js-otherBookList">
+					<h3>阅读排行榜</h3>
+					<ul class="keywordlist clearfix firstList">
+						<?php
+							while ($row = $results5->fetch_array()){
+						?>
+							<li><a href="http://www.yuanbo88.com/article.html?rid=<?php echo $row['id']; ?>" title="<?php echo $row['title']; ?>" target="_blank"><?php echo $row['title']; ?></a></li>
+						<?php
+							}
+						?>	
+					</ul>
+					<ul class="keywordlist clearfix none">
+						<?php
+							while ($row = $results6->fetch_array()){
+						?>
+							<li><a href="http://www.yuanbo88.com/article.html?rid=<?php echo $row['id']; ?>" title="<?php echo $row['title']; ?>" target="_blank"><?php echo $row['title']; ?></a></li>
+						<?php
+							}
+						?>
+					</ul>
+					<ul class="keywordlist clearfix none">
+						<?php
+							while ($row = $results7->fetch_array()){
+						?>
+							<li><a href="http://www.yuanbo88.com/article.html?rid=<?php echo $row['id']; ?>" title="<?php echo $row['title']; ?>" target="_blank"><?php echo $row['title']; ?></a></li>
+						<?php
+							}
+						?>
+					</ul>
+					<p class="change-group tc js-changeGroup" data-current="0"><a href="javascript:;">换一批</a></p>
+				</div><!-- .other-keyword-wrap -->
+
+				<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/zh_CN/sdk.js#xfbml=1&version=v2.8";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+
+				<div class="fb-page" data-href="https://www.facebook.com/yuanboba/" data-width="250" data-height="290" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><blockquote cite="https://www.facebook.com/yuanboba/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/yuanboba/">袁波</a></blockquote></div>
+			</div><!-- .right-content-box -->
 		</div>
 
 		<div id="pageing">
