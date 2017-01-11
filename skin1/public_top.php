@@ -40,44 +40,41 @@
 	</div>
 </div><!-- #top -->
 
-<div id="topMian">
-	<div class="logo"><a href="http://www.yuanbo88.com/" title="园博吧"><img src="http://www.yuanbo88.com/dist/images/styleimg/logo.png" height="60" width="170" alt="园博吧"></a></div>
-	<div class="topm_nav clearfix">
-		<ul class="clearfix fl">
-			<li><a href="http://www.yuanbo88.com/category.html?type=1" class="s-title">前端开发</a></li>
-			<li><a href="http://www.yuanbo88.com/category.html?type=2" class="s-title">前端扩展</a></li>
-			<li><a href="http://www.yuanbo88.com/booklist.html" class="s-title">参考书籍<i class="icon-fire ml5"></i></a></li>
-			<li><a href="http://www.yuanbo88.com/catedemo.html" class="s-title">演示案例<i class="icon-fire ml5"></i></a></li>
-			<li>
-				<a href="javascript:;" class="s-title">其他</a>
-				<dl>
-					<dt>
-						<i class="triangle triangle_t"></i>
-						<i class="triangle triangle_t2"></i>
-					</dt>
-					</dt>
-					<dd><a href="http://www.yuanbo88.com/catewei.html">微话题</a></dd>
-					<dd><a href="http://www.yuanbo88.com/weiword.html">微言</a></dd>
-					<dd><a href="http://www.yuanbo88.com/dou.html">你真逗</a></dd>
-					<dd><a href="http://www.yuanbo88.com/about.html">关于</a></dd>
-				</dl>
-			</li>
-		</ul>
+<div class="top-main-wrap js-topMainWrap">
+	<div id="topMian">
+		<div class="logo"><a href="http://www.yuanbo88.com/" title="园博吧"><img src="http://www.yuanbo88.com/dist/images/styleimg/logo2.png" height="60" width="170" alt="园博吧"></a></div>
+		<div class="topm_nav clearfix">
+			<ul class="clearfix fl">
+				<li><a href="http://www.yuanbo88.com/category.html?type=1" class="s-title">前端开发</a></li>
+				<li><a href="http://www.yuanbo88.com/category.html?type=2" class="s-title">前端扩展</a></li>
+				<li><a href="http://www.yuanbo88.com/booklist.html" class="s-title">参考书籍<i class="icon-fire ml5"></i></a></li>
+				<li><a href="http://www.yuanbo88.com/catedemo.html" class="s-title">演示案例<i class="icon-fire ml5"></i></a></li>
+				<li>
+					<a href="javascript:;" class="s-title">其他</a>
+					<dl>
+						<dd><a href="http://www.yuanbo88.com/catewei.html">微话题</a></dd>
+						<dd><a href="http://www.yuanbo88.com/weiword.html">微言</a></dd>
+						<dd><a href="http://www.yuanbo88.com/dou.html">你真逗</a></dd>
+						<dd><a href="http://www.yuanbo88.com/about.html">关于</a></dd>
+					</dl>
+				</li>
+			</ul>
 
-		<a class="demo-banner fr" href="<?php echo $demoFirstUrl; ?>" title="<?php echo $demoFirstTitle; ?>"><img src="<?php echo $demoFirstImg; ?>" alt="<?php echo $demoFirstTitle; ?>" width="75" height="40"></a>
-	</div>
+			<a class="demo-banner fr" href="<?php echo $demoFirstUrl; ?>" title="<?php echo $demoFirstTitle; ?>"><img src="<?php echo $demoFirstImg; ?>" alt="<?php echo $demoFirstTitle; ?>" width="75" height="40"></a>
+		</div>
 
-	<!-- <div class="topm_tel">
-		<i class="befor_icon c_tagbg"></i>
-		<span>1882653****</span>
-	</div> -->
+		<!-- <div class="topm_tel">
+			<i class="befor_icon c_tagbg"></i>
+			<span>1882653****</span>
+		</div> -->
 
-	<div class="search-warp clearfix fr">
-		<p class="error-tips js-errorTips"></p>
-        <div class="search-area" data-search="top-banner">
-            <input class="search-input" id="js-searchInput" placeholder="请输入搜索的关键词..." type="text" autocomplete="off" onkeypress="getKey();">
-        </div>
-        <div class="showhide-search" id="js-globalSearch"><i class="iconfont">&#xf002d;</i></div>
-    </div>
-</div><!-- #topMian -->
+		<div class="search-warp clearfix fr">
+			<p class="error-tips js-errorTips"></p>
+	        <div class="search-area" data-search="top-banner">
+	            <input class="search-input" id="js-searchInput" placeholder="请输入搜索的关键词..." type="text" autocomplete="off" onkeypress="getKey();">
+	        </div>
+	        <div class="showhide-search" id="js-globalSearch"><i class="iconfont">&#xf002d;</i></div>
+	    </div>
+	</div><!-- #topMian -->
+</div>
 <!--public public_top.php end -->

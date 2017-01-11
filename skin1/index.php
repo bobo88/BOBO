@@ -465,6 +465,18 @@ if($isNoResult){//如果没有数据，直接到404页面
 				    direction:'up',
 				    loop: 0
 				});
+
+				$(window).scroll(function(event) {
+					var $win = $(window);
+					var scrollH = $win.scrollTop();
+					var headerH = $('#header').height();
+					var $navBox = $('.js-topMainWrap');
+					if(scrollH >=  headerH){
+						$navBox.addClass('css-fixed');
+					}else{
+						$navBox.removeClass('css-fixed');
+					}
+				});
 			})
 			.script("index.min.js")
 	</script>

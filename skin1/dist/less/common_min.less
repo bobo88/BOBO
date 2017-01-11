@@ -79,23 +79,23 @@ img{ display: block; margin: 0 auto;}
 #header{ width: 100%; min-width: 1200px; background: #f7f7f7;}
 #top{.border(bottom,1px,@colore2);
 	.top-content{ margin: 0 auto; width: 1200px;}
-	.top_r{ display: inline; float: right; padding: 4px 0;
-		dl{ display: inline; float: left; padding: 15px 0; height: 12px;
-			dd{ .border(right,1px,@colorc); display: inline; float: left; padding: 0 10px; height: 12px; line-height: 12px; *height: 14px;*line-height: 14px;
+	.top_r{ display: inline; float: right;
+		dl{ display: inline; float: left; padding: 10px 0; height: 12px;
+			dd{ .border(right,1px,@colorc); display: inline; float: left; height: 12px; line-height: 12px; *height: 14px;*line-height: 14px;
 				&.last{ border: none;}
 				strong{ color: @color_main; font-weight: bold;}
 			}
-			dt{.border(right,1px,@colorc); padding: 0 10px; height: 12px; line-height: 12px; *height: 14px;*line-height: 14px;
+			dt{.border(right,1px,@colorc); height: 12px; line-height: 12px; *height: 14px;*line-height: 14px;
 				&.last{ border: none;}
 			}
-			a{ color: @color6; text-decoration: none;
+			a{ padding: 0 10px; color: @color6; text-decoration: none;
 				&:hover{ color: @color_main;}
 			}
 			.topr-qrcode{ position: relative; z-index: 19;
-				.qr-code-wrap{ padding-top: 21px; display: none; position: absolute; top: 10px; right: -20px; 
-					.triangle{ position: absolute; top: 11px; left: 50%; margin-left: -10px; z-index: 3;
-						&.triangle_t{.triangle(top,10px,@colore2);}
-						&.triangle_t2{.triangle(top,10px,@colorf); top: 12px;}
+				.qr-code-wrap{ padding-top: 11px; display: none; position: absolute; top: 11px; right: -20px; 
+					.triangle{ position: absolute; top: 5px; left: 50%; margin-left: -10px; z-index: 3;
+						&.triangle_t{.triangle(top,6px,@colore2);}
+						&.triangle_t2{.triangle(top,6px,@colorf); top: 6px;}
 					}
 					.txt{ height: 30px; line-height: 30px; color: @color6; font-size: 14px; font-weight: bold; text-align: center;}
 				}
@@ -107,6 +107,10 @@ img{ display: block; margin: 0 auto;}
 		}
 	}
 }
+
+.top-main-wrap{ width: 100%; min-width: 1200px; height: 80px; background: #736c6d;
+	&.css-fixed{ position: fixed; z-index: 9999; top: 0; left: 0;}
+}
 #topMian{ position: relative; margin: 0 auto; width: 1200px; height: 80px; z-index: 9;
 	.logo{ position: absolute; z-index: 10; top: 10px; left: 0; width: 170px; height: 60px;
 		a{ display: block; width: 170px; height: 60px;}
@@ -115,26 +119,24 @@ img{ display: block; margin: 0 auto;}
 		.befor_icon{ position: absolute; top: 0; left: 0; width: 32px; height: 32px; background-position: -200px 0;}
 		span{ color: @color6; font-size: 16px;}
 	}
-	.topm_nav{ position: relative; z-index: 1; padding: 0 200px;
-		ul{ padding: 25px 0; height: 30px; line-height: 30px;
-			li{ position: relative; display: inline; float: left; margin-left: 10px; z-index: 1; padding-bottom: 10px;
-				&:hover{
-					.s-title{ color: @color_blue;}
+	.topm_nav{ position: relative; z-index: 1; padding: 0 180px;
+		ul{ height: 80px;
+			li{ position: relative; display: inline; float: left; margin-left: 10px; z-index: 1; padding: 25px 0; width: 130px; height: 30px; line-height: 30px;
+				&:hover{ background: #fff;
+					.s-title{ color: @color_main;}
 					dl{ display: block;}
 				}
-				.s-title{ display: block; padding: 0 30px; color: #000; font-size: 14px; text-decoration: none; letter-spacing: 2px;
-					&.on,&:hover{ color: @color_blue;}
+				.s-title{ position: relative; z-index: 1; display: block; padding: 0 30px; color: #fff; font-size: 14px; text-decoration: none; text-align: center; letter-spacing: 2px;
+					&.on,&:hover{ color: @color_main;}
 					&.on{ font-weight: bold;}
+					.icon-fire{ position: absolute; z-index: 2; top: 5px; right: 16px;}
 				}
-				dl{ display: none; position: absolute; z-index: 2; top: 35px; left: -30px; border:1px solid @color_blue; background: @color_bgf; box-shadow: 3px 3px 10px 0px #16486a;
-					.triangle{ position: absolute; top: -11px; left: 50%; margin-left: -10px; z-index: 3;
-						&.triangle_t{.triangle(top,10px,@color_blue);}
-						&.triangle_t2{.triangle(top,10px,@colorf); top: -10px;}
-					}
-					dd{ position: relative; z-index: 1; width: 150px; text-align: center;
+				dl{ display: none; position: absolute; z-index: 2; top: 80px; left: 0; background: @color_bgf; overflow: hidden;
+					-webkit-border-radius: 0 0 3px 3px; -moz-border-radius: 0 0 3px 3px; border-radius: 0 0 3px 3px;
+					dd{ position: relative; z-index: 1; width: 130px; text-align: center;
 						&:hover{ background: #f7f7f7;}
-						a{.inline-block(); position: relative; z-index: 1; color: #4c4c4c; font-size: 14px; text-decoration: none;
-							&.on,&:hover{ color: @color_blue;}
+						a{ display: block; position: relative; z-index: 1; color: #4c4c4c; font-size: 14px; text-decoration: none;
+							&.on,&:hover{ color: @colorf; background: #736c6d;}
 							&.on{ font-weight: bold;}
 						}
 					}
@@ -151,12 +153,12 @@ img{ display: block; margin: 0 auto;}
 
 /*全局搜索*/
 .search-warp { position: absolute; z-index: 10; top: 20px; right: 0;
-	.error-tips{ display: none; position: absolute; z-index: 11; bottom: -18px; left: 2px; color: @color_main; font-size: 12px;}
+	.error-tips{ display: none; position: absolute; z-index: 11; bottom: -16px; left: 2px; color: @colorf; font-size: 12px;}
 	i { display: block; width: 30px; height: 38px; color: #757a7e; font-size: 20px; line-height: 38px; cursor: pointer; background: @color_bgf;
-		&:hover { color: @color_blue;}
+		&:hover { color: @color_main;}
 	}
 	.showhide-search{.inline-block(); position: absolute; z-index: 2; right: 2px; top: 1px; width: 30px; height: 38px; line-height: 38px; text-align: center;}
-	.search-area { float: right; position: relative; z-index: 1; height: 38px; width: 150px; padding-right: 30px; border: 1px solid @color9; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; overflow: hidden;
+	.search-area { float: right; position: relative; z-index: 1; height: 38px; width: 150px; padding-right: 30px; border: 1px solid @colorf; background: @color_bgf; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; overflow: hidden;
 					-webkit-transition: width 0.3s; -moz-transition: width 0.3s; transition: width 0.3s;
 		.search-input { position: relative; left: 1px; top: 0; padding: 10px 0; width: 100%; height: 18px; line-height: 18px; font-size: 12px; float: left; border: 0; color: @color3; text-indent: 5px;}
 		// .btn_search { float: left; cursor: pointer; width: 30px; height: 38px; text-align: center; 
