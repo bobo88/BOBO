@@ -8,6 +8,7 @@
 //取得文章发表的数据
 $author = isset($_REQUEST['author']) ? $_REQUEST['author'] : 1;                             //文章author
 $sort = isset($_REQUEST['sort']) ? $_REQUEST['sort'] : 1;                                   //文章分类sort
+$category = isset($_REQUEST['category']) ? $_REQUEST['category'] : 1;                       //文章分类category
 $title = addslashes(isset($_REQUEST['title']) ? $_REQUEST['title'] : '');                   //文章标题title
 $summary = addslashes(isset($_REQUEST['summary']) ? $_REQUEST['summary'] : '');             //文章简介summary
 $content = addslashes(isset($_REQUEST['content']) ? $_REQUEST['content'] : '');             //文章内容content
@@ -20,7 +21,7 @@ $littleImg = addslashes(isset($_REQUEST['littleImg']) ? $_REQUEST['littleImg'] :
 $bigImg = addslashes(isset($_REQUEST['bigImg']) ? $_REQUEST['bigImg'] : '');              //文章大插图bigImg
 
 //处理插入结果
-$sql = "INSERT INTO article(author, sort, title, summary, content, keyword, hot, isTop, fromUrl, fromTitle, littleImg, bigImg) VALUES('".$author."', '".$sort."', '".$title."', '".$summary."', '".$content."', '".$keyword."', '".$hot."', '".$isTop."', '".$fromUrl."', '".$fromTitle."', '".$littleImg."', '".$bigImg."')";//插入文章数据
+$sql = "INSERT INTO article(author, sort, category, title, summary, content, keyword, hot, isTop, fromUrl, fromTitle, littleImg, bigImg) VALUES('".$author."', '".$sort."', '".$category."', '".$title."', '".$summary."', '".$content."', '".$keyword."', '".$hot."', '".$isTop."', '".$fromUrl."', '".$fromTitle."', '".$littleImg."', '".$bigImg."')";//插入文章数据
 $results = $link->query($sql);
 if($results){
     $msg['msg'] = '文章发表成功!';
