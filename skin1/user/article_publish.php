@@ -53,12 +53,26 @@
 			                					<span class="title">文章分类sort：</span>
 			                					<span class="cont">
 			                						<select name="sort" id="sort">
+			                							<option value="0">0</option>
 			                							<option value="1">1</option>
 			                							<option value="2">2</option>
 			                							<option value="3">3</option>
+			                							<option value="4">4</option>
+			                							<option value="5">5</option>
+			                							<option value="6">6</option>
 			                						</select>
 			                					</span>
-			                					<span class="tips"><strong>*</strong>表示文章类型-----1:HTML&CSS, 2:Javascript&jQuery, 3:其他类型。</span>
+			                					<span class="tips"><strong>*</strong>表示文章系列-----1:HTML, 2:css, 3:js, 4:node, 5:vue, 6:react, 0:other。</span>
+			                				</label>
+			                				<label class="clearfix options">
+			                					<span class="title">文章大类category：</span>
+			                					<span class="cont">
+			                						<select name="category" id="category">
+			                							<option value="1">1</option>
+			                							<option value="2">2</option>
+			                						</select>
+			                					</span>
+			                					<span class="tips"><strong>*</strong>表示文章大类-----1:前端开发，2:前端扩展。</span>
 			                				</label>
 
 			                				<label class="clearfix options">
