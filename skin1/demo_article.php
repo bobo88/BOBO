@@ -32,14 +32,13 @@
 #FF5F09    yellow
 <br/>
 <!-- <h1>初探Flexbox弹性盒子布局</h1> -->
-<h1>.gitignore详解</h1>
+<h1>JS设计模式之装饰者模式</h1>
 
 
 
 <h3><strong>一、前言：</strong></h3>
 <section>
-<p>最近在研究学习Git，之前也总结了 <a href="http://www.yuanbo88.com/article.html?rid=53" target="_blank">Git常用命令总结</a>、<a href="http://www.yuanbo88.com/article.html?rid=55" target="_blank">Git add命令拓展</a>。在使用 Git & GitHub 的时候，发现项目中的有些文件是不方便放在GitHub上面的，但是由于文件路径的特殊性，又不好直接将这些文件移出项目目录。所以，如果git命令在运行的时候，能直接忽略掉这些特殊文件（不会添加到GitHub上面去，同时也不会影响我本地的文件），那该有多好啊？</p>
-<p>于是，就有了今天的主角 ---- <strong>.gitignore</strong>！</p>
+<p>最近在做一个案例，在代码中有一个</p>
 </section><br/>
 
 <h3><strong>二、.gitignore详解：</strong></h3>

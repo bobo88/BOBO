@@ -108,7 +108,7 @@ img{ display: block; margin: 0 auto;}
 	}
 }
 
-.top-main-wrap{ width: 100%; min-width: 1200px; height: 80px; background: #736c6d;
+.top-main-wrap{ width: 100%; min-width: 1200px; height: 80px;
 	&.css-fixed{ position: fixed; z-index: 9999; top: 0; left: 0;}
 }
 #topMian{ position: relative; margin: 0 auto; width: 1200px; height: 80px; z-index: 9;
@@ -122,21 +122,23 @@ img{ display: block; margin: 0 auto;}
 	.topm_nav{ position: relative; z-index: 1; padding: 0 180px;
 		ul{ height: 80px;
 			li{ position: relative; display: inline; float: left; margin-left: 10px; z-index: 1; width: 130px; height: 80px;
-				&:hover{ background: #fff;
-					.s-title{ color: @color_main;}
+				&:hover{
+					.s-title{ color: @color_main;
+						&:after{ content: ''; position: absolute; z-index: 2; bottom: 10px; left: 0; width: 130px; height: 2px; background: @color_main;}
+					}
 					dl{ display: block;}
 				}
-				.s-title{ position: relative; z-index: 1; display: block; padding: 25px 30px; height: 30px; line-height: 30px; color: #fff; font-size: 14px; text-decoration: none; text-align: center; letter-spacing: 2px;
+				.s-title{ position: relative; z-index: 1; display: block; padding: 25px 30px; height: 30px; line-height: 30px; color: #000; font-size: 14px; text-decoration: none; text-align: center; letter-spacing: 2px;
 					&.on,&:hover{ color: @color_main;}
 					&.on{ font-weight: bold;}
 					.icon-fire{ position: absolute; z-index: 2; top: 30px; right: 16px;}
 				}
-				dl{ display: none; position: absolute; z-index: 2; top: 80px; left: -1px; border:1px solid #736c6d; border-top: none; background: @color_bgf; overflow: hidden;
+				dl{ display: none; position: absolute; z-index: 2; top: 80px; left: -1px; border:1px solid #f7f7f7; border-top: none; background: #f7f7f7; overflow: hidden;
 					-webkit-border-radius: 0 0 3px 3px; -moz-border-radius: 0 0 3px 3px; border-radius: 0 0 3px 3px;
 					dd{ position: relative; z-index: 1; width: 130px; text-align: center;
 						&:hover{ background: #f7f7f7;}
 						a{ display: block; position: relative; z-index: 1; height: 30px; line-height: 30px; color: #4c4c4c; font-size: 14px; text-decoration: none;
-							&.on,&:hover{ color: @colorf; background: #736c6d;}
+							&.on,&:hover{ color: @color_main;}
 							&.on{ font-weight: bold;}
 						}
 					}

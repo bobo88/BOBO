@@ -1,4 +1,4 @@
-public public_top.php start -->
+<!--public public_top.php start -->
 <div id="top">
 	<div class="top-content clearfix">
 		<div class="top_r">
@@ -42,7 +42,7 @@ public public_top.php start -->
 
 <div class="top-main-wrap js-topMainWrap">
 	<div id="topMian">
-		<div class="logo"><a href="http://www.yuanbo88.com/" title="园博吧"><img src="http://www.yuanbo88.com/dist/images/styleimg/logo2.png" height="60" width="170" alt="园博吧"></a></div>
+		<div class="logo"><a href="http://www.yuanbo88.com/" title="园博吧"><img src="http://www.yuanbo88.com/dist/images/styleimg/logo.png" height="60" width="170" alt="园博吧"></a></div>
 		<div class="topm_nav clearfix">
 			<ul class="clearfix fl">
 				<li>
@@ -92,4 +92,4 @@ public public_top.php start -->
 	    </div>
 	</div><!-- #topMian -->
 </div>
-<!--public public_top.php end 
+<!--public public_top.php end -->
