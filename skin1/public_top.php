@@ -59,7 +59,7 @@
 						<dd><a href="http://www.yuanbo88.com/category-n-1.html">NodeJS系列</a></dd>
 						<dd><a href="http://www.yuanbo88.com/category-v-1.html">VueJS系列</a></dd>
 						<dd><a href="http://www.yuanbo88.com/category-r-1.html">React系列</a></dd>
-						<dd><a href="http://www.yuanbo88.com/category-o-1.html">其他</a></dd>
+						<dd><a href="http://www.yuanbo88.com/category-o-1.html">其他扩展</a></dd>
 					</dl>
 				</li>
 				<li><a href="http://www.yuanbo88.com/booklist.html" class="s-title">参考书籍<i class="icon-fire ml5"></i></a></li>
