@@ -1,4 +1,4 @@
-<!--public public_top.php start -->
+public public_top.php start -->
 <div id="top">
 	<div class="top-content clearfix">
 		<div class="top_r">
@@ -58,7 +58,7 @@
 					<dl>
 						<dd><a href="http://www.yuanbo88.com/category-n-1.html">NodeJS系列</a></dd>
 						<dd><a href="http://www.yuanbo88.com/category-v-1.html">VueJS系列</a></dd>
-						<dd><a href="http://www.yuanbo88.com/category-r-1.html">React系列</a></dd>
+						<!-- <dd><a href="http://www.yuanbo88.com/category-r-1.html">React系列</a></dd> -->
 						<dd><a href="http://www.yuanbo88.com/category-o-1.html">其他扩展</a></dd>
 					</dl>
 				</li>
@@ -92,4 +92,4 @@
 	    </div>
 	</div><!-- #topMian -->
 </div>
-<!--public public_top.php end -->
+<!--public public_top.php end 
