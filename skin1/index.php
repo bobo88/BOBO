@@ -13,11 +13,11 @@ $sql = "SELECT * FROM article AS a WHERE a.isTop=1 AND a.category=1 ORDER BY a.i
 $results = $link->query($sql);
 
 //执行数据库查询2
-$sql2 = "SELECT a.id, a.title, a.content, a.summary, a.isTop FROM article AS a WHERE a.isTop=0 AND a.category=1 ORDER BY a.id DESC LIMIT 3";//取文章页面数据
+$sql2 = "SELECT * FROM article AS a WHERE a.isTop=0 AND a.category=1 ORDER BY a.id DESC LIMIT 3";//取文章页面数据
 $results2 = $link->query($sql2);
 
 //执行数据库查询3
-$sql3 = "SELECT a.id, a.title, a.content, a.isTop FROM article AS a WHERE a.isTop=0 AND a.category=1 ORDER BY a.id DESC LIMIT 3,8";//取文章页面数据
+$sql3 = "SELECT * FROM article AS a WHERE a.isTop=0 AND a.category=1 ORDER BY a.id DESC LIMIT 3,8";//取文章页面数据
 $results3 = $link->query($sql3);
 
 //执行数据库查询======================前端扩展
@@ -25,11 +25,11 @@ $sql4 = "SELECT * FROM article AS a WHERE a.isTop=1 AND a.category=2 ORDER BY a.
 $results4 = $link->query($sql4);
 
 //执行数据库查询2
-$sql5 = "SELECT a.id, a.title, a.content, a.summary, a.isTop FROM article AS a WHERE a.isTop=0 AND a.category=2 ORDER BY a.id DESC LIMIT 3";//取文章页面数据
+$sql5 = "SELECT * FROM article AS a WHERE a.isTop=0 AND a.category=2 ORDER BY a.id DESC LIMIT 3";//取文章页面数据
 $results5 = $link->query($sql5);
 
 //执行数据库查询3
-$sql6 = "SELECT a.id, a.title, a.content, a.isTop FROM article AS a WHERE a.isTop=0 AND a.category=2 ORDER BY a.id DESC LIMIT 3,8";//取文章页面数据
+$sql6 = "SELECT * FROM article AS a WHERE a.isTop=0 AND a.category=2 ORDER BY a.id DESC LIMIT 3,8";//取文章页面数据
 $results6 = $link->query($sql6);
 
 //查询首页banner
@@ -146,10 +146,36 @@ if($isNoResult){//如果没有数据，直接到404页面
 					<ul>
 					<?php
 						while ($row = $results->fetch_array()){
+							switch ($row['sort']) {
+								case 0:
+									$articleSort = 'o';
+									break;
+								case 1:
+									$articleSort = 'h';
+									break;
+								case 2:
+									$articleSort = 'c';
+									break;
+								case 3:
+									$articleSort = 'j';
+									break;
+								case 4:
+									$articleSort = 'n';
+									break;
+								case 5:
+									$articleSort = 'v';
+									break;
+								case 6:
+									$articleSort = 'r';
+									break;
+								default:
+									$articleSort = 'o';
+									break;
+							}
 					?>
 						<li>
 							<span class="img">
-								<a href="/article.html?rid=<?php echo $row['id']; ?>" target="_blank">
+								<a href="/article-<?php echo $articleSort;?>-<?php echo $row['id']; ?>.html" target="_blank">
 									<?php
 										if($row['bigImg']){
 									?>
@@ -174,9 +200,35 @@ if($isNoResult){//如果没有数据，直接到404页面
 				<div class="fl category-center-cont">
 					<?php
 						while ($row = $results2->fetch_array()){
+							switch ($row['sort']) {
+								case 0:
+									$articleSort = 'o';
+									break;
+								case 1:
+									$articleSort = 'h';
+									break;
+								case 2:
+									$articleSort = 'c';
+									break;
+								case 3:
+									$articleSort = 'j';
+									break;
+								case 4:
+									$articleSort = 'n';
+									break;
+								case 5:
+									$articleSort = 'v';
+									break;
+								case 6:
+									$articleSort = 'r';
+									break;
+								default:
+									$articleSort = 'o';
+									break;
+							}
 					?>
 						<div class="cont">
-							<h3><a href="/article.html?rid=<?php echo $row['id']; ?>" title="<?php echo $row['title']; ?>" target="_blank"><?php echo $row['title']; ?></a></h3>
+							<h3><a href="/article-<?php echo $articleSort;?>-<?php echo $row['id']; ?>.html" title="<?php echo $row['title']; ?>" target="_blank"><?php echo $row['title']; ?></a></h3>
 							<p><?php echo $row['summary']; ?></p>
 						</div>
 					<?php
@@ -189,9 +241,35 @@ if($isNoResult){//如果没有数据，直接到404页面
 					<ul>
 					<?php
 						while ($row = $results3->fetch_array()){
+							switch ($row['sort']) {
+								case 0:
+									$articleSort = 'o';
+									break;
+								case 1:
+									$articleSort = 'h';
+									break;
+								case 2:
+									$articleSort = 'c';
+									break;
+								case 3:
+									$articleSort = 'j';
+									break;
+								case 4:
+									$articleSort = 'n';
+									break;
+								case 5:
+									$articleSort = 'v';
+									break;
+								case 6:
+									$articleSort = 'r';
+									break;
+								default:
+									$articleSort = 'o';
+									break;
+							}
 					?>
 						<li>
-							<a href="/article.html?rid=<?php echo $row['id']; ?>" title="<?php echo $row['title']; ?>" target="_blank">
+							<a href="/article-<?php echo $articleSort;?>-<?php echo $row['id']; ?>.html" title="<?php echo $row['title']; ?>" target="_blank">
 								<?php echo $row['title']; ?>
 							</a>
 						</li>
@@ -243,10 +321,36 @@ if($isNoResult){//如果没有数据，直接到404页面
 					<ul>
 					<?php
 						while ($row = $results4->fetch_array()){
+							switch ($row['sort']) {
+								case 0:
+									$articleSort = 'o';
+									break;
+								case 1:
+									$articleSort = 'h';
+									break;
+								case 2:
+									$articleSort = 'c';
+									break;
+								case 3:
+									$articleSort = 'j';
+									break;
+								case 4:
+									$articleSort = 'n';
+									break;
+								case 5:
+									$articleSort = 'v';
+									break;
+								case 6:
+									$articleSort = 'r';
+									break;
+								default:
+									$articleSort = 'o';
+									break;
+							}
 					?>
 						<li>
 							<span class="img">
-								<a href="/article.html?rid=<?php echo $row['id']; ?>" target="_blank">
+								<a href="/article-<?php echo $articleSort;?>-<?php echo $row['id']; ?>.html" target="_blank">
 									<?php
 										if($row['bigImg']){
 									?>
@@ -271,9 +375,35 @@ if($isNoResult){//如果没有数据，直接到404页面
 				<div class="fl category-center-cont">
 					<?php
 						while ($row = $results5->fetch_array()){
+							switch ($row['sort']) {
+								case 0:
+									$articleSort = 'o';
+									break;
+								case 1:
+									$articleSort = 'h';
+									break;
+								case 2:
+									$articleSort = 'c';
+									break;
+								case 3:
+									$articleSort = 'j';
+									break;
+								case 4:
+									$articleSort = 'n';
+									break;
+								case 5:
+									$articleSort = 'v';
+									break;
+								case 6:
+									$articleSort = 'r';
+									break;
+								default:
+									$articleSort = 'o';
+									break;
+							}
 					?>
 						<div class="cont">
-							<h3><a href="/article.html?rid=<?php echo $row['id']; ?>" title="<?php echo $row['title']; ?>" target="_blank"><?php echo $row['title']; ?></a></h3>
+							<h3><a href="/article-<?php echo $articleSort;?>-<?php echo $row['id']; ?>.html" title="<?php echo $row['title']; ?>" target="_blank"><?php echo $row['title']; ?></a></h3>
 							<p><?php echo $row['summary']; ?></p>
 						</div>
 					<?php
@@ -286,9 +416,35 @@ if($isNoResult){//如果没有数据，直接到404页面
 					<ul>
 					<?php
 						while ($row = $results6->fetch_array()){
+							switch ($row['sort']) {
+								case 0:
+									$articleSort = 'o';
+									break;
+								case 1:
+									$articleSort = 'h';
+									break;
+								case 2:
+									$articleSort = 'c';
+									break;
+								case 3:
+									$articleSort = 'j';
+									break;
+								case 4:
+									$articleSort = 'n';
+									break;
+								case 5:
+									$articleSort = 'v';
+									break;
+								case 6:
+									$articleSort = 'r';
+									break;
+								default:
+									$articleSort = 'o';
+									break;
+							}
 					?>
 						<li>
-							<a href="/article.html?rid=<?php echo $row['id']; ?>" title="<?php echo $row['title']; ?>" target="_blank">
+							<a href="/article-<?php echo $articleSort;?>-<?php echo $row['id']; ?>.html" title="<?php echo $row['title']; ?>" target="_blank">
 								<?php echo $row['title']; ?>
 							</a>
 						</li>
