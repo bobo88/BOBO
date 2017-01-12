@@ -15,7 +15,6 @@ require_once 'inc_session.php';
 //http://www.yuanbo88.com/category-o-2.html   //o:表示other系列  keyNum = 0
 
 
-
 if(isset($_GET['category'])) {
 	$category = $_GET['category'];
 	switch ($category) {
@@ -279,6 +278,46 @@ if($isNoResult){//如果没有数据，直接到404页面
 				}
 			?>
 
+			<div id="pageing">
+				<?php
+					if($page > 1){ //不是第一页，显示“上一页”
+				?>	
+					<?php
+						//如果是大分类：前端开发 OR 前端扩展
+						if(isset($_GET['category'])) {
+					?>
+						<a href="http://www.yuanbo88.com/category-<?php echo $category; ?>-<?php echo $prevPage; ?>.html">上一页</a>
+					<?php
+						}else{
+					?>
+						<a href="http://www.yuanbo88.com/category-<?php echo $sort; ?>-<?php echo $prevPage; ?>.html">上一页</a>
+					<?php
+						}
+					?>	
+				<?php
+					}
+				?>
+
+				<?php
+					if($page < $pageMaxNumber){ //如果不是最后一页，显示“下一页”
+				?>
+					<?php
+						//如果是大分类：前端开发 OR 前端扩展
+						if(isset($_GET['category'])) {
+					?>
+						<a href="http://www.yuanbo88.com/category-<?php echo $category; ?>-<?php echo $nextPage; ?>.html">下一页</a>
+					<?php
+						}else{
+					?>
+						<a href="http://www.yuanbo88.com/category-<?php echo $sort; ?>-<?php echo $nextPage; ?>.html">下一页</a>
+					<?php
+						}
+					?>
+				<?php
+					}
+				?>
+			</div><!-- #pageing -->
+
 			<!-- 热门文章 -->
 			<div class="right-content-box">
 				<div class="other-keyword-wrap" id="js-otherBookList">
@@ -395,45 +434,7 @@ if($isNoResult){//如果没有数据，直接到404页面
 			</div><!-- .right-content-box -->
 		</div>
 
-		<div id="pageing">
-			<?php
-				if($page > 1){ //不是第一页，显示“上一页”
-			?>	
-				<?php
-					//如果是大分类：前端开发 OR 前端扩展
-					if(isset($_GET['category'])) {
-				?>
-					<a href="http://www.yuanbo88.com/category-<?php echo $category; ?>-<?php echo $prevPage; ?>.html">上一页</a>
-				<?php
-					}else{
-				?>
-					<a href="http://www.yuanbo88.com/category-<?php echo $sort; ?>-<?php echo $prevPage; ?>.html">上一页</a>
-				<?php
-					}
-				?>	
-			<?php
-				}
-			?>
-
-			<?php
-				if($page < $pageMaxNumber){ //如果不是最后一页，显示“下一页”
-			?>
-				<?php
-					//如果是大分类：前端开发 OR 前端扩展
-					if(isset($_GET['category'])) {
-				?>
-					<a href="http://www.yuanbo88.com/category-<?php echo $category; ?>-<?php echo $nextPage; ?>.html">下一页</a>
-				<?php
-					}else{
-				?>
-					<a href="http://www.yuanbo88.com/category-<?php echo $sort; ?>-<?php echo $nextPage; ?>.html">下一页</a>
-				<?php
-					}
-				?>
-			<?php
-				}
-			?>
-		</div><!-- #pageing -->
+		
 
 	</div><!-- .category-main-wrap -->
 
