@@ -14,6 +14,9 @@
 
     #分类页
     RewriteRule category.html$ category.php
+    RewriteRule ^category-([a-z])-([0-9]+).html$ category.php?sort=$1&page=$2
+    RewriteRule ^category-([a-z]).html$ category.php?sort=$1&page=1
+    RewriteRule ^category-([0-9])-([0-9]+).html$ category.php?category=$1&page=$2
 
     #微话题
     RewriteRule catewei.html$ catewei.php
@@ -69,6 +72,8 @@
 
     #article
     RewriteRule article.html$ article.php
+    RewriteRule ^article-([0-9]+).html$ article.php?rid=$1
+    RewriteRule ^article-([a-z])-([0-9]+).html$ article.php?sort=$1&rid=$2
 
     #logout
     RewriteRule logout.html$ logout.php

@@ -9,27 +9,27 @@ $results = $link->query($sql);
 $results->free_result();
 
 //执行数据库查询======================前端开发
-$sql = "SELECT a.id, a.title, a.content, a.isTop, a.bigImg FROM article AS a WHERE a.isTop=1 AND a.sort!=3 ORDER BY a.id DESC LIMIT 1";//取文章页面数据
+$sql = "SELECT * FROM article AS a WHERE a.isTop=1 AND a.category=1 ORDER BY a.id DESC LIMIT 1";//取文章页面数据
 $results = $link->query($sql);
 
 //执行数据库查询2
-$sql2 = "SELECT a.id, a.title, a.content, a.summary, a.isTop FROM article AS a WHERE a.isTop=0 AND a.sort!=3 ORDER BY a.id DESC LIMIT 3";//取文章页面数据
+$sql2 = "SELECT a.id, a.title, a.content, a.summary, a.isTop FROM article AS a WHERE a.isTop=0 AND a.category=1 ORDER BY a.id DESC LIMIT 3";//取文章页面数据
 $results2 = $link->query($sql2);
 
 //执行数据库查询3
-$sql3 = "SELECT a.id, a.title, a.content, a.isTop FROM article AS a WHERE a.isTop=0 AND a.sort!=3 ORDER BY a.id DESC LIMIT 3,8";//取文章页面数据
+$sql3 = "SELECT a.id, a.title, a.content, a.isTop FROM article AS a WHERE a.isTop=0 AND a.category=1 ORDER BY a.id DESC LIMIT 3,8";//取文章页面数据
 $results3 = $link->query($sql3);
 
 //执行数据库查询======================前端扩展
-$sql4 = "SELECT a.id, a.title, a.content, a.isTop, a.bigImg FROM article AS a WHERE a.isTop=1 AND a.sort=3 ORDER BY a.id DESC LIMIT 1";//取文章页面数据
+$sql4 = "SELECT * FROM article AS a WHERE a.isTop=1 AND a.category=2 ORDER BY a.id DESC LIMIT 1";//取文章页面数据
 $results4 = $link->query($sql4);
 
 //执行数据库查询2
-$sql5 = "SELECT a.id, a.title, a.content, a.summary, a.isTop FROM article AS a WHERE a.isTop=0 AND a.sort=3 ORDER BY a.id DESC LIMIT 3";//取文章页面数据
+$sql5 = "SELECT a.id, a.title, a.content, a.summary, a.isTop FROM article AS a WHERE a.isTop=0 AND a.category=2 ORDER BY a.id DESC LIMIT 3";//取文章页面数据
 $results5 = $link->query($sql5);
 
 //执行数据库查询3
-$sql6 = "SELECT a.id, a.title, a.content, a.isTop FROM article AS a WHERE a.isTop=0 AND a.sort=3 ORDER BY a.id DESC LIMIT 3,8";//取文章页面数据
+$sql6 = "SELECT a.id, a.title, a.content, a.isTop FROM article AS a WHERE a.isTop=0 AND a.category=2 ORDER BY a.id DESC LIMIT 3,8";//取文章页面数据
 $results6 = $link->query($sql6);
 
 //查询首页banner
@@ -138,7 +138,7 @@ if($isNoResult){//如果没有数据，直接到404页面
 					<span class="hot-key"><a href="/search.html?key=javascript" title="Javascript" target="_blank">Javascript</a></span>
 					<span class="hot-key"><a href="/search.html?key=jquery" title="jQuery" target="_blank">jQuery</a></span>
 				</span>
-				<span class="fr more"><a href="http://www.yuanbo88.com/category.html?type=1" target="_blank">更多</a></span>
+				<span class="fr more"><a href="http://www.yuanbo88.com/category-1-1.html" target="_blank">更多</a></span>
 			</div>
 			
 			<div class="clearfix floor-content-wrap mt30">
@@ -235,7 +235,7 @@ if($isNoResult){//如果没有数据，直接到404页面
 					<span class="hot-key"><a href="/search.html?key=gulp" title="Gulp" target="_blank">Gulp</a></span>
 					<span class="hot-key"><a href="/search.html?key=react" title="React Native" target="_blank">React Native</a></span>
 				</span>
-				<span class="fr more"><a href="http://www.yuanbo88.com/category.html?type=2" target="_blank">更多</a></span>
+				<span class="fr more"><a href="http://www.yuanbo88.com/category-2-1.html" target="_blank">更多</a></span>
 			</div>
 			
 			<div class="clearfix floor-content-wrap mt30">

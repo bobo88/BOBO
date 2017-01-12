@@ -20,11 +20,54 @@ if($rid < 1){ //rid为负数
 	$rid = 1;
 }
 
+$cateTitUrl = 'category-h-1.html';
+$cateSort = 'HTML系列';
+$sortShort = 'h';
 //得到当前文章所属分类
 if(isset($_GET['sort'])) {
-	$cateSort = $_GET['sort'];
-}else{
-	$cateSort = 1; //默认是HTML&CSS分类
+	$sortShort = $_GET['sort'];
+	switch ($sortShort) {
+		case 'h':
+			$cateSort = 'HTML系列';
+			$cateTitUrl = 'category-h-1.html';
+			$keyNum = 1;
+			break;
+		case 'c':
+			$cateSort = 'CSS系列';
+			$cateTitUrl = 'category-c-1.html';
+			$keyNum = 2;
+			break;
+		case 'j':
+			$cateSort = 'Javascript系列';
+			$cateTitUrl = 'category-j-1.html';
+			$keyNum = 3;
+			break;
+		case 'n':
+			$cateSort = 'NodeJS系列';
+			$cateTitUrl = 'category-n-1.html';
+			$keyNum = 4;
+			break;
+		case 'v':
+			$cateSort = 'VueJS系列';
+			$cateTitUrl = 'category-v-1.html';
+			$keyNum = 5;
+			break;
+		case 'r':
+			$cateSort = 'React系列';
+			$cateTitUrl = 'category-r-1.html';
+			$keyNum = 6;
+			break;
+		case 'o':
+			$cateSort = '其他';
+			$cateTitUrl = 'category-o-1.html';
+			$keyNum = 0;
+			break;
+		default:
+			$cateSort = '其他';
+			$cateTitUrl = 'category-o-1.html';
+			$keyNum = 0;
+			break;
+	}
 }
 
 $isNoResult = 0;
@@ -56,25 +99,13 @@ if($hasResult > 0){
 	$resultsPlus = $link->query($sqlPlus);
 
 	
-	$rid_1 = $rid-1;
-	$sql4 = "SELECT * FROM article WHERE id=".$rid_1;//看是否有当前文章页面上一页数据
+	$sql4 = "SELECT * FROM article AS a WHERE a.sort='".$keyNum."' AND a.id <'".$rid."' ORDER BY a.id DESC LIMIT 1";//看是否有当前文章页面上一页数据
 	$results4 = $link->query($sql4);
 	$hasResultPrev = $results4->num_rows;
-	if($hasResultPrev > 0){
-		//执行数据库查询
-		$sql5 = "SELECT a.title FROM article AS a, user AS u WHERE a.author=u.id AND a.id={$rid_1}";//取文章页面上一页数据
-		$results5 = $link->query($sql5);
-	}
 
-	$rid1 = $rid+1;
-	$sql6 = "SELECT * FROM article WHERE id=".$rid1;//看是否有当前文章页面下一页数据
-	$results6 = $link->query($sql6);
-	$hasResultNext = $results6->num_rows;
-	if($hasResultNext > 0){
-		//执行数据库查询
-		$sql7 = "SELECT a.title FROM article AS a, user AS u WHERE a.author=u.id AND a.id={$rid1}";//取文章页面下一页数据
-		$results7 = $link->query($sql7);
-	}
+	$sql5 = "SELECT * FROM article AS a WHERE a.sort='".$keyNum."' AND a.id >'".$rid."' ORDER BY a.id ASC LIMIT 1";//看是否有当前文章页面下一页数据
+	$results5 = $link->query($sql5);
+	$hasResultNext = $results5->num_rows;
 }else{ //查询失败
 	$isNoResult = 1;
 }
@@ -152,37 +183,9 @@ if($isNoResult){//如果没有数据，直接到404页面
 			当前位置：<a href="/">首页</a>
 			<span> > </span>
 
-			<?php 
-				if($sort == 1 || $sort == 2){
-			?>
-				<a href="category.html?type=1">前端开发</a>
-			<?php
-				}else if($sort == 3){
-			?>
-				<a href="category.html?type=2">前端扩展</a>
-			<?php
-				}
-			?>
-
-			<span> > </span>
-
-			<?php 
-				if($sort == 1){
-			?>
-				<a href="category.html?type=1&key=h5">HTML(5)/CSS(3)</a>
-			<?php
-				}else if($sort == 2){
-			?>
-				<a href="category.html?type=1&key=js">Javascript/jQuery</a>
-			<?php
-				}else if($sort == 3){
-			?>
-				<a href="category.html?type=2&key=other">Other</a>
-			<?php	
-				}
-			?>
+			<a href="<?php echo $cateTitUrl ;?>"><?php echo $cateSort; ?></a>
 			
-			<span> > </span>正文
+			<span> > </span><?php echo $title; ?>
 		</div>
 		<h1><?php echo $title; ?></h1>
 		<div class="article-info">
@@ -223,9 +226,9 @@ if($isNoResult){//如果没有数据，直接到404页面
 				if($hasResultPrev > 0){
 				?>
 					<?php
-					while ($row = $results5->fetch_array()){
+					while ($row = $results4->fetch_array()){
 					?>
-						<a class="btn-normal mr100" href="http://www.yuanbo88.com/article.html?rid=<?php echo $rid_1; ?>"><span>上一篇:</span>&nbsp;&nbsp;<?php echo $row['title']; ?></a>
+						<a class="btn-normal mr100" href="http://www.yuanbo88.com/article-<?php echo $sortShort; ?>-<?php echo $row['id']; ?>.html"><span>上一篇:</span>&nbsp;&nbsp;<?php echo $row['title']; ?></a>
 				<?php
 					}
 				}
@@ -236,9 +239,9 @@ if($isNoResult){//如果没有数据，直接到404页面
 				?>
 				
 					<?php
-					while ($row = $results7->fetch_array()){
+					while ($row = $results5->fetch_array()){
 					?>
-						<a class="btn-normal" href="http://www.yuanbo88.com/article.html?rid=<?php echo $rid1; ?>"><span>下一篇:</span>&nbsp;&nbsp;<?php echo $row['title']; ?></a>
+						<a class="btn-normal" href="http://www.yuanbo88.com/article-<?php echo $sortShort; ?>-<?php echo $row['id']; ?>.html"><span>下一篇:</span>&nbsp;&nbsp;<?php echo $row['title']; ?></a>
 				<?php
 					}
 				}

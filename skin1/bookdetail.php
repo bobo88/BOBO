@@ -46,19 +46,11 @@ if($hasResult > 0){
 	$isNoResult = 1;
 }
 
-//查询article表中的keyword字段，取出现次数最多的30个字段
-$sql4 = "SELECT a.keyword FROM article AS a";
-$results4 = $link->query($sql4);
-$allKeywordArr = [];
-while ($row = $results4->fetch_array()){
-	$arr = explode(' ', $row['keyword']);//explode() 函数把字符串分割为数组
-	$num = count($arr);
-	for($j=0; $j<$num; ++$j){
-		array_push($allKeywordArr, $arr[$j]);//array_push() 函数向第一个参数的数组尾部添加一个或多个元素（入栈），然后返回新数组的长度。
-	}
-}
-$arrayCountValuesArr = array_count_values($allKeywordArr);//array_count_values()是统计数组中所有值出现的次数，返回一个数组
-arsort($arrayCountValuesArr);//arsort() 函数对关联数组按照键值进行降序排序。
+$sql5 = "SELECT b.id, b.bookname FROM booklist AS b ORDER BY b.id DESC LIMIT 10";
+$results5 = $link->query($sql5);
+
+$sql6 = "SELECT b.id, b.bookname FROM booklist AS b ORDER BY b.id DESC LIMIT 10,10";
+$results6 = $link->query($sql6);
 
 //关闭数据库连接
 $link->close(); 
@@ -126,37 +118,32 @@ if($isNoResult){//如果没有数据，直接到404页面
 			</div>
 
 			<!-- 其他推荐书籍列表 -->
-			<div class="other-book-wrap" id="js-otherBookList">
-				<h3>热门文章Keyword</h3>
-				<ul class="booklist clearfix">
-					<?php
-						foreach(array_slice($arrayCountValuesArr, 0 , 10) as $k=>$v){
-					?>
-						<li><a href="http://www.yuanbo88.com/search.html?key=<?php echo $k; ?>" target="_blank"><?php echo $k; ?></a></li>
-					<?php
-						}
-					?>
-				</ul>
-				<ul class="booklist clearfix none">
-					<?php
-						foreach(array_slice($arrayCountValuesArr, 11 , 10) as $k=>$v){
-					?>
-						<li><a href="http://www.yuanbo88.com/search.html?key=<?php echo $k; ?>" target="_blank"><?php echo $k; ?></a></li>
-					<?php
-						}
-					?>
-				</ul>
-				<ul class="booklist clearfix none">
-					<?php
-						foreach(array_slice($arrayCountValuesArr, 21 , 10) as $k=>$v){
-					?>
-						<li><a href="http://www.yuanbo88.com/search.html?key=<?php echo $k; ?>" target="_blank"><?php echo $k; ?></a></li>
-					<?php
-						}
-					?>
-				</ul>
-				<p class="change-group mb25 tc js-changeGroup" data-current="0"><a href="javascript:;">换一批</a></p>
-			</div><!-- .other-book-wrap -->
+			<div class="right-content-box">
+				<div class="other-book-wrap" id="js-otherBookList">
+					<h3>最新书籍</h3>
+					<ul class="booklist clearfix firstList">
+						<?php
+							while ($row = $results5->fetch_array()){
+						?>
+							<li><a href="http://www.yuanbo88.com/bookdetail.html?bid=<?php echo $row['id']; ?>" title="<?php echo $row['bookname']; ?>" target="_blank"><?php echo $row['bookname']; ?></a></li>
+						<?php
+							}
+						?>	
+					</ul>
+					<ul class="booklist clearfix none">
+						<?php
+							while ($row = $results6->fetch_array()){
+						?>
+							<li><a href="http://www.yuanbo88.com/bookdetail.html?bid=<?php echo $row['id']; ?>" title="<?php echo $row['bookname']; ?>" target="_blank"><?php echo $row['bookname']; ?></a></li>
+						<?php
+							}
+						?>
+					</ul>
+					<p class="change-group tc js-changeGroup" data-current="0"><a href="javascript:;">换一批</a></p>
+				</div><!-- .other-book-wrap -->
+
+				<div class="fb-page" data-href="https://www.facebook.com/yuanboba/" data-width="250" data-height="290" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><blockquote cite="https://www.facebook.com/yuanboba/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/yuanboba/">Facebook园博吧</a></blockquote></div>
+			</div><!-- .right-content-box -->
 		</div>
 	
 	</div><!-- .book-detail-wrap -->
@@ -204,6 +191,15 @@ if($isNoResult){//如果没有数据，直接到404页面
 			})
 			.script("")
 	</script>
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/zh_CN/sdk.js#xfbml=1&version=v2.8";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
 </body>
 </html>
