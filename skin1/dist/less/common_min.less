@@ -124,13 +124,18 @@ img{ display: block; margin: 0 auto;}
 			li{ position: relative; display: inline; float: left; margin-left: 10px; z-index: 1; width: 130px; height: 80px;
 				&:hover{
 					.s-title{ color: @color_main;
-						&:after{ content: ''; position: absolute; z-index: 2; bottom: 10px; left: 0; width: 130px; height: 2px; background: @color_main;}
+						&:after{ -webkit-transform: scaleX(1); -moz-transform: scaleX(1); -ms-transform: scaleX(1); transform: scaleX(1); opacity: 1;}
 					}
 					dl{ display: block;}
 				}
 				.s-title{ position: relative; z-index: 1; display: block; padding: 25px 30px; height: 30px; line-height: 30px; color: #000; font-size: 14px; text-decoration: none; text-align: center; letter-spacing: 2px;
 					&.on,&:hover{ color: @color_main;}
 					&.on{ font-weight: bold;}
+					&:after{ content: ''; position: absolute; z-index: 2; bottom: 10px; left: 0; width: 130px; height: 2px; background: @color_main; opacity: 0;
+						-webkit-transition: all 1s cubic-bezier(.165,.84,.44,1); -moz-transition: all 1s cubic-bezier(.165,.84,.44,1); -ms-transition: all 1s cubic-bezier(.165,.84,.44,1); transition: all 1s cubic-bezier(.165,.84,.44,1);
+						-webkit-transform: scaleX(0); -moz-transform: scaleX(0); -ms-transform: scaleX(0); transform: scaleX(0);
+						-webkit-transform-origin: 50% 50%; -moz-transform-origin: 50% 50%; -ms-transform-origin: 50% 50%; transform-origin: 50% 50%;
+					}
 					.icon-fire{ position: absolute; z-index: 2; top: 30px; right: 16px;}
 				}
 				dl{ display: none; position: absolute; z-index: 2; top: 80px; left: -1px; border:1px solid #f7f7f7; border-top: none; background: #f7f7f7; overflow: hidden;
@@ -143,7 +148,7 @@ img{ display: block; margin: 0 auto;}
 						}
 					}
 				}
-				.icon-hot{ position: absolute; top: 5px; right: -30px; width: 22px; height: 9px; background-position:  -100px 0; z-index: 2;}
+				.icon-hot{ position: absolute; top: 5px; right: -30px; width: 22px; height: 9px; background-position: -100px 0; z-index: 2;}
 			}
 		}
 		.demo-banner{ position: relative; top: 20px; margin-right: 30px;
