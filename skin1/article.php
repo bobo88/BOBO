@@ -135,33 +135,24 @@ if($isNoResult){//如果没有数据，直接到404页面
 	<script>SyntaxHighlighter.defaults['auto-links'] = false;</script>
 	<script src="dist/minjs/jquery.zclip.js"></script>
 	<style>
+		@media screen and (max-width: 959px){
+			#header{min-width: 100%;}
+			#top .top-content{width: 100%;}
+			#topMian{width: 100%;}
+			#topMian .logo{left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%);}
+			#topMian .topm_nav, .search-warp{ display: none;}
+			.top-main-wrap{ min-width: auto;}
+			.btn-normal{ float: left;margin-bottom: 5px !important;}
+		}
 		@media screen and (min-width: 768px) and (max-width: 959px) {
-		  #header{min-width: 100%;}
-		  #top .top-content{width: 100%;}
-		  #topMian{width: 100%;}
-		  #topMian .logo{left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%);}
-		  #topMian .topm_nav, .search-warp{ display: none;}
-		  .btn-normal{ float: left;margin-bottom: 5px !important;}
 		  .article-wrap{ width: 900px;}
 		  .foot-wrap{ min-width: 900px;}
 		}
 		@media only screen and (min-width: 480px) and (max-width: 767px) {
-		  #header{min-width: 100%;}
-		  #top .top-content{width: 100%;}
-		  #topMian{width: 100%;}
-		  #topMian .logo{left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%);}
-		  #topMian .topm_nav, .search-warp{ display: none;}
-		  .btn-normal{ float: left;margin-bottom: 5px !important;}
 		  .article-wrap{ width: 450px;}
 		  .foot-wrap{ min-width: 450px;}
 		}
 		@media only screen and (max-width: 479px) {
-		  #header{min-width: 100%;}
-		  #top .top-content{width: 100%;}
-		  #topMian{width: 100%;}
-		  #topMian .logo{left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%);}
-		  #topMian .topm_nav, .search-warp{ display: none;}
-		  .btn-normal{ float: left;margin-bottom: 5px !important;}
 		  .article-wrap{ width: 350px;}
 		  .foot-wrap{ min-width: 350px;}
 		}
