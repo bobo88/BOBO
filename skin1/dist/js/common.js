@@ -65,6 +65,7 @@ GLOBAL.PopObj = {
             closeBtn : options.closeBtn ? options.closeBtn : 1,
             shade : options.shade ? options.shade : [0.8 , '#000' , true],
             border : [1, 1, '#ddd', true],
+            offset : ['100px'],
             content : options.content,
             yes : function(index){
                 options.callBack ? options.callBack(options.callBackArg ? options.callBackArg : "") : "";
