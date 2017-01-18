@@ -157,9 +157,6 @@ if($isNoResult){//如果没有数据，直接到404页面
 		  .foot-wrap{ min-width: 350px;}
 		}
 	</style>
-
-	<!-- Go to www.addthis.com/dashboard to customize your tools --> 
-	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53e9df045fc56166"></script> 
 </head>
 <body>
 	<header id="header">
@@ -248,6 +245,9 @@ if($isNoResult){//如果没有数据，直接到404页面
 	<footer id="footer">
 		<? include 'foot.html'; ?>	
 	</footer><!--end #footer -->
+
+	<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53e9df045fc56166"></script> 
 
 	<script>
 		$LAB.script("")
