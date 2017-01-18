@@ -365,6 +365,17 @@
 			a{ color: #1ab5e3; text-decoration: underline;}
 		}
 	}
+	.github-list{ padding: 0 15px 0 20px; background: #f7f7f7;
+		h3{ position: relative; z-index: 1; margin-bottom: 10px; padding: 10px 0 5px; height: 20px; line-height: 20px; color: #009a61; font-size: 14px; font-weight: bold; text-align: center; border-bottom: 1px solid #009a61;
+			&:after{ content: ''; position: absolute;z-index: 2; bottom: -10px; left: 50%; margin-left: -5px; display: inline-block; border:5px solid transparent; border-top: 5px solid #009a61;}
+		}
+		li{ padding-bottom: 10px;
+			a{.inline-block(); height: 20px; line-height: 20px; color: #009a61; font-size: 14px;
+				&:hover{ text-decoration: underline;}
+			}
+			p{ height: 30px; line-height: 30px; overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+		}
+	}
 }
 
 //msg
