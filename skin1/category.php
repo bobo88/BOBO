@@ -441,6 +441,10 @@ if($isNoResult){//如果没有数据，直接到404页面
 							<a href="https://github.com/bobo88/temp" target="_blank">temp</a>
 							<p>园博吧网站源代码，需要建站的朋友可以在此基础上快速建立基于php的网站。</p>
 						</li>
+						<li>
+							<a href="https://github.com/bobo88/plugin" target="_blank">plugin</a>
+							<p>Javascript相关插件，有兴趣的朋友可以根据实际情况直接下载使用。</p>
+						</li>
 					</ul>
 				</div><!-- .github-list -->
 			</div><!-- .right-content-box -->
