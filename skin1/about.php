@@ -25,7 +25,7 @@ $link->close();
 				<div class="bobo-info">
 					<h3 class="name">I'M YUAN BO</h3>
 					<span class="line"></span>
-					<p class="jobs">FRONT-END WEB DEVELOPER</p>
+					<p class="jobs">一个能经常把键盘敲出钢琴感觉的WEB前端开发工程师！</p>
 				</div>
 			</div>
 		</section>
