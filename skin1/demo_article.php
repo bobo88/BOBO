@@ -149,8 +149,7 @@
 <p>相信也会有一些朋友不知道怎么把数值转换成标准的二进制码，那么有没有快速的方法呢？答案是肯定的。</p>
 <p>我的网上随机找到了一个在线转换工具地址：<a href="http://www.atool.org/hexconvert.php" target="_blank">数值进制转换（点我查看）</a>。（当然，你也可以使用你找到的别的工具，不管怎样，能实现效果就是我们的最终目的）</p>
 <p>最后，再附上我通过手写转换二进制过程中总结的规律图，依然可以快速将数值转换成二进制码，逼格满满哒！</p>
-
-
+<p><img src="http://www.yuanbo88.com/dist/images/domeimg/lazyload.gif" data-original="http://www.yuanbo88.com/dist/images/domeimg/article/2017/Binary/binary.png" alt="二进制转换规律图"></p>
 </section><br/>
 
 <script>
