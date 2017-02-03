@@ -201,7 +201,7 @@ if($isNoResult){//如果没有数据，直接到404页面
 					}else{
 				?>
 					<h4>本站欢迎任何形式的转载，但请务必注明出处，尊重他人劳动成果。</h4>
-					<p>转载请注明： 文章转载自：园博吧资源网 <a href="<?php echo $locationUrl; ?>"><?php echo $locationUrl; ?></a></p>
+					<p>转载请注明： 文章转载自：园博吧资源网 <a href="http://www.yuanbo88.com/article-<?php echo $sortShort; ?>-<?php echo $rid; ?>.html">http://www.yuanbo88.com/article-<?php echo $sortShort; ?>-<?php echo $rid; ?>.html</a></p>
 				<?php	
 					}
 				?>
