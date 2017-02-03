@@ -224,10 +224,12 @@ $(function(){
     //回到顶部
     $(window).scroll(function(event) {
         var html = '<div class="goTop js_goTop"><a href="javascript:;"><i class="icon-goTop c_tagbg"></i><span>回到顶部</span></a></div>';
+        var $goTop = $("body").find(".goTop");
+        
         if($(window).scrollTop() > 0 ){
-            $("body").find(".goTop").length > 0 ? $("body").find(".goTop").fadeIn() : $("body").append(html).fadeIn();
+            $goTop.length > 0 ? $goTop.fadeIn() : $("body").append(html).fadeIn();
         }else{
-            $("body").find(".goTop").fadeOut();
+            $goTop.fadeOut();
         }  
     });
     $("body").on("click",".js_goTop",function(){
