@@ -13,8 +13,8 @@ if(isset($_SESSION['userid'])){
 	}
 }else{
 	//没有登录，跳转到登录页面
-	// header("Location: http://www.yuanbo88.com/sign.html?ref=m-user-center.html\n");
-	// exit;
+	header("Location: http://www.yuanbo88.com/sign.html?ref=m-user-center.html\n");
+	exit;
 	
 	$_SESSION['userid'] = null;
 }
