@@ -70,7 +70,7 @@
 						<dd><a href="http://www.yuanbo88.com/catewei.html">微话题</a></dd>
 						<dd><a href="http://www.yuanbo88.com/weiword.html">微言</a></dd>
 						<dd><a href="http://www.yuanbo88.com/dou.html">你真逗</a></dd>
-						<dd><a href="http://www.yuanbo88.com/about.html">关于</a></dd>
+						<dd><a href="http://www.yuanbo88.com/about.html">关于我</a></dd>
 					</dl>
 				</li>
 			</ul>

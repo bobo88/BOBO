@@ -47,7 +47,7 @@ $link->close();
 						<img src="dist/images/domeimg/about/case_2.jpg" alt="CASE" class="bg">
 						<div class="hover">
 							<h5 class="project-name">Project Name</h5>
-							<p class="works">GEARBESE</p>
+							<p class="works">GEARBEST</p>
 							<p class="jobs">WEB FRONT END DEVELOPMENT</p>
 							<a href="http://www.gearbest.com" class="view" target="_blank">VIEW</a>
 						</div>
