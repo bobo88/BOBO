@@ -87,7 +87,7 @@ if($isNoResult){//如果没有数据，直接到404页面
 	
 	<div class="dou-wrap">
 		<h1 class="title">你真逗</h1>
-		<p class="tips">资源：取之网络，用之网络。</p>
+		<p class="tips">资源：取之网络，用之网络（用手机访问本页面效果也是杠杠的哦）。</p>
 		<div class="dou-box" id="js-douBox">
 			<?php
 				while ($row = $results->fetch_array()){
