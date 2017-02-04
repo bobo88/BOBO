@@ -79,11 +79,11 @@ $link->close();
 				<li>
 					<h4 class="intro-tit"><span>About Me</span></h4>
 					<div class="about-me">
-						<p class="clearfix"><i class="iconfont">&#xe60d;</i><span>帅</span></p>
-						<p class="clearfix"><i class="iconfont">&#xe60d;</i><span>专注</span></p>
-						<p class="clearfix"><i class="iconfont">&#xe60d;</i><span>很勤奋</span></p>
-						<p class="clearfix"><i class="iconfont">&#xe60d;</i><span>会写代码</span></p>
-						<p class="clearfix"><i class="iconfont">&#xe60d;</i><span>有一点逗比</span></p>
+						<p class="clearfix"><i class="iconfont">&#xe60d;</i><span>逗得了比</span></p>
+						<p class="clearfix"><i class="iconfont">&#xe60d;</i><span>P得了图</span></p>
+						<p class="clearfix"><i class="iconfont">&#xe60d;</i><span>调得了BUG</span></p>
+						<p class="clearfix"><i class="iconfont">&#xe60d;</i><span>写得了代码</span></p>
+						<p class="clearfix"><i class="iconfont">&#xe60d;</i><span>就是卖不了萌</span></p>
 						
 					</div>
 				</li>
@@ -97,9 +97,9 @@ $link->close();
 				<li>
 					<h4 class="intro-tit"><span>Skills</span></h4>
 					<div class="skills">
-						<p><span style="width:90%;"><b>HTML&CSS</b></span></p>
-						<p><span style="width:80%;"><b>JS</b></span></p>
-						<p><span style="width:70%;"><b>PS</b></span></p>
+						<p><span style="width:90%;"><b>HTML & CSS</b></span></p>
+						<p><span style="width:90%;"><b>JS & jQuery</b></span></p>
+						<p><span style="width:90%;"><b>PS</b></span></p>
 						<p><span style="width:50%;"><b>PHP</b></span></p>
 					</div>
 				</li>
