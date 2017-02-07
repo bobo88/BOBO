@@ -122,8 +122,12 @@ $link->close();
         .marquee-box a{ display: block; width: 100%; height: 46px; line-height: 46px; color: #eae1b0; font-size: 14px; text-decoration: none; text-align: center;}
         .marquee-box a:hover{ text-decoration: underline;}
 
-        .get-coupon-list{ padding: 0 100px; width: 800px; height: 192px; overflow: hidden;}
-        .get-coupon-list li{ float: left; padding: 20px 10px 0 20px; width: 155px; height: 182px; margin-left: 5px; background: url('images/demo_24/getcoupon_bg.png') top center no-repeat;}
+        .get-coupon-list{ padding: 0 100px; width: 800px; height: 192px;}
+        .get-coupon-list li{ position: relative; z-index: 1; float: left; padding: 20px 10px 0 20px; width: 155px; height: 182px; margin-left: 5px; background: url('images/demo_24/getcoupon_bg.png') top center no-repeat;-webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; -ms-transition: 0.5s; transition: 0.5s;}
+        .get-coupon-list li:hover{
+            -webkit-transform: translate(0,12px);
+            -moz-transform: translate(0,12px);
+        }
         .coupon-value{ height: 30px; line-height: 30px; color: #bd0900; font-size: 28px; font-weight: bold;}
         .coupon-scope{ height: 24px; line-height: 24px; color: #bd0900; font-size: 14px; font-weight: bold;}
         .coupon-country,.coupon-use-time{ height: 20px; line-height: 20px; color: #32373e; font-size: 14px;}
