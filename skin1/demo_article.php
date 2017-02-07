@@ -35,143 +35,106 @@
 <h1>Javascript中的URI编码方法</h1>
 
 
-<style>
-	.url-input{ width: 420px !important;}
-</style>
 <h3><strong>一、前言：</strong></h3>
 <section>
-<p>在我们编写js代码的过程中，难免会碰到如何将URL地址进行编码的时候。比如，我在工作中就经常会涉及到Facebook、twitter分享，分享地址不能直接带有空格、斜杠等内容，这时候就需要用到URI编码方法了。</p>
-<p><small>Javascript中的URI编码方法很简单，这里只是简单的总结下，用以抛砖引玉。</small></p>
+
 </section><br/>
 
 <h3><strong>二、URI编码方法：</strong></h3>
 <section>
-<p class="mb10">在ECMAScript中有一个非常特别的对象<span class="fb-black">Global</span>，这个对象是一个全局对象。实际上，没有全局变量或者全局函数，所有在全局作用域中定义的属性和函数，都是Global对象的属性。而我们今天要说的URI编码，恰恰就是Global的方法。接下来，对URI方法进行逐一说明。</p>
 
+<pre class="brush:js">
+//原型式继承
+function object(o){
+	function F(){}
+	F.prototype = o;
+	return new F();
+}
 
-<h5><span class="fb-black">1、编码：encodeURI()和encodeURIComponent()</span></h5>
-<p>
-	<small>encodeURI()不会对本身属于URI的特殊字符进行编码，例如冒号、正斜杠、问号和井字号；</small><br/>
-	<small>encodeURIComponent()则会对它发现的任何非标准字符进行编码。</small>
-</p>
-<p>编码示例：（注意url地址中有空格）</p>
-<div class="mb10">
-	<input type="text" value="http://www.yuanbo88.com/demo-uri.html ?name=bobo" id="js-encodeURIText" class="input-normal url-input">
-	<a href="javascript:;" class="btn-normal" id="js-encodeURIBtn">encodeURI</a>
-	<input type="text" placeholder="点击encodeURI按钮查看最终生成的效果" class="input-normal url-input" id="js-encodeURILast">
-</div>
-<div class="mb10">
-	<input type="text" value="http://www.yuanbo88.com/demo-uri.html ?name=bobo" id="js-encodeURIComponentText" class="input-normal url-input">
-	<a href="javascript:;" class="btn-normal" id="js-encodeURIComponentBtn">encodeURIComponent</a>
-	<input type="text" placeholder="点击encodeURIComponent按钮查看最终生成的效果" class="input-normal url-input" id="js-encodeURIComponentLast">
-</div>
+//寄生组合式继承：实现基于类型继承的最有效方式
+function inheritPrototype(subType, superType){
+	var prototype = object(superType.prototype);
+	prototype.constructor = subType;
+	subType.prototype = prototype;
+}
 
-<h5><span class="fb-black">2、解码：decodeURI()和decodeURIComponent()</span></h5>
-<p>
-	<small>decodeURI()只能对使用encodeURI()替换的字符进行解码；</small><br/>
-	<small>decodeURIComponent()则可以解码任何特殊字符的编码。</small>
-</p>
-<p>解码示例：</p>
-<div class="mb10">
-	<input type="text" value="http%3A%2F%2Fwww.yuanbo88.com%2Fdemo-uri.html%20%3Fname%3Dbobo" id="js-decodeURIText" class="input-normal url-input">
-	<a href="javascript:;" class="btn-normal" id="js-decodeURIBtn">decodeURI</a>
-	<input type="text" placeholder="点击decodeURI按钮查看最终生成的效果" class="input-normal url-input" id="js-decodeURILast">
-</div>
-<div class="mb10">
-	<input type="text" value="http%3A%2F%2Fwww.yuanbo88.com%2Fdemo-uri.html%20%3Fname%3Dbobo" id="js-decodeURIComponentText" class="input-normal url-input">
-	<a href="javascript:;" class="btn-normal" id="js-decodeURIComponentBtn">decodeURIComponent</a>
-	<input type="text" placeholder="点击decodeURIComponent按钮查看最终生成的效果" class="input-normal url-input" id="js-decodeURIComponentLast">
-</div>
+//父类型
+function SuperType(name){
+	this.name = name;
+	this.colors = ["red", "blue", "green"];
+}
+//父类型的原型方法
+SuperType.prototype.sayName = function(){
+	console.log(this.name);
+}
 
-<p>
-	<span class="fb-black">从上面的两组示例，我们可以看出，一般情况下，我们使用encodeURIComponent()编码以及decodeURIComponent()解码会更多一点，因为在实践中更常见的是对查询字符串参数而不是对基础URI进行编码处理。</span>
-</p>
+//子类型
+function SubType(name, age){
+	SuperType.call(this, name);
+	this.age = age;
+}
 
+//实现继承
+inheritPrototype(SubType, SuperType);
 
-<pre class="brush:js;">
-	window.onload = function(){
-		//获取编码（解码）前输入框中的URL内容
-		var txt1 = document.getElementById('js-encodeURIText').value,
-			txt2 = document.getElementById('js-encodeURIComponentText').value,
-			txt3 = document.getElementById('js-decodeURIText').value,
-			txt4 = document.getElementById('js-decodeURIComponentText').value;
-		
-		//获取点击按钮
-		var btn1 = document.getElementById('js-encodeURIBtn'),
-			btn2 = document.getElementById('js-encodeURIComponentBtn'),
-			btn3 = document.getElementById('js-decodeURIBtn'),
-			btn4 = document.getElementById('js-decodeURIComponentBtn');
-		
-		//获取编码（解码）后的输入框
-		var lastInput1 = document.getElementById('js-encodeURILast'),
-			lastInput2 = document.getElementById('js-encodeURIComponentLast'),
-			lastInput3 = document.getElementById('js-decodeURILast'),
-			lastInput4 = document.getElementById('js-decodeURIComponentLast');
-		
-		//点击事件处理
-		btn1.onclick = function(){
-			var encodeTxt1 = encodeURI(txt1);
-			lastInput1.value = encodeTxt1;
-		}
-		
-		btn2.onclick = function(){
-			var encodeTxt2 = encodeURIComponent(txt2);
-			lastInput2.value = encodeTxt2;
-		}
+//子类型的原型方法
+SubType.prototype.sayAge = function(){
+	console.log(this.age);
+}
 
-		btn3.onclick = function(){
-			var encodeTxt3 = decodeURI(txt3);
-			lastInput3.value = encodeTxt3;
-		}
-
-		btn4.onclick = function(){
-			var encodeTxt4 = decodeURIComponent(txt4);
-			lastInput4.value = encodeTxt4;
-		}
-	}
+//声明子类型实例
+var subObj = new SubType('BOBO', 27);
+subObj.sayName(); // BOBO
+subObj.sayAge(); // 27	
+	
 </pre>
+
 </section><br/>
+
+
 <script>	
-	window.onload = function(){
-		//获取编码（解码）前输入框中的URL内容
-		var txt1 = document.getElementById('js-encodeURIText').value,
-			txt2 = document.getElementById('js-encodeURIComponentText').value,
-			txt3 = document.getElementById('js-decodeURIText').value,
-			txt4 = document.getElementById('js-decodeURIComponentText').value;
-		
-		//获取点击按钮
-		var btn1 = document.getElementById('js-encodeURIBtn'),
-			btn2 = document.getElementById('js-encodeURIComponentBtn'),
-			btn3 = document.getElementById('js-decodeURIBtn'),
-			btn4 = document.getElementById('js-decodeURIComponentBtn');
-		
-		//获取编码（解码）后的输入框
-		var lastInput1 = document.getElementById('js-encodeURILast'),
-			lastInput2 = document.getElementById('js-encodeURIComponentLast'),
-			lastInput3 = document.getElementById('js-decodeURILast'),
-			lastInput4 = document.getElementById('js-decodeURIComponentLast');
-
-		//点击事件处理
-		btn1.onclick = function(){
-			var encodeTxt1 = encodeURI(txt1);
-			lastInput1.value = encodeTxt1;
-		}
-		
-		btn2.onclick = function(){
-			var encodeTxt2 = encodeURIComponent(txt2);
-			lastInput2.value = encodeTxt2;
-		}
-
-		btn3.onclick = function(){
-			var encodeTxt3 = decodeURI(txt3);
-			lastInput3.value = encodeTxt3;
-		}
-
-		btn4.onclick = function(){
-			var encodeTxt4 = decodeURIComponent(txt4);
-			lastInput4.value = encodeTxt4;
-		}
+	//原型式继承
+	function object(o){
+		function F(){}
+		F.prototype = o;
+		return new F();
 	}
+
+	//寄生组合式继承：实现基于类型继承的最有效方式
+	function inheritPrototype(subType, superType){
+		var prototype = object(superType.prototype);
+		prototype.constructor = subType;
+		subType.prototype = prototype;
+	}
+
+	//父类型
+	function SuperType(name){
+		this.name = name;
+		this.colors = ["red", "blue", "green"];
+	}
+	//父类型的原型方法
+	SuperType.prototype.sayName = function(){
+		console.log(this.name);
+	}
+
+	//子类型
+	function SubType(name, age){
+		SuperType.call(this, name);
+		this.age = age;
+	}
+
+	//实现继承
+	inheritPrototype(SubType, SuperType);
+
+	//子类型的原型方法
+	SubType.prototype.sayAge = function(){
+		console.log(this.age);
+	}
+
+	//声明子类型实例
+	var subObj = new SubType('BOBO', 27);
+	subObj.sayName(); // BOBO
+	subObj.sayAge(); // 27
 </script>
 
 <h3><strong>三、“|”（按位或OR）：</strong></h3>
