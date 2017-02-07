@@ -21,10 +21,10 @@ var gulp = require('gulp'),
     // 桌面通知
     notify = require("gulp-notify"),
     // 路径扩展
-    watchPath = require('gulp-watch-path'),
+    watchPath = require('gulp-watch-path');
 	
 	//livereload
-	livereload = require('gulp-livereload');
+	// livereload = require('gulp-livereload');
 
 // 所有路径及文件
 var Path = {
@@ -96,6 +96,6 @@ gulp.task('default', function(){
     var watchJs = gulp.watch(Path.js(true), ['compress']);  
     watchJs.on('change', handle.Success);
 	
-	livereload.listen();
-	gulp.watch(['../skin1/**']).on('change', livereload.changed);
+	// livereload.listen();
+	// gulp.watch(['../skin1/**']).on('change', livereload.changed);
 })
