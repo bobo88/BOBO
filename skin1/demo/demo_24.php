@@ -79,8 +79,8 @@ $link->close();
             100%{ -ms-transform: scale(1.1);}
         }
         
-        .anniversary-3-wrap{ width: 100%; min-width: 1000px; font-family: Arial; font-size: 12px; background: #e9e9e9;}
-        .banner-wrap{ width: 100%; min-width: 1000px; height: 822px; background: url('images/demo_24/banner_bg.jpg') top center no-repeat;}
+        .anniversary-3-wrap{ width: 100%; min-width: 1080px; font-family: Arial; font-size: 12px; background: #e9e9e9;}
+        .banner-wrap{ width: 100%; min-width: 1080px; height: 822px; background: url('images/demo_24/banner_bg.jpg') top center no-repeat;}
         .banner-box{ position: relative; z-index: 1; margin: 0 auto; padding-top: 465px; width: 1000px; height: 358px;}
         .num3, .rd, .note-1, .note-2, .note-3, .note-4, .top-limit-time-wrap{ position: absolute; z-index: 2; display: inline-block;*display: inline;*zoom:1;}
         .num3{ top: -1000px; left: 310px; opacity: 0;}
@@ -206,6 +206,146 @@ $link->close();
         .deals-nav li.active p{ padding-top: 0; color: #bd0900; font-size: 24px; font-weight: bold;}
         .deals-nav li.active span{ margin: 0 auto; width: 230px; color: #fef4d6; font-size: 18px; background: #bd0900;}
 
+        .party-sec-1{ width: 100%; height: 1368px; background: url('images/demo_24/party_bg1.jpg') top center no-repeat;}
+        .party-1-wrap{ position: relative; z-index: 1; margin: 0 auto; padding-top: 395px; width: 1080px; height: 973px;}
+
+        .party-1-style{ background: url('images/demo_24/party_sec_bg.png') bottom center no-repeat;}
+        .party-1-style .goods-buy a{background:#321314;}
+        .party-2-style{ background: url('images/demo_24/party_sec_bg2.png') bottom center no-repeat;}
+        .party-2-style .party-nav{ border-bottom: 1px solid #9d2b1d;}
+        .party-2-style .party-nav li:hover a, .party-2-style .party-nav li.active a{ background: #9d2b1d;}
+        .party-2-style .goods-buy a{background:#9d2b1d;}
+
+
+        .note-5, .note-6, .note-7{ position: absolute; z-index: 2;
+            -webkit-animation:shake4 0.2s ease 0s infinite;
+            -moz-animation:shake4 0.2s ease 0s infinite;
+            -ms-animation:shake4 0.2s ease 0s infinite;
+            animation:shake4 0.2s ease 0s infinite;
+        }
+        .note-5{ top: 150px; left: 770px;}
+        .note-6{ top: 140px; left: 900px;}
+        .note-7{ top: 70px; left: 1030px;}
+        .party-content{ padding-top: 23px; height: 950px;}
+        .party-sec-tit{ margin: 0 auto 39px; background: url('images/demo_24/party_sec_tit.png') no-repeat; font-size: 0; text-indent: -9999px;}
+        .ps-tit-1{ width: 506px; height: 31px; background-position: 0 0;}
+        .ps-tit-2{ width: 378px; height: 31px; background-position: 0 -60px;}
+        .ps-tit-3{ width: 338px; height: 31px; background-position: 0 -120px;}
+        .ps-tit-4{ width: 343px; height: 31px; background-position: 0 -180px;}
+        .ps-tit-5{ width: 298px; height: 31px; background-position: 0 -240px;}
+
+        .party-pro-wrap{ position: relative; z-index: 1; padding:13px 36px 0 296px; width: 748px;}
+        .party-nav{ width: 748px; height: 50px; line-height: 50px; border-bottom: 1px solid #321314;}
+        .party-nav li{ float: left; text-align: center;}
+        .party-nav li.line2 a{ padding: 5px; height: 40px; line-height: 20px;}
+        .party-nav li a{ display: block; color: #f9e8b6; font-size: 16px; -webkit-border-radius: 3px 3px 0 0; -moz-border-radius: 3px 3px 0 0; -ms-border-radius: 3px 3px 0 0; border-radius: 3px 3px 0 0; overflow: hidden;}
+        .party-nav li:hover a, .party-nav li.active a{ background: #321314;}
+        .party-nav.item-5 li{ width: 20%;}
+        .party-nav.item-4 li{ width: 25%;}
+        .party-nav.item-3 li{ padding: 0 3%; width: 27%;}
+
+        .party-prolist-wrap{ position: relative; z-index: 1; padding-top: 17px;}
+        .party-prolist-wrap .pro-list{ width: 756px;}
+        .party-prolist-wrap .pro-list li{ float: left; margin: 0 8px 12px 0; padding: 15px 17px; width: 210px; height: 350px; background: #fff; -webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; -ms-transition: 0.5s; transition: 0.5s;}
+        .party-prolist-wrap .pro-list li:hover{
+            -webkit-transform: translate(0,-5px);
+            -moz-transform: translate(0,-5px);
+        }
+        .party-prolist-wrap .goods-img{ padding: 0; width: 210px; height: 210px;}
+        .party-prolist-wrap .goods-img a{ width: 210px; height: 210px;}
+        .party-prolist-wrap .goods-img img{ width: 210px; height: 210px;}
+        .party-prolist-wrap .goods-title{}
+        .party-prolist-wrap .goods-price{}
+        .party-prolist-wrap .market-price{ display: block; height: 20px; line-height: 20px; color: #b1b0b4; font-size: 14px;}
+        .party-prolist-wrap .shop-price{ display: block; height: 24px; line-height: 24px; font-size: 22px; color: #ff6035;}
+        .party-prolist-wrap .goods-buy a{ width: 120px; height: 30px; line-height: 30px; color: #f9e8b6; font-size: 14px;}
+
+        .party-pro-wrap .aside{ position: absolute; z-index: 2; top:64px; left: 0; padding-top: 220px; width: 260px; height: 250px;}
+        .aside .aside-img{ position: absolute; z-index: 3;}
+        .aside-img-1{ top: -1px; left: 14px;}
+        .aside-img-2{ top: -18px; left: 20px;}
+        .aside-img-3{ top: -37px; left: 34px;}
+        .aside-img-4{ top: -43px; left: -4px;}
+        .aside-img-5{ top: -43px; left: 8px;}
+
+        .sort-detail{ padding: 30px 25px 0;}
+        .sort-detail .sort-tit{ margin-bottom: 10px; height: 70px; line-height: 35px; color: #321314; font-size: 26px; font-weight: bold;}
+        .sort-detail .sort-off{ margin-bottom: 20px; height: 80px; line-height: 26px; color: #9d2b1d; font-size: 26px; font-weight: bold;}
+        .sort-detail .sort-off strong{ display: block; height: 56px; line-height: 56px; font-size: 50px; font-weight: bold;}
+        .sort-detail .sort-link{ margin-bottom: 15px; width: 180px; height: 30px;}
+        .sort-detail .sort-link a{ display: block; width: 180px; height: 30px; line-height: 30px; color: #f9e8b6; font-size: 14px; text-align: center; background: #321314; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; border-radius: 3px;}
+        .aside-coupon{ position: absolute; z-index: 2; top: 480px; left: -286px; margin: 0 auto; width: 244px; height: 265px; background: url('images/demo_24/aside_coupon_bg.png') top center no-repeat; text-align: center;}
+        .aside-coupon .coupon-tit{ padding-top: 15px; height: 20px; line-height: 20px; color: #795e10; font-size: 14px;}
+        .aside-coupon .coupon-off{ height: 60px; line-height: 60px; font-size: 50px; color: #795e10; font-weight: bold;}
+        .aside-coupon .coupon-county-time{ height: 40px; line-height: 20px; color: #795e10; font-size: 14px;}
+        .aside-coupon .coupon-county-time span{ display: block; height: 20px; line-height: 20px;}
+        .aside-coupon .coupon-left{ position: relative; z-index: 1; margin-bottom: 30px; padding-top: 30px; height: 12px;}
+        .aside-coupon .coupon-left .bar{ margin: 0 auto; width: 126px; height: 12px; background: #321314; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; border-radius: 6px;}
+        .aside-coupon .coupon-left .bar span{ display: block; height: 12px; background: #9d2b1d; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; border-radius: 6px;}
+        .aside-coupon .coupon-left .left-num{position:absolute;left:50px;top:0;width:60px; height:20px;font:normal 12px/20px Arial;
+            background:#fff;border:1px solid #000;text-align: center;-webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; border-radius: 3px;}
+        .left-num b{color:#000;padding-right:5px;}
+        .left-num em{position:absolute;display:block;bottom:-10px;left:10px;border-width:5px;border-style:solid;}
+        .left-num em.tri_bd{border-color:#000 transparent transparent transparent;bottom:-11px;z-index:1;}
+        .left-num em.tri_bg{border-color:#fff transparent transparent transparent;z-index:2;}
+        .aside-coupon .get-coupon-btn{ margin: 0 auto;}
+
+        .party-sec-2{ width: 100%; height: 1087px; background: url('images/demo_24/party_bg2.jpg') top center no-repeat;}
+        .party-2-wrap{ position: relative; z-index: 1; margin: 0 auto; padding-top: 114px; width: 1080px; height: 973px;}
+
+        .party-sec-3{ width: 100%; height: 1086px; background: url('images/demo_24/party_bg3.jpg') top center no-repeat;}
+        .party-3-wrap{ position: relative; z-index: 1; margin: 0 auto; padding-top: 113px; width: 1080px; height: 973px;}
+
+        .party-sec-4{ width: 100%; height: 1087px; background: url('images/demo_24/party_bg4.jpg') top center no-repeat;}
+        .party-4-wrap{ position: relative; z-index: 1; margin: 0 auto; padding-top: 114px; width: 1080px; height: 973px;}
+
+        .party-sec-5{ width: 100%; height: 1086px; background: url('images/demo_24/party_bg5.jpg') top center no-repeat;}
+        .party-5-wrap{ position: relative; z-index: 1; margin: 0 auto; padding-top: 113px; width: 1080px; height: 973px;}
+
+        .jjg-sec{ width: 100%; height: 1013px; background: url('images/demo_24/jjg_bg.jpg') top center no-repeat;}
+        .jjg-content-wrap{ margin: 0 auto; padding-top: 173px; width: 1000px;}
+        .jjg-pro-list{ width: 1010px;}
+        .jjg-pro-list li{ position: relative; z-index: 1; float: left; margin: 0 8px 18px 0; padding: 15px 17px; width: 210px; height: 290px; background: #fff; -webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; -ms-transition: 0.5s; transition: 0.5s;}
+        .jjg-pro-list li.item-pro:hover{
+            -webkit-transform: translate(0,-5px);
+            -moz-transform: translate(0,-5px);
+        }
+        .jjg-pro-list li .icon-jjg{ position: absolute; z-index: 2; top: 0; right: 0; display: block; width: 86px; height: 86px; background: url('images/demo_24/icon_jjg.png') center center no-repeat;} 
+        .jjg-pro-list li.first{ padding: 270px 17px 0; height: 50px; background: none;}
+        .jjg-pro-list li.first .view-more{ height: 30px; line-height: 30px; color: #f9e8b6; font-size: 24px; font-weight: bold;}
+        .jjg-pro-list li.first .view-more:hover{text-decoration: underline;}
+        .jjg-pro-list li .pro-img{ margin-bottom: 10px; width: 210px; height: 210px;}
+        .jjg-pro-list li .pro-img img{ width: 210px; height: 210px;}
+        .jjg-pro-list li .pro-title{ height: 36px; line-height: 18px; overflow: hidden; text-align: center;}
+        .jjg-pro-list li .pro-title a{ font-size: 14px; color: #171717;}
+        .jjg-pro-list li .pro-price{ height: 40px; line-height: 40px; color: #ff6035; font-size: 22px; font-weight: bold; text-align: center;}
+
+        .foot-sec-wrap{ width: 100%; height: 1562px;background: url('images/demo_24/foot_bg.jpg') top center no-repeat;}
+        .foot-content-wrap{ margin: 0 auto; width: 1000px;}
+        .active-sec-1, .active-sec-2, .active-sec-3{ position: relative; z-index: 1;}
+        .foot-content-wrap a{ position: absolute; z-index: 2;-webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; -ms-transition: 0.5s; transition: 0.5s;}
+        .foot-content-wrap a:hover{
+            -webkit-transform: translate(0,-5px);
+            -moz-transform: translate(0,-5px);
+        }
+        .active-sec-1{ width: 100%; height: 791px;}
+        .active-sec-1 .banner-1{ top: 18px; left: 102px;}
+        .active-sec-1 .banner-2{ top: 0; right: -10px;}
+        .active-sec-1 .banner-3{ top: 350px; left: 0;}
+        .active-sec-1 .banner-4{ top: 350px; left: 323px;}
+        .active-sec-2{ margin-bottom: 42px; width: 100%; height: 370px;}
+        .active-sec-2 .banner-5{ top: 0; left: 0;}
+        .active-sec-2 .banner-6{ top: 0; left: 289px;}
+        .active-sec-2 .banner-7{ top: 0; left: 578px;}
+        .active-sec-2 .banner-8{ top: 0; right: 0;}
+        .active-sec-2 .banner-9{ top: 188px; left: 578px;}
+        .active-sec-2 .banner-10{ top: 188px; right: 0;}
+        .active-sec-2 .note-6{top: 210px; left: 1200px;}
+        .active-sec-2 .note-7{top: 150px; left: 1130px;}
+        .active-sec-3{ width: 100%; height: 190px;}
+        .active-sec-3 .banner-11{ top: 0; left: 0;}
+        .active-sec-3 .banner-12{ top: 0; left: 336px;}
+        .active-sec-3 .banner-13{ top: 0; right: 0;}
     </style>
 </head>
 <body>
@@ -253,21 +393,21 @@ $link->close();
                         <p class="coupon-scope">SMART WATCHES</p>
                         <p class="coupon-country">HK,HK-2,China</p>
                         <p class="coupon-use-time">12/31/2016-12/31/2016</p>
-                        <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-alltoken">Discover Deals</a></p>
+                        <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-alltoken">All Taken</a></p>
                     </li>
                     <li>
                         <p class="coupon-value">50%</p>
                         <p class="coupon-scope">SMART WATCHES</p>
                         <p class="coupon-country">HK,HK-2,China</p>
                         <p class="coupon-use-time">12/31/2016-12/31/2016</p>
-                        <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-received">Discover Deals</a></p>
+                        <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-received">Already Received</a></p>
                     </li>
                     <li>
                         <p class="coupon-value">50%</p>
                         <p class="coupon-scope">SMART WATCHES</p>
                         <p class="coupon-country">HK,HK-2,China</p>
                         <p class="coupon-use-time">12/31/2016-12/31/2016</p>
-                        <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-expired">Discover Deals</a></p>
+                        <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-expired">Have Expired</a></p>
                     </li>
                 </ul><!-- .get-coupon-list -->
             </div>
@@ -777,6 +917,1359 @@ $link->close();
             </div>
         </section><!-- .flash-deals-wrap -->
 
+        <!-- Party section 1 -->
+        <section class="party-sec-1">
+            <div class="party-1-wrap party-1-style">
+                <span class="note-5"><img src="images/demo_24/note_5.png" alt="Anniversary 3rd"></span>
+                <span class="note-6"><img src="images/demo_24/note_1.png" alt="Anniversary 3rd"></span>
+                <span class="note-7"><img src="images/demo_24/note_6.png" alt="Anniversary 3rd"></span>
+
+                <div class="party-content"> 
+                    <h3 class="party-sec-tit ps-tit-1">TOP PHONES AND TABLETS</h3>   
+                    
+                    <div class="party-pro-wrap">
+                        <ul class="party-nav clearfix item-5 js-sortNav">
+                            <li class="active js-navItem"><a href="javascript:;">HOT</a></li>
+                            <li class="js-navItem"><a href="javascript:;">PHONES</a></li>
+                            <li class="js-navItem"><a href="javascript:;">TABLETS</a></li>
+                            <li class="js-navItem"><a href="javascript:;">INTEL</a></li>
+                            <li class="js-navItem"><a href="javascript:;">ACCESSORIES</a></li>
+                        </ul>
+
+                        <div class="aside">
+                            <h4 class="aside-img aside-img-1"><img src="images/demo_24/sort_1.png" alt="sort 1"></h4>
+                            <div class="sort-detail">
+                                <p class="sort-tit">MOBILE POWERHOUSES</p>
+                                <p class="sort-off">UP TO <strong>60%OFF</strong></p>
+                                <p class="sort-link"><a href="javascript:;">ULTIMATE PERFORMANCE ►</a></p>
+                            </div>
+                        </div><!-- .aside -->
+
+                        <div class="party-prolist-wrap js-sortItem">
+                            <div class="aside-coupon">
+                                <h5 class="coupon-tit">UKEFONE</h5>
+                                <p class="coupon-off">50%</p>
+                                <p class="coupon-county-time">
+                                    <span>ES-UN、ES-UN</span>
+                                    <span>12/28/2016</span>
+                                </p>
+                                <div class="coupon-left">
+                                    <span class="left-num"><em class="tri_bd"></em><em class="tri_bg"></em><b class="red">10&nbsp;</b>Left</span>
+                                    <p class="bar"><span style="width: 50%;"></span></p>
+                                </div>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-ok">Discover Deals</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-alltoken">All Taken</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-received">Already Received</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-expired">Have Expired</a></p>
+                            </div>
+
+                            <ul class="clearfix pro-list">
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- .party-prolist-wrap -->
+
+                        <div class="party-prolist-wrap none js-sortItem">
+                            <div class="aside-coupon">
+                                <h5 class="coupon-tit">UKEFONE</h5>
+                                <p class="coupon-off">50%</p>
+                                <p class="coupon-county-time">
+                                    <span>ES-UN、ES-UN</span>
+                                    <span>12/28/2016</span>
+                                </p>
+                                <div class="coupon-left">
+                                    <span class="left-num"><em class="tri_bd"></em><em class="tri_bg"></em><b class="red">10&nbsp;</b>Left</span>
+                                    <p class="bar"><span style="width: 50%;"></span></p>
+                                </div>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-ok">Discover Deals</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-alltoken">All Taken</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-received">Already Received</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-expired">Have Expired</a></p>
+                            </div>
+
+                            <ul class="clearfix pro-list">
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                               
+                            </ul>
+                        </div><!-- .party-prolist-wrap -->
+
+                        <div class="party-prolist-wrap none js-sortItem">
+                            <div class="aside-coupon">
+                                <h5 class="coupon-tit">UKEFONE</h5>
+                                <p class="coupon-off">50%</p>
+                                <p class="coupon-county-time">
+                                    <span>ES-UN、ES-UN</span>
+                                    <span>12/28/2016</span>
+                                </p>
+                                <div class="coupon-left">
+                                    <span class="left-num"><em class="tri_bd"></em><em class="tri_bg"></em><b class="red">10&nbsp;</b>Left</span>
+                                    <p class="bar"><span style="width: 50%;"></span></p>
+                                </div>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-ok">Discover Deals</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-alltoken">All Taken</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-received">Already Received</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-expired">Have Expired</a></p>
+                            </div>
+
+                            <ul class="clearfix pro-list">
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div><!-- .party-prolist-wrap -->
+
+                        <div class="party-prolist-wrap none js-sortItem">
+                            <div class="aside-coupon">
+                                <h5 class="coupon-tit">UKEFONE</h5>
+                                <p class="coupon-off">50%</p>
+                                <p class="coupon-county-time">
+                                    <span>ES-UN、ES-UN</span>
+                                    <span>12/28/2016</span>
+                                </p>
+                                <div class="coupon-left">
+                                    <span class="left-num"><em class="tri_bd"></em><em class="tri_bg"></em><b class="red">10&nbsp;</b>Left</span>
+                                    <p class="bar"><span style="width: 50%;"></span></p>
+                                </div>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-ok">Discover Deals</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-alltoken">All Taken</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-received">Already Received</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-expired">Have Expired</a></p>
+                            </div>
+
+                            <ul class="clearfix pro-list">
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div><!-- .party-prolist-wrap -->
+
+                        <div class="party-prolist-wrap none js-sortItem">
+                            <div class="aside-coupon">
+                                <h5 class="coupon-tit">UKEFONE</h5>
+                                <p class="coupon-off">50%</p>
+                                <p class="coupon-county-time">
+                                    <span>ES-UN、ES-UN</span>
+                                    <span>12/28/2016</span>
+                                </p>
+                                <div class="coupon-left">
+                                    <span class="left-num"><em class="tri_bd"></em><em class="tri_bg"></em><b class="red">10&nbsp;</b>Left</span>
+                                    <p class="bar"><span style="width: 50%;"></span></p>
+                                </div>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-ok">Discover Deals</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-alltoken">All Taken</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-received">Already Received</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-expired">Have Expired</a></p>
+                            </div>
+
+                            <ul class="clearfix pro-list">
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                               
+                            </ul>
+                        </div><!-- .party-prolist-wrap -->
+
+                    </div>
+                </div>
+            </div>
+        </section><!-- .party-sec-1 -->
+
+        <!-- Party section 2 -->
+        <section class="party-sec-2">
+            <div class="party-2-wrap party-2-style">
+                <div class="party-content"> 
+                    <h3 class="party-sec-tit ps-tit-2">THE FUTURE IS NOW</h3>   
+                    
+                    <div class="party-pro-wrap">
+                        <ul class="party-nav clearfix item-5 js-sortNav">
+                            <li class="active js-navItem line2"><a href="javascript:;">COMPUTERS & NETWORKING</a></li>
+                            <li class="js-navItem line2"><a href="javascript:;">CONSUMER ELECTRONICS</a></li>
+                            <li class="js-navItem"><a href="javascript:;">3D PRINTER</a></li>
+                            <li class="js-navItem"><a href="javascript:;">AUTOMOBILE</a></li>
+                            <li class="js-navItem line2"><a href="javascript:;">OFFICE & SCHOOL</a></li>
+                        </ul>
+
+                        <div class="aside">
+                            <h4 class="aside-img aside-img-2"><img src="images/demo_24/sort_2.png" alt="sort 2"></h4>
+                            <div class="sort-detail">
+                                <p class="sort-tit">CUTTING EDGE TECH</p>
+                                <p class="sort-off">UP TO <strong>70%OFF</strong></p>
+                                <p class="sort-link"><a href="javascript:;">GET TOP DEALS ►</a></p>
+                            </div>
+                        </div><!-- .aside -->
+
+                        <div class="party-prolist-wrap js-sortItem">
+                            <div class="aside-coupon">
+                                <h5 class="coupon-tit">UKEFONE</h5>
+                                <p class="coupon-off">50%</p>
+                                <p class="coupon-county-time">
+                                    <span>ES-UN、ES-UN</span>
+                                    <span>12/28/2016</span>
+                                </p>
+                                <div class="coupon-left">
+                                    <span class="left-num"><em class="tri_bd"></em><em class="tri_bg"></em><b class="red">10&nbsp;</b>Left</span>
+                                    <p class="bar"><span style="width: 50%;"></span></p>
+                                </div>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-ok">Discover Deals</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-alltoken">All Taken</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-received">Already Received</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-expired">Have Expired</a></p>
+                            </div>
+
+                            <ul class="clearfix pro-list">
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- .party-prolist-wrap -->
+
+                        <div class="party-prolist-wrap none js-sortItem">
+                            <div class="aside-coupon">
+                                <h5 class="coupon-tit">UKEFONE</h5>
+                                <p class="coupon-off">50%</p>
+                                <p class="coupon-county-time">
+                                    <span>ES-UN、ES-UN</span>
+                                    <span>12/28/2016</span>
+                                </p>
+                                <div class="coupon-left">
+                                    <span class="left-num"><em class="tri_bd"></em><em class="tri_bg"></em><b class="red">10&nbsp;</b>Left</span>
+                                    <p class="bar"><span style="width: 50%;"></span></p>
+                                </div>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-ok">Discover Deals</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-alltoken">All Taken</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-received">Already Received</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-expired">Have Expired</a></p>
+                            </div>
+
+                            <ul class="clearfix pro-list">
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                               
+                            </ul>
+                        </div><!-- .party-prolist-wrap -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- .party-sec-2 -->
+
+        <!-- Party section 3 -->
+        <section class="party-sec-3">
+            <div class="party-3-wrap party-1-style">
+                <div class="party-content"> 
+                    <h3 class="party-sec-tit ps-tit-3">YOUR SMART LIFE</h3>   
+                    
+                    <div class="party-pro-wrap">
+                        <ul class="party-nav clearfix item-4 js-sortNav">
+                            <li class="active js-navItem"><a href="javascript:;">HOME & GARDEN</a></li>
+                            <li class="js-navItem"><a href="javascript:;">LED</a></li>
+                            <li class="js-navItem"><a href="javascript:;">TOOLS</a></li>
+                            <li class="js-navItem"><a href="javascript:;">TOYS</a></li>
+                        </ul>
+
+                        <div class="aside">
+                            <h4 class="aside-img aside-img-3"><img src="images/demo_24/sort_3.png" alt="sort 3"></h4>
+                            <div class="sort-detail">
+                                <p class="sort-tit">LIFE MADE EASY</p>
+                                <p class="sort-off">UP TO <strong>70%OFF</strong></p>
+                                <p class="sort-link"><a href="javascript:;">EFFORTLESS DEALS ►</a></p>
+                            </div>
+                        </div><!-- .aside -->
+
+                        <div class="party-prolist-wrap js-sortItem">
+                            <div class="aside-coupon">
+                                <h5 class="coupon-tit">UKEFONE</h5>
+                                <p class="coupon-off">50%</p>
+                                <p class="coupon-county-time">
+                                    <span>ES-UN、ES-UN</span>
+                                    <span>12/28/2016</span>
+                                </p>
+                                <div class="coupon-left">
+                                    <span class="left-num"><em class="tri_bd"></em><em class="tri_bg"></em><b class="red">10&nbsp;</b>Left</span>
+                                    <p class="bar"><span style="width: 50%;"></span></p>
+                                </div>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-ok">Discover Deals</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-alltoken">All Taken</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-received">Already Received</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-expired">Have Expired</a></p>
+                            </div>
+
+                            <ul class="clearfix pro-list">
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- .party-prolist-wrap -->
+
+                        <div class="party-prolist-wrap none js-sortItem">
+                            <div class="aside-coupon">
+                                <h5 class="coupon-tit">UKEFONE</h5>
+                                <p class="coupon-off">50%</p>
+                                <p class="coupon-county-time">
+                                    <span>ES-UN、ES-UN</span>
+                                    <span>12/28/2016</span>
+                                </p>
+                                <div class="coupon-left">
+                                    <span class="left-num"><em class="tri_bd"></em><em class="tri_bg"></em><b class="red">10&nbsp;</b>Left</span>
+                                    <p class="bar"><span style="width: 50%;"></span></p>
+                                </div>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-ok">Discover Deals</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-alltoken">All Taken</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-received">Already Received</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-expired">Have Expired</a></p>
+                            </div>
+
+                            <ul class="clearfix pro-list">
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                               
+                            </ul>
+                        </div><!-- .party-prolist-wrap -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- .party-sec-3 -->
+
+        <!-- Party section 4 -->
+        <section class="party-sec-4">
+            <div class="party-4-wrap party-2-style">
+                <div class="party-content"> 
+                    <h3 class="party-sec-tit ps-tit-4">EMBRACE NATURE</h3>   
+                    
+                    <div class="party-pro-wrap">
+                        <ul class="party-nav clearfix item-3 js-sortNav">
+                            <li class="active js-navItem"><a href="javascript:;">RC</a></li>
+                            <li class="js-navItem"><a href="javascript:;">OUTDOOR & SPORTS</a></li>
+                            <li class="js-navItem"><a href="javascript:;">ACTION CAMS</a></li>
+                        </ul>
+
+                        <div class="aside">
+                            <h4 class="aside-img aside-img-4"><img src="images/demo_24/sort_4.png" alt="sort 4"></h4>
+                            <div class="sort-detail">
+                                <p class="sort-tit">FOR EVERY ADVENTURE</p>
+                                <p class="sort-off">UP TO <strong>70%OFF</strong></p>
+                                <p class="sort-link"><a href="javascript:;">LIVE EACH MOMENT ►</a></p>
+                            </div>
+                        </div><!-- .aside -->
+
+                        <div class="party-prolist-wrap js-sortItem">
+                            <div class="aside-coupon">
+                                <h5 class="coupon-tit">UKEFONE</h5>
+                                <p class="coupon-off">50%</p>
+                                <p class="coupon-county-time">
+                                    <span>ES-UN、ES-UN</span>
+                                    <span>12/28/2016</span>
+                                </p>
+                                <div class="coupon-left">
+                                    <span class="left-num"><em class="tri_bd"></em><em class="tri_bg"></em><b class="red">10&nbsp;</b>Left</span>
+                                    <p class="bar"><span style="width: 50%;"></span></p>
+                                </div>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-ok">Discover Deals</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-alltoken">All Taken</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-received">Already Received</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-expired">Have Expired</a></p>
+                            </div>
+
+                            <ul class="clearfix pro-list">
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- .party-prolist-wrap -->
+
+                        <div class="party-prolist-wrap none js-sortItem">
+                            <div class="aside-coupon">
+                                <h5 class="coupon-tit">UKEFONE</h5>
+                                <p class="coupon-off">50%</p>
+                                <p class="coupon-county-time">
+                                    <span>ES-UN、ES-UN</span>
+                                    <span>12/28/2016</span>
+                                </p>
+                                <div class="coupon-left">
+                                    <span class="left-num"><em class="tri_bd"></em><em class="tri_bg"></em><b class="red">10&nbsp;</b>Left</span>
+                                    <p class="bar"><span style="width: 50%;"></span></p>
+                                </div>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-ok">Discover Deals</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-alltoken">All Taken</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-received">Already Received</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-expired">Have Expired</a></p>
+                            </div>
+
+                            <ul class="clearfix pro-list">
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                               
+                            </ul>
+                        </div><!-- .party-prolist-wrap -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- .party-sec-4 -->
+
+        <!-- Party section 5 -->
+        <section class="party-sec-5">
+            <div class="party-5-wrap party-1-style">
+                <div class="party-content"> 
+                    <h3 class="party-sec-tit ps-tit-5">FASHION TREND</h3>   
+                    
+                    <div class="party-pro-wrap">
+                        <ul class="party-nav clearfix item-4 js-sortNav">
+                            <li class="active js-navItem"><a href="javascript:;">MEN'S CLOTHING</a></li>
+                            <li class="js-navItem"><a href="javascript:;">WOMEN'S CLOTHING</a></li>
+                            <li class="js-navItem"><a href="javascript:;">WATCHES & JEWELRY</a></li>
+                            <li class="js-navItem"><a href="javascript:;">HEALTH & BEAUTY</a></li>
+                        </ul>
+
+                        <div class="aside">
+                            <h4 class="aside-img aside-img-5"><img src="images/demo_24/sort_5.png" alt="sort 5"></h4>
+                            <div class="sort-detail">
+                                <p class="sort-tit">PERFECT INSIDE & OUT</p>
+                                <p class="sort-off">UP TO <strong>80%OFF</strong></p>
+                                <p class="sort-link"><a href="javascript:;">STYLE TO GO ►</a></p>
+                            </div>
+                        </div><!-- .aside -->
+
+                        <div class="party-prolist-wrap js-sortItem">
+                            <div class="aside-coupon">
+                                <h5 class="coupon-tit">UKEFONE</h5>
+                                <p class="coupon-off">50%</p>
+                                <p class="coupon-county-time">
+                                    <span>ES-UN、ES-UN</span>
+                                    <span>12/28/2016</span>
+                                </p>
+                                <div class="coupon-left">
+                                    <span class="left-num"><em class="tri_bd"></em><em class="tri_bg"></em><b class="red">10&nbsp;</b>Left</span>
+                                    <p class="bar"><span style="width: 50%;"></span></p>
+                                </div>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-ok">Discover Deals</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-alltoken">All Taken</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-received">Already Received</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-expired">Have Expired</a></p>
+                            </div>
+
+                            <ul class="clearfix pro-list">
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- .party-prolist-wrap -->
+
+                        <div class="party-prolist-wrap none js-sortItem">
+                            <div class="aside-coupon">
+                                <h5 class="coupon-tit">UKEFONE</h5>
+                                <p class="coupon-off">50%</p>
+                                <p class="coupon-county-time">
+                                    <span>ES-UN、ES-UN</span>
+                                    <span>12/28/2016</span>
+                                </p>
+                                <div class="coupon-left">
+                                    <span class="left-num"><em class="tri_bd"></em><em class="tri_bg"></em><b class="red">10&nbsp;</b>Left</span>
+                                    <p class="bar"><span style="width: 50%;"></span></p>
+                                </div>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-ok">Discover Deals</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-alltoken">All Taken</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-received">Already Received</a></p>
+                                <p class="get-coupon-btn"><a href="javascript:;" class="js-getCoupon is-expired">Have Expired</a></p>
+                            </div>
+
+                            <ul class="clearfix pro-list">
+                                <li class="pr">
+                                    <div class="border-wrap">
+                                        <p class="goods-img pr">
+                                            <a href="#" target="special">
+                                                <img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg">
+                                            </a>
+                                        </p>
+                                        <p class="goods-title">
+                                            <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
+                                        </p>
+                                        <p class="goods-price">
+                                            <del class="market-price"><b class="bizhong">$</b><b class="my_shop_price" orgp="279.51">279.51</b></del>      
+                                            <span class="shop-price">
+                                                <b class="bizhong">$</b>
+                                                <b class="my_shop_price" orgp="200.99">200.99</b>
+                                            </span>
+                                        </p>             
+
+                                        <p class="goods-buy"><a href="#" target="special">Buy Now</a></p>
+                                        <a href="javascript:;" class="toCart"></a>
+                                    </div>
+                                </li>
+                               
+                            </ul>
+                        </div><!-- .party-prolist-wrap -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- .party-sec-5 -->
+
+        <!-- Jjg section -->
+        <section class="jjg-sec">
+            <div class="jjg-content-wrap">
+                <ul class="clearfix jjg-pro-list">
+                    <li class="first">
+                        <a href="#" class="view-more">VIEW MORE >></a>
+                    </li>
+                    <li class="item-pro">
+                        <span class="icon-jjg"></span>
+                        <p class="pro-img"><a href="#"><img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg" alt=""></a></p>
+                        <p class="pro-title"><a href="#">CubeWork 10 Flagship Tablet PC Ultrabook</a></p>
+                        <p class="pro-price">$279.51</p>
+                    </li>
+                    <li class="item-pro">
+                        <span class="icon-jjg"></span>
+                        <p class="pro-img"><a href="#"><img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg" alt=""></a></p>
+                        <p class="pro-title"><a href="#">CubeWork 10 Flagship Tablet PC Ultrabook</a></p>
+                        <p class="pro-price">$279.51</p>
+                    </li>
+                    <li class="item-pro">
+                        <span class="icon-jjg"></span>
+                        <p class="pro-img"><a href="#"><img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg" alt=""></a></p>
+                        <p class="pro-title"><a href="#">CubeWork 10 Flagship Tablet PC Ultrabook</a></p>
+                        <p class="pro-price">$279.51</p>
+                    </li>
+                    <li class="item-pro">
+                        <span class="icon-jjg"></span>
+                        <p class="pro-img"><a href="#"><img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg" alt=""></a></p>
+                        <p class="pro-title"><a href="#">CubeWork 10 Flagship Tablet PC Ultrabook</a></p>
+                        <p class="pro-price">$279.51</p>
+                    </li>
+                    <li class="item-pro">
+                        <span class="icon-jjg"></span>
+                        <p class="pro-img"><a href="#"><img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg" alt=""></a></p>
+                        <p class="pro-title"><a href="#">CubeWork 10 Flagship Tablet PC Ultrabook</a></p>
+                        <p class="pro-price">$279.51</p>
+                    </li>
+                    <li class="item-pro">
+                        <span class="icon-jjg"></span>
+                        <p class="pro-img"><a href="#"><img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg" alt=""></a></p>
+                        <p class="pro-title"><a href="#">CubeWork 10 Flagship Tablet PC Ultrabook</a></p>
+                        <p class="pro-price">$279.51</p>
+                    </li>
+                    <li class="item-pro">
+                        <span class="icon-jjg"></span>
+                        <p class="pro-img"><a href="#"><img src="http://www.yuanbo88.com/demo/images/demo_14/morefuns_1.jpg" alt=""></a></p>
+                        <p class="pro-title"><a href="#">CubeWork 10 Flagship Tablet PC Ultrabook</a></p>
+                        <p class="pro-price">$279.51</p>
+                    </li>
+                </ul>
+            </div>
+        </section><!-- .jjg-sec -->
+
+        <!-- Foot section -->
+        <section class="foot-sec-wrap">
+            <div class="foot-content-wrap">
+                <div class="active-sec-1">
+                    <a href="#" class="banner-1"><img src="images/demo_24/banner1.png" alt=""></a>
+                    <a href="#" class="banner-2"><img src="images/demo_24/banner2.png" alt=""></a>
+                    <a href="#" class="banner-3"><img src="images/demo_24/banner3.png" alt=""></a>
+                    <a href="#" class="banner-4"><img src="images/demo_24/banner4.png" alt=""></a>
+                </div>
+
+                <div class="active-sec-2">
+                    <a href="#" class="banner-5"><img src="images/demo_24/banner5.jpg" alt=""></a>
+                    <a href="#" class="banner-6"><img src="images/demo_24/banner6.jpg" alt=""></a>
+                    <a href="#" class="banner-7"><img src="images/demo_24/banner7.jpg" alt=""></a>
+                    <a href="#" class="banner-8"><img src="images/demo_24/banner8.jpg" alt=""></a>
+                    <a href="#" class="banner-9"><img src="images/demo_24/banner9.jpg" alt=""></a>
+                    <a href="#" class="banner-10"><img src="images/demo_24/banner10.jpg" alt=""></a>
+
+                    <span class="note-6"><img src="images/demo_24/note_1.png" alt="Anniversary 3rd"></span>
+                    <span class="note-7"><img src="images/demo_24/note_6.png" alt="Anniversary 3rd"></span>
+                </div>
+
+                <div class="active-sec-3">
+                    <a href="#" class="banner-11"><img src="images/demo_24/banner11.jpg" alt=""></a>
+                    <a href="#" class="banner-12"><img src="images/demo_24/banner12.jpg" alt=""></a>
+                    <a href="#" class="banner-13"><img src="images/demo_24/banner13.jpg" alt=""></a>
+                </div>
+            </div>
+        </section>
 
 
     </section><!-- .anniversary-3-wrap -->
