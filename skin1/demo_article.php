@@ -21,8 +21,8 @@
 
 
 
- <img src="dist/images/domeimg/lazyload.gif" data-original="dist/images/domeimg/article/2016/livereload/livereload_2.png" alt="使用gulp实现前端自动化运行任务之浏览器自动刷新">
-<a href="javascript:;" class="btn-normal js-addMethod">点击我执行add方法</a>
+ <img src="dist/images/domeimg/lazyload.gif" data-original="dist/images/domeimg/article/2016/livereload/livereload_2.png" alt="ʹ��gulpʵ��ǰ���Զ�����������֮������Զ�ˢ��">
+<a href="javascript:;" class="btn-normal js-addMethod">�����ִ��add����</a>
 <img src="http://www.yuanbo88.com/dist/images/domeimg/beauty.jpg" width="200" height="200" alt="">
 <input type="text" class="input-normal">
 #1ab5e3    blue
@@ -31,28 +31,28 @@
 
 #FF5F09    yellow
 <br/>
-<!-- <h1>初探Flexbox弹性盒子布局</h1> -->
-<h1>如何使用Babel将ES6转码为ES5？</h1>
+<!-- <h1>��̽Flexbox���Ժ��Ӳ���</h1> -->
+<h1>���ʹ��Babel��ES6ת��ΪES5��</h1>
 
-<h3><strong>一、前言：</strong></h3>
+<h3><strong>һ��ǰ�ԣ�</strong></h3>
 <section>
-<p class="notes">当我们还在沉迷于ES5的时候，殊不知ES6早就已经发布几年了。时代在进步，WEB前端技术也在日新月异，是时候做些改变了！</p>
+<p class="notes">�����ǻ��ڳ�����ES5��ʱ���ⲻ֪ES6����Ѿ����������ˡ�ʱ���ڽ�����WEBǰ�˼���Ҳ���������죬��ʱ����Щ�ı��ˣ�</p>
 <p class="mb10">
-	ECMAScript 6(ES6)的发展速度非常之快，但现代浏览器对ES6新特性支持度不高，所以要想在浏览器中直接使用ES6的新特性就得借助别的工具来实现。<br/>
-	Babel是一个广泛使用的转码器，babel可以将ES6代码完美地转换为ES5代码，所以我们不用等到浏览器的支持就可以在项目中使用ES6的特性。
+	ECMAScript 6(ES6)�ķ�չ�ٶȷǳ�֮�죬���ִ��������ES6������֧�ֶȲ��ߣ�����Ҫ�����������ֱ��ʹ��ES6�������Ծ͵ý�����Ĺ�����ʵ�֡�<br/>
+	Babel��һ���㷺ʹ�õ�ת������babel���Խ�ES6����������ת��ΪES5���룬�������ǲ��õȵ��������֧�־Ϳ�������Ŀ��ʹ��ES6�����ԡ�
 </p>
 
 <p>
-	<span class="fb-black">babel 6与之前版本的区别：</span><br/>
-	<span class="focus">之前版本只要安装一个babel就可以用了，所以之前的版本包含了一大堆的东西，这也导致了下载一堆不必要的东西。但在babel 6中，将babel拆分成两个包：babel-cli和babel-core。如果你想要在CLI(终端或REPL)使用babel就下载babel-cli，如果想要在node中使用就下载babel-core。
-	babel 6已结尽可能的模块化了，如果还用babel 6之前的方法转换ES6，它会原样输出，并不会转化，因为需要安装插件。如果你想使用箭头函数，那就得安装箭头函数插件npm install  babel-plugin-transform-es2015-arrow-functions。</span><br/>
-	<small>本文中，我们不讨论ES6的语法特性，重点讲的是如何将ES6代码转码为ES5代码。</small>
+	<span class="fb-black">babel 6��֮ǰ�汾������</span><br/>
+	<span class="focus">֮ǰ�汾ֻҪ��װһ��babel�Ϳ������ˣ�����֮ǰ�İ汾������һ��ѵĶ�������Ҳ����������һ�Ѳ���Ҫ�Ķ���������babel 6�У���babel��ֳ���������babel-cli��babel-core���������Ҫ��CLI(�ն˻�REPL)ʹ��babel������babel-cli�������Ҫ��node��ʹ�þ�����babel-core��
+	babel 6�ѽᾡ���ܵ�ģ�黯�ˣ��������babel 6֮ǰ�ķ���ת��ES6������ԭ�������������ת������Ϊ��Ҫ��װ������������ʹ�ü�ͷ�������Ǿ͵ð�װ��ͷ�������npm install  babel-plugin-transform-es2015-arrow-functions��</span><br/>
+	<small>�����У����ǲ�����ES6���﷨���ԣ��ص㽲������ν�ES6����ת��ΪES5���롣</small>
 </p>
 </section><br/>
 
-<h3><strong>二、Babel转码：</strong></h3>
+<h3><strong>����Babelת�룺</strong></h3>
 <section>
-<p>如果你并没有接触过ES6，当你看到下面的代码时，肯定是有点懵逼的（这是什么鬼？心中一万头神兽奔腾而过），但是你没看错，这就是ES6。不管你看不看它，它都在这里。</p>
+<p>����㲢û�нӴ���ES6�����㿴������Ĵ���ʱ���϶����е��±Ƶģ�����ʲô��������һ��ͷ���ޱ��ڶ�������������û�����������ES6�������㿴�����������������</p>
 <pre class="brush:js;">
 	var a = (msg) =&gt; () =&gt; msg;
 
@@ -65,7 +65,7 @@
 	  }
 	};
 </pre>
-<p>实际上，上面的这段代码通过Babel转换后，会变成：</p>
+<p>ʵ���ϣ��������δ���ͨ��Babelת���󣬻��ɣ�</p>
 <pre class="brush:js;">
 	"use strict";
 
@@ -75,8 +75,8 @@
 	  };
 	};
 
-	var bob = {
-	  _name: "Bob",
+	var bobo = {
+	  _name: "BoBo",
 	  _friends: [],
 	  printFriends: function printFriends() {
 	    var _this = this;
@@ -87,19 +87,19 @@
 	  }
 	};
 </pre>
-<p>好，言归正传，我们尝试下用一些方法来实现上面的转码效果吧。</p>
+<p>�ã��Թ����������ǳ�������һЩ������ʵ�������ת��Ч���ɡ�</p>
 
 
-<h5 class="fb-black line-d">1、直接安装Babel法：</h5>
-<p class="focus">1.1) 首先全局安装Babel。</p>
+<h5 class="fb-black line-d">1��ֱ�Ӱ�װBabel����</h5>
+<p class="focus">1.1) ����ȫ�ְ�װBabel��</p>
 <pre class="brush:js;">
 	$ npm install -g babel-cli
 
-	//也可以通过直接将Babel安装到项目中，在项目根目录下执行下面命令，同时它会自动在package.json文件中的devDependencies中加入babel-cli
-	//在执行安装到项目中命令之前，要先在项目根目录下新建一个package.json文件。
+	//Ҳ����ͨ��ֱ�ӽ�Babel��װ����Ŀ�У�����Ŀ��Ŀ¼��ִ���������ͬʱ�����Զ���package.json�ļ��е�devDependencies�м���babel-cli
+	//��ִ�а�װ����Ŀ������֮ǰ��Ҫ������Ŀ��Ŀ¼���½�һ��package.json�ļ���
 	$ npm install -g babel-cli --save-dev
 </pre>
-<p>如果将babel直接安装到项目中，它会自动在package.json文件中的devDependencies中加入babel-cli。如下所示：</p>
+<p>�����babelֱ�Ӱ�װ����Ŀ�У������Զ���package.json�ļ��е�devDependencies�м���babel-cli��������ʾ��</p>
 <pre class="brush:js;">
 	//......
 	{
@@ -108,30 +108,30 @@
 	  }
 	}
 </pre>
-<p class="focus">1.2) Babel的配置文件是.babelrc，存放在项目的根目录下。使用Babel的第一步，就是配置这个文件。</p>
-<p><small>这个文件的完整文件名是 “.babelrc”，注意最前面是有个“.”的。由于我的电脑是Windows系统，所以在新建这个文件的时候老是提示 “必须键入文件名” 的错误。后来谷歌了下，发现创建这个文件的时候，把文件名改成“.babelrc.”，注意是前后都有一个点，这样就可以保存成功了</small></p>
+<p class="focus">1.2) Babel�������ļ���.babelrc���������Ŀ�ĸ�Ŀ¼�¡�ʹ��Babel�ĵ�һ����������������ļ���</p>
+<p><small>����ļ��������ļ����� ��.babelrc����ע����ǰ�����и���.���ġ������ҵĵ�����Windowsϵͳ���������½�����ļ���ʱ��������ʾ ����������ļ����� �Ĵ��󡣺����ȸ����£����ִ�������ļ���ʱ�򣬰��ļ����ĳɡ�.babelrc.����ע����ǰ����һ���㣬�����Ϳ��Ա���ɹ���</small></p>
 <pre class="brush:js;">
 	{
 	  "presets": [],
 	  "plugins": []
 	}
 </pre>
-<p class="focus">1.3) presets字段设定转码规则，官方提供以下的规则集，你可以根据需要安装。</p>
-<p>点击此处到Babel中文官网presets配置页面：<a href="http://babeljs.cn/docs/plugins/" class="alink" target="_blank">Babel Plugins</a></p>
+<p class="focus">1.3) presets�ֶ��趨ת����򣬹ٷ��ṩ���µĹ��򼯣�����Ը�����Ҫ��װ��</p>
+<p>����˴���Babel���Ĺ���presets����ҳ�棺<a href="http://babeljs.cn/docs/plugins/" class="alink" target="_blank">Babel Plugins</a></p>
 <pre class="brush:js;">
-	# ES2015转码规则
+	# ES2015ת�����
 	$ npm install --save-dev babel-preset-es2015
 
-	# react转码规则
+	# reactת�����
 	$ npm install --save-dev babel-preset-react
 
-	# ES7不同阶段语法提案的转码规则（共有4个阶段），选装一个
+	# ES7��ͬ�׶��﷨�᰸��ת����򣨹���4���׶Σ���ѡװһ��
 	$ npm install --save-dev babel-preset-stage-0
 	$ npm install --save-dev babel-preset-stage-1
 	$ npm install --save-dev babel-preset-stage-2
 	$ npm install --save-dev babel-preset-stage-3
 </pre>
-<p class="focus">1.4) 根据官网的提示，当我们用npm安装好这些插件工具之后，我们需要将这些规则加入到.babelrc中去。如下所示：</p>
+<p class="focus">1.4) ���ݹ�������ʾ����������npm��װ����Щ�������֮��������Ҫ����Щ������뵽.babelrc��ȥ��������ʾ��</p>
 <pre class="brush:js;">
 	{
 	    "presets": [
@@ -142,40 +142,40 @@
 	    "plugins": []
 	  }
 </pre>
-<p class="focus">1.5) 转码、转码的规则：</p>
+<p class="focus">1.5) ת�롢ת��Ĺ���</p>
 <pre class="brush:js;">
-	# 转码结果输出到标准输出
+	# ת�����������׼���
 	$ babel test.js
 
-	# 转码结果写入一个文件
-	# --out-file 或 -o 参数指定输出文件
+	# ת����д��һ���ļ�
+	# --out-file �� -o ����ָ������ļ�
 	$ babel a.js --out-file b.js
-	# 或者
+	# ����
 	$ babel a.js -o b.js
 
-	# 整个目录转码
-	# --out-dir 或 -d 参数指定输出目录
+	# ����Ŀ¼ת��
+	# --out-dir �� -d ����ָ�����Ŀ¼
 	$ babel src --out-dir lib
-	# 或者
+	# ����
 	$ babel src -d lib
 
-	# -s 参数生成source map文件
+	# -s ��������source map�ļ�
 	$ babel src -d lib -s
 </pre>
 
-<h5 class="fb-black line-d">2、工具配置法：</h5>
-<p>实际上，我们可以通过前端自动化的很多工具来实现ES6的转码配置，比如，常见的grunt、gulp、Webpack和Node等。下面我就简单的说下我较为熟悉的gulp配置法。</p>
-<p>点击此处到Babel中文官网Tool配置页面：<a href="http://babeljs.cn/docs/setup/" class="alink" target="_blank">Babel Tool</a></p>
-<p class="focus">2.1) 首先，我们需要在项目中安装gulp：</p>
+<h5 class="fb-black line-d">2���������÷���</h5>
+<p>ʵ���ϣ����ǿ���ͨ��ǰ���Զ����ĺܶ๤����ʵ��ES6��ת�����ã����磬������grunt��gulp��Webpack��Node�ȡ������Ҿͼ򵥵�˵���ҽ�Ϊ��Ϥ��gulp���÷���</p>
+<p>����˴���Babel���Ĺ���Tool����ҳ�棺<a href="http://babeljs.cn/docs/setup/" class="alink" target="_blank">Babel Tool</a></p>
+<p class="focus">2.1) ���ȣ�������Ҫ����Ŀ�а�װgulp��</p>
 <pre class="brush:js;">
 	$ npm install gulp --save-dev
 </pre>
 
-<p class="focus">2.2) 然后，我们需要在项目中安装gulp-babel：</p>
+<p class="focus">2.2) Ȼ��������Ҫ����Ŀ�а�װgulp-babel��</p>
 <pre class="brush:js;">
 	$ npm install --save-dev gulp-babel
 </pre>
-<p>当执行完上面的两个命令后，我们会发现根目录下的package.json文件内容已经被自动修改成：</p>
+<p>��ִ���������������������ǻᷢ�ָ�Ŀ¼�µ�package.json�ļ������Ѿ����Զ��޸ĳɣ�</p>
 <pre class="brush:js;">
 	{
 	  "devDependencies": {
@@ -186,7 +186,7 @@
 	}
 </pre>
 
-<p class="focus">2.3) 编写gulpfile.js文件，文件内容如下所示：</p>
+<p class="focus">2.3) ��дgulpfile.js�ļ����ļ�����������ʾ��</p>
 <pre class="brush:js;">
 	var gulp = require("gulp");
 	var babel = require("gulp-babel");
@@ -197,19 +197,19 @@
 	    .pipe(gulp.dest("lib"));
 	});
 </pre>
-<p>当我们在当前项目目录下运行如下命令后，会发现原本在src文件夹中的a.js(按照ES6标准编写的)文件已经被转码成ES5标准的a.js，并放在了lib文件夹里面。</p>
+<p>�������ڵ�ǰ��ĿĿ¼��������������󣬻ᷢ��ԭ����src�ļ����е�a.js(����ES6��׼��д��)�ļ��Ѿ���ת���ES5��׼��a.js����������lib�ļ������档</p>
 <pre class="brush:js;">
 	$ gulp default
 
-	#或者用下面的命令也行
+	#���������������Ҳ��
 	$ gulp
 </pre>
 </section><br/>
 
-<h3><strong>三、其他：</strong></h3>
+<h3><strong>����������</strong></h3>
 <section>
-<p class="notes">以上两种方法，在我本地亲测有效。当然，你可以选择更多其他的工具来处理，殊途同归，Anyway，让我们一起来拥抱ES6吧！</p>
-<p>当然，你也可以选择在线转码（测试体验用），地址是：<a href="http://babeljs.cn/repl/" target="_blank" class="alink">http://babeljs.cn/repl/</a>。</p>
+<p class="notes">�������ַ��������ұ����ײ���Ч����Ȼ�������ѡ����������Ĺ�������������;ͬ�飬Anyway��������һ����ӵ��ES6�ɣ�</p>
+<p>��Ȼ����Ҳ����ѡ������ת�루���������ã�����ַ�ǣ�<a href="http://babeljs.cn/repl/" target="_blank" class="alink">http://babeljs.cn/repl/</a>��</p>
 </section><br/>
 
 
