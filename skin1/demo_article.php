@@ -32,119 +32,38 @@
 #FF5F09    yellow
 <br/>
 <!-- <h1>初探Flexbox弹性盒子布局</h1> -->
-<h1>用原生js如何实现图片懒加载？</h1>
-
+<h1>如何使用Babel将ES6转码为ES5？</h1>
 
 <h3><strong>一、前言：</strong></h3>
 <section>
+<p class="notes">当我们还在沉迷于ES5的时候，殊不知ES6早就已经发布几年了。时代在进步，WEB前端技术也在日新月异，是时候做些改变了！</p>
+<p class="mb10">
+	ECMAScript 6(ES6)的发展速度非常之快，但现代浏览器对ES6新特性支持度不高，所以要想在浏览器中直接使用ES6的新特性就得借助别的工具来实现。<br/>
+	Babel是一个广泛使用的转码器，babel可以将ES6代码完美地转换为ES5代码，所以我们不用等到浏览器的支持就可以在项目中使用ES6的特性。
+</p>
+
+<p>
+	<span class="fb-black">babel 6与之前版本的区别：</span><br/>
+	<span class="focus">之前版本只要安装一个babel就可以用了，所以之前的版本包含了一大堆的东西，这也导致了下载一堆不必要的东西。但在babel 6中，将babel拆分成两个包：babel-cli和babel-core。如果你想要在CLI(终端或REPL)使用babel就下载babel-cli，如果想要在node中使用就下载babel-core。
+	babel 6已结尽可能的模块化了，如果还用babel 6之前的方法转换ES6，它会原样输出，并不会转化，因为需要安装插件。如果你想使用箭头函数，那就得安装箭头函数插件npm install  babel-plugin-transform-es2015-arrow-functions。</span>
+</p>
+
+
 
 </section><br/>
 
-<h3><strong>二、URI编码方法：</strong></h3>
-<section>
-
-<pre class="brush:js">
-//原型式继承
-function object(o){
-	function F(){}
-	F.prototype = o;
-	return new F();
-}
-
-//寄生组合式继承：实现基于类型继承的最有效方式
-function inheritPrototype(subType, superType){
-	var prototype = object(superType.prototype);
-	prototype.constructor = subType;
-	subType.prototype = prototype;
-}
-
-//父类型
-function SuperType(name){
-	this.name = name;
-	this.colors = ["red", "blue", "green"];
-}
-//父类型的原型方法
-SuperType.prototype.sayName = function(){
-	console.log(this.name);
-}
-
-//子类型
-function SubType(name, age){
-	SuperType.call(this, name);
-	this.age = age;
-}
-
-//实现继承
-inheritPrototype(SubType, SuperType);
-
-//子类型的原型方法
-SubType.prototype.sayAge = function(){
-	console.log(this.age);
-}
-
-//声明子类型实例
-var subObj = new SubType('BOBO', 27);
-subObj.sayName(); // BOBO
-subObj.sayAge(); // 27	
-	
-</pre>
-
-</section><br/>
-
-
-<script>	
-	//原型式继承
-	function object(o){
-		function F(){}
-		F.prototype = o;
-		return new F();
-	}
-
-	//寄生组合式继承：实现基于类型继承的最有效方式
-	function inheritPrototype(subType, superType){
-		var prototype = object(superType.prototype);
-		prototype.constructor = subType;
-		subType.prototype = prototype;
-	}
-
-	//父类型
-	function SuperType(name){
-		this.name = name;
-		this.colors = ["red", "blue", "green"];
-	}
-	//父类型的原型方法
-	SuperType.prototype.sayName = function(){
-		console.log(this.name);
-	}
-
-	//子类型
-	function SubType(name, age){
-		SuperType.call(this, name);
-		this.age = age;
-	}
-
-	//实现继承
-	inheritPrototype(SubType, SuperType);
-
-	//子类型的原型方法
-	SubType.prototype.sayAge = function(){
-		console.log(this.age);
-	}
-
-	//声明子类型实例
-	var subObj = new SubType('BOBO', 27);
-	subObj.sayName(); // BOBO
-	subObj.sayAge(); // 27
-</script>
-
-<h3><strong>三、“|”（按位或OR）：</strong></h3>
+<h3><strong>二、Babel转码：</strong></h3>
 <section>
 
 </section><br/>
+
+
+
+
 
 <h3><strong>四、其他：</strong></h3>
 <section>
-	<div id="demo">http://www.yuanbo88.com/demo-test.html?id=3&name=bobo</div>
+
 </section><br/>
 
 
