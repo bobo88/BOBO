@@ -21,8 +21,8 @@
 
 
 
- <img src="dist/images/domeimg/lazyload.gif" data-original="dist/images/domeimg/article/2016/livereload/livereload_2.png" alt="Ê¹ÓÃgulpÊµÏÖÇ°¶Ë×Ô¶¯»¯ÔËĞĞÈÎÎñÖ®ä¯ÀÀÆ÷×Ô¶¯Ë¢ĞÂ">
-<a href="javascript:;" class="btn-normal js-addMethod">µã»÷ÎÒÖ´ĞĞadd·½·¨</a>
+ <img src="dist/images/domeimg/lazyload.gif" data-original="dist/images/domeimg/article/2016/livereload/livereload_2.png" alt="ä½¿ç”¨gulpå®ç°å‰ç«¯è‡ªåŠ¨åŒ–è¿è¡Œä»»åŠ¡ä¹‹æµè§ˆå™¨è‡ªåŠ¨åˆ·æ–°">
+<a href="javascript:;" class="btn-normal js-addMethod">ç‚¹å‡»æˆ‘æ‰§è¡Œaddæ–¹æ³•</a>
 <img src="http://www.yuanbo88.com/dist/images/domeimg/beauty.jpg" width="200" height="200" alt="">
 <input type="text" class="input-normal">
 #1ab5e3    blue
@@ -31,192 +31,241 @@
 
 #FF5F09    yellow
 <br/>
-<!-- <h1>³õÌ½Flexboxµ¯ĞÔºĞ×Ó²¼¾Ö</h1> -->
-<h1>ÈçºÎÊ¹ÓÃBabel½«ES6×ªÂëÎªES5£¿</h1>
+<!-- <h1>åˆæ¢Flexboxå¼¹æ€§ç›’å­å¸ƒå±€</h1> -->
+<!-- <h1>ES6å¦‚ä½•å®ç°æ¨¡å—åŒ–</h1> -->
+<!-- <h1>jQueryæºç æ¢ç©¶ç³»åˆ—ä¹‹isFunction</h1> -->
+<h1>Vueä¸­ â€œComputedâ€ vs â€œMethodsâ€</h1>
 
-<h3><strong>Ò»¡¢Ç°ÑÔ£º</strong></h3>
+
+<script src="http://www.yuanbo88.com/dist/minjs/vue.min.js"></script>
+
+<style>
+	.click-tips{ color: #28AF59;}
+</style>
+<h3><strong>ä¸€ã€å‰è¨€ï¼š</strong></h3>
 <section>
-<p class="notes">µ±ÎÒÃÇ»¹ÔÚ³ÁÃÔÓÚES5µÄÊ±ºò£¬Êâ²»ÖªES6Ôç¾ÍÒÑ¾­·¢²¼¼¸ÄêÁË¡£Ê±´úÔÚ½ø²½£¬WEBÇ°¶Ë¼¼ÊõÒ²ÔÚÈÕĞÂÔÂÒì£¬ÊÇÊ±ºò×öĞ©¸Ä±äÁË£¡</p>
-<p class="mb10">
-	ECMAScript 6(ES6)µÄ·¢Õ¹ËÙ¶È·Ç³£Ö®¿ì£¬µ«ÏÖ´úä¯ÀÀÆ÷¶ÔES6ĞÂÌØĞÔÖ§³Ö¶È²»¸ß£¬ËùÒÔÒªÏëÔÚä¯ÀÀÆ÷ÖĞÖ±½ÓÊ¹ÓÃES6µÄĞÂÌØĞÔ¾ÍµÃ½èÖú±ğµÄ¹¤¾ßÀ´ÊµÏÖ¡£<br/>
-	BabelÊÇÒ»¸ö¹ã·ºÊ¹ÓÃµÄ×ªÂëÆ÷£¬babel¿ÉÒÔ½«ES6´úÂëÍêÃÀµØ×ª»»ÎªES5´úÂë£¬ËùÒÔÎÒÃÇ²»ÓÃµÈµ½ä¯ÀÀÆ÷µÄÖ§³Ö¾Í¿ÉÒÔÔÚÏîÄ¿ÖĞÊ¹ÓÃES6µÄÌØĞÔ¡£
-</p>
-
-<p>
-	<span class="fb-black">babel 6ÓëÖ®Ç°°æ±¾µÄÇø±ğ£º</span><br/>
-	<span class="focus">Ö®Ç°°æ±¾Ö»Òª°²×°Ò»¸öbabel¾Í¿ÉÒÔÓÃÁË£¬ËùÒÔÖ®Ç°µÄ°æ±¾°üº¬ÁËÒ»´ó¶ÑµÄ¶«Î÷£¬ÕâÒ²µ¼ÖÂÁËÏÂÔØÒ»¶Ñ²»±ØÒªµÄ¶«Î÷¡£µ«ÔÚbabel 6ÖĞ£¬½«babel²ğ·Ö³ÉÁ½¸ö°ü£ºbabel-cliºÍbabel-core¡£Èç¹ûÄãÏëÒªÔÚCLI(ÖÕ¶Ë»òREPL)Ê¹ÓÃbabel¾ÍÏÂÔØbabel-cli£¬Èç¹ûÏëÒªÔÚnodeÖĞÊ¹ÓÃ¾ÍÏÂÔØbabel-core¡£
-	babel 6ÒÑ½á¾¡¿ÉÄÜµÄÄ£¿é»¯ÁË£¬Èç¹û»¹ÓÃbabel 6Ö®Ç°µÄ·½·¨×ª»»ES6£¬Ëü»áÔ­ÑùÊä³ö£¬²¢²»»á×ª»¯£¬ÒòÎªĞèÒª°²×°²å¼ş¡£Èç¹ûÄãÏëÊ¹ÓÃ¼ıÍ·º¯Êı£¬ÄÇ¾ÍµÃ°²×°¼ıÍ·º¯Êı²å¼şnpm install  babel-plugin-transform-es2015-arrow-functions¡£</span><br/>
-	<small>±¾ÎÄÖĞ£¬ÎÒÃÇ²»ÌÖÂÛES6µÄÓï·¨ÌØĞÔ£¬ÖØµã½²µÄÊÇÈçºÎ½«ES6´úÂë×ªÂëÎªES5´úÂë¡£</small>
-</p>
+<p>åœ¨é˜…è¯»Vueå®˜æ–¹æ–‡æ¡£çš„è¿‡ç¨‹ä¸­ï¼Œçœ‹åˆ° â€œComputedâ€ vs â€œMethodsâ€è¿™ä¸€æ®µï¼Œè§‰å¾—åŸæ–‡æ¡ˆä¾‹æœ‰ç‚¹æ™¦æ¶©éš¾æ‡‚ã€‚åŸæ–‡åœ°å€æ˜¯ï¼š<a href="http://vuejs.org/v2/guide/computed.html#Computed-Caching-vs-Methods" target="_blank">http://vuejs.org/v2/guide/computed.html#Computed-Caching-vs-Methods</a>ã€‚æ‰€ä»¥å°±æƒ³ç€åšä¸ªdemoæ¨¡æ‹Ÿä¸‹ï¼Œä»¥ä¾¿æ›´å¥½çš„åŒºåˆ«ï¼ŒåŠ æ·±ç†è§£ã€‚</p>
 </section><br/>
 
-<h3><strong>¶ş¡¢Babel×ªÂë£º</strong></h3>
+<h3><strong>äºŒã€â€œComputedâ€ vs â€œMethodsâ€ï¼š</strong></h3>
 <section>
-<p>Èç¹ûÄã²¢Ã»ÓĞ½Ó´¥¹ıES6£¬µ±Äã¿´µ½ÏÂÃæµÄ´úÂëÊ±£¬¿Ï¶¨ÊÇÓĞµããÂ±ÆµÄ£¨ÕâÊÇÊ²Ã´¹í£¿ĞÄÖĞÒ»ÍòÍ·ÉñÊŞ±¼ÌÚ¶ø¹ı£©£¬µ«ÊÇÄãÃ»¿´´í£¬Õâ¾ÍÊÇES6¡£²»¹ÜÄã¿´²»¿´Ëü£¬Ëü¶¼ÔÚÕâÀï¡£</p>
+<p><span class="fb-black">1ã€Computedï¼š#######################################################</span></p>
+<pre class="brush:xml;">
+	&lt;!-- HTML --&gt;
+	&lt;div id="example"&gt;
+	  &lt;p&gt;Original message: "{{ message }}"&lt;/p&gt;
+	  &lt;p&gt;Computed reversed message: "{{ reversedMessage }}"&lt;/p&gt;
+	&lt;/div&gt;
+</pre>
 <pre class="brush:js;">
-	var a = (msg) =&gt; () =&gt; msg;
-
-	var bobo = {
-	  _name: "BoBo",
-	  _friends: [],
-	  printFriends() {
-	    this._friends.forEach(f =&gt;
-	      console.log(this._name + " knows " + f));
+	//JS Computed
+	var vm = new Vue({
+	  el: '#example',
+	  data: {
+	    message: 'Hello'
+	  },
+	  computed: {
+	    // a computed getter
+	    reversedMessage: function () {
+	      // `this` points to the vm instance
+	      return this.message.split('').reverse().join('')
+	    }
 	  }
-	};
-</pre>
-<p>Êµ¼ÊÉÏ£¬ÉÏÃæµÄÕâ¶Î´úÂëÍ¨¹ıBabel×ª»»ºó£¬»á±ä³É£º</p>
-<pre class="brush:js;">
-	"use strict";
-
-	var a = function a(msg) {
-	  return function () {
-	    return msg;
-	  };
-	};
-
-	var bobo = {
-	  _name: "BoBo",
-	  _friends: [],
-	  printFriends: function printFriends() {
-	    var _this = this;
-
-	    this._friends.forEach(function (f) {
-	      return console.log(_this._name + " knows " + f);
-	    });
-	  }
-	};
-</pre>
-<p>ºÃ£¬ÑÔ¹éÕı´«£¬ÎÒÃÇ³¢ÊÔÏÂÓÃÒ»Ğ©·½·¨À´ÊµÏÖÉÏÃæµÄ×ªÂëĞ§¹û°É¡£</p>
-
-
-<h5 class="fb-black line-d">1¡¢Ö±½Ó°²×°Babel·¨£º</h5>
-<p class="focus">1.1) Ê×ÏÈÈ«¾Ö°²×°Babel¡£</p>
-<pre class="brush:js;">
-	$ npm install -g babel-cli
-
-	//Ò²¿ÉÒÔÍ¨¹ıÖ±½Ó½«Babel°²×°µ½ÏîÄ¿ÖĞ£¬ÔÚÏîÄ¿¸ùÄ¿Â¼ÏÂÖ´ĞĞÏÂÃæÃüÁî£¬Í¬Ê±Ëü»á×Ô¶¯ÔÚpackage.jsonÎÄ¼şÖĞµÄdevDependenciesÖĞ¼ÓÈëbabel-cli
-	//ÔÚÖ´ĞĞ°²×°µ½ÏîÄ¿ÖĞÃüÁîÖ®Ç°£¬ÒªÏÈÔÚÏîÄ¿¸ùÄ¿Â¼ÏÂĞÂ½¨Ò»¸öpackage.jsonÎÄ¼ş¡£
-	$ npm install -g babel-cli --save-dev
-</pre>
-<p>Èç¹û½«babelÖ±½Ó°²×°µ½ÏîÄ¿ÖĞ£¬Ëü»á×Ô¶¯ÔÚpackage.jsonÎÄ¼şÖĞµÄdevDependenciesÖĞ¼ÓÈëbabel-cli¡£ÈçÏÂËùÊ¾£º</p>
-<pre class="brush:js;">
-	//......
-	{
-	  "devDependencies": {
-	    "babel-cli": "^6.22.2"
-	  }
-	}
-</pre>
-<p class="focus">1.2) BabelµÄÅäÖÃÎÄ¼şÊÇ.babelrc£¬´æ·ÅÔÚÏîÄ¿µÄ¸ùÄ¿Â¼ÏÂ¡£Ê¹ÓÃBabelµÄµÚÒ»²½£¬¾ÍÊÇÅäÖÃÕâ¸öÎÄ¼ş¡£</p>
-<p><small>Õâ¸öÎÄ¼şµÄÍêÕûÎÄ¼şÃûÊÇ ¡°.babelrc¡±£¬×¢Òâ×îÇ°ÃæÊÇÓĞ¸ö¡°.¡±µÄ¡£ÓÉÓÚÎÒµÄµçÄÔÊÇWindowsÏµÍ³£¬ËùÒÔÔÚĞÂ½¨Õâ¸öÎÄ¼şµÄÊ±ºòÀÏÊÇÌáÊ¾ ¡°±ØĞë¼üÈëÎÄ¼şÃû¡± µÄ´íÎó¡£ºóÀ´¹È¸èÁËÏÂ£¬·¢ÏÖ´´½¨Õâ¸öÎÄ¼şµÄÊ±ºò£¬°ÑÎÄ¼şÃû¸Ä³É¡°.babelrc.¡±£¬×¢ÒâÊÇÇ°ºó¶¼ÓĞÒ»¸öµã£¬ÕâÑù¾Í¿ÉÒÔ±£´æ³É¹¦ÁË</small></p>
-<pre class="brush:js;">
-	{
-	  "presets": [],
-	  "plugins": []
-	}
-</pre>
-<p class="focus">1.3) presets×Ö¶ÎÉè¶¨×ªÂë¹æÔò£¬¹Ù·½Ìá¹©ÒÔÏÂµÄ¹æÔò¼¯£¬Äã¿ÉÒÔ¸ù¾İĞèÒª°²×°¡£</p>
-<p>µã»÷´Ë´¦µ½BabelÖĞÎÄ¹ÙÍøpresetsÅäÖÃÒ³Ãæ£º<a href="http://babeljs.cn/docs/plugins/" class="alink" target="_blank">Babel Plugins</a></p>
-<pre class="brush:js;">
-	# ES2015×ªÂë¹æÔò
-	$ npm install --save-dev babel-preset-es2015
-
-	# react×ªÂë¹æÔò
-	$ npm install --save-dev babel-preset-react
-
-	# ES7²»Í¬½×¶ÎÓï·¨Ìá°¸µÄ×ªÂë¹æÔò£¨¹²ÓĞ4¸ö½×¶Î£©£¬Ñ¡×°Ò»¸ö
-	$ npm install --save-dev babel-preset-stage-0
-	$ npm install --save-dev babel-preset-stage-1
-	$ npm install --save-dev babel-preset-stage-2
-	$ npm install --save-dev babel-preset-stage-3
-</pre>
-<p class="focus">1.4) ¸ù¾İ¹ÙÍøµÄÌáÊ¾£¬µ±ÎÒÃÇÓÃnpm°²×°ºÃÕâĞ©²å¼ş¹¤¾ßÖ®ºó£¬ÎÒÃÇĞèÒª½«ÕâĞ©¹æÔò¼ÓÈëµ½.babelrcÖĞÈ¥¡£ÈçÏÂËùÊ¾£º</p>
-<pre class="brush:js;">
-	{
-	    "presets": [
-	      "es2015",
-	      "react",
-	      "stage-2"
-	    ],
-	    "plugins": []
-	  }
-</pre>
-<p class="focus">1.5) ×ªÂë¡¢×ªÂëµÄ¹æÔò£º</p>
-<pre class="brush:js;">
-	# ×ªÂë½á¹ûÊä³öµ½±ê×¼Êä³ö
-	$ babel test.js
-
-	# ×ªÂë½á¹ûĞ´ÈëÒ»¸öÎÄ¼ş
-	# --out-file »ò -o ²ÎÊıÖ¸¶¨Êä³öÎÄ¼ş
-	$ babel a.js --out-file b.js
-	# »òÕß
-	$ babel a.js -o b.js
-
-	# Õû¸öÄ¿Â¼×ªÂë
-	# --out-dir »ò -d ²ÎÊıÖ¸¶¨Êä³öÄ¿Â¼
-	$ babel src --out-dir lib
-	# »òÕß
-	$ babel src -d lib
-
-	# -s ²ÎÊıÉú³Ésource mapÎÄ¼ş
-	$ babel src -d lib -s
-</pre>
-
-<h5 class="fb-black line-d">2¡¢¹¤¾ßÅäÖÃ·¨£º</h5>
-<p>Êµ¼ÊÉÏ£¬ÎÒÃÇ¿ÉÒÔÍ¨¹ıÇ°¶Ë×Ô¶¯»¯µÄºÜ¶à¹¤¾ßÀ´ÊµÏÖES6µÄ×ªÂëÅäÖÃ£¬±ÈÈç£¬³£¼ûµÄgrunt¡¢gulp¡¢WebpackºÍNodeµÈ¡£ÏÂÃæÎÒ¾Í¼òµ¥µÄËµÏÂÎÒ½ÏÎªÊìÏ¤µÄgulpÅäÖÃ·¨¡£</p>
-<p>µã»÷´Ë´¦µ½BabelÖĞÎÄ¹ÙÍøToolÅäÖÃÒ³Ãæ£º<a href="http://babeljs.cn/docs/setup/" class="alink" target="_blank">Babel Tool</a></p>
-<p class="focus">2.1) Ê×ÏÈ£¬ÎÒÃÇĞèÒªÔÚÏîÄ¿ÖĞ°²×°gulp£º</p>
-<pre class="brush:js;">
-	$ npm install gulp --save-dev
-</pre>
-
-<p class="focus">2.2) È»ºó£¬ÎÒÃÇĞèÒªÔÚÏîÄ¿ÖĞ°²×°gulp-babel£º</p>
-<pre class="brush:js;">
-	$ npm install --save-dev gulp-babel
-</pre>
-<p>µ±Ö´ĞĞÍêÉÏÃæµÄÁ½¸öÃüÁîºó£¬ÎÒÃÇ»á·¢ÏÖ¸ùÄ¿Â¼ÏÂµÄpackage.jsonÎÄ¼şÄÚÈİÒÑ¾­±»×Ô¶¯ĞŞ¸Ä³É£º</p>
-<pre class="brush:js;">
-	{
-	  "devDependencies": {
-	    "babel-cli": "^6.22.2",
-	    "gulp": "^3.9.1",
-	    "gulp-babel": "^6.1.2"
-	  }
-	}
-</pre>
-
-<p class="focus">2.3) ±àĞ´gulpfile.jsÎÄ¼ş£¬ÎÄ¼şÄÚÈİÈçÏÂËùÊ¾£º</p>
-<pre class="brush:js;">
-	var gulp = require("gulp");
-	var babel = require("gulp-babel");
-
-	gulp.task("default", function () {
-	  return gulp.src("src/a.js")
-	    .pipe(babel())
-	    .pipe(gulp.dest("lib"));
 	});
 </pre>
-<p>µ±ÎÒÃÇÔÚµ±Ç°ÏîÄ¿Ä¿Â¼ÏÂÔËĞĞÈçÏÂÃüÁîºó£¬»á·¢ÏÖÔ­±¾ÔÚsrcÎÄ¼ş¼ĞÖĞµÄa.js(°´ÕÕES6±ê×¼±àĞ´µÄ)ÎÄ¼şÒÑ¾­±»×ªÂë³ÉES5±ê×¼µÄa.js£¬²¢·ÅÔÚÁËlibÎÄ¼ş¼ĞÀïÃæ¡£</p>
-<pre class="brush:js;">
-	$ gulp default
+<div id="example" class="mb10">
+  <p>Original message: "{{ message }}"</p>
+  <p>Computed reversed message: "{{ reversedMessage }}"</p>
+</div>
 
-	#»òÕßÓÃÏÂÃæµÄÃüÁîÒ²ĞĞ
-	$ gulp
+<p><span class="fb-black">2ã€Methodsï¼š#######################################################</span></p>
+<pre class="brush:xml;">
+	&lt;!-- HTML --&gt;
+	&lt;div id="example2"&gt;
+	  &lt;p&gt;Original message: "{{ message }}"&lt;/p&gt;
+	  &lt;p&gt;Methods reversed message: "{{ reverseMessage() }}"&lt;/p&gt;
+	&lt;/div&gt;
 </pre>
+<pre class="brush:js;">
+	//JS Methods
+	var vm2 = new Vue({
+		el: '#example2',
+		data: {
+			message: 'Hello'
+		},
+		methods: {
+		  reverseMessage: function () {
+		    return this.message.split('').reverse().join('')
+		  }
+		}
+	});
+</pre>
+
+<div id="example2" class="mb10">
+  <p>Original message: "{{ message }}"</p>
+  <p>Methods reversed message: "{{ reverseMessage() }}"</p>
+</div>
+<p>ä»ä¸Šé¢çš„ä¸¤ä¸ªdemoï¼Œæˆ‘ä»¬å¯ä»¥çœ‹å‡ºï¼šå¯ä»¥é€šè¿‡è°ƒç”¨è¡¨è¾¾å¼ä¸­çš„methodæ¥è¾¾åˆ°åŒæ ·çš„æ•ˆæœã€‚</p>
+<p>åŸæ–‡ä¸­çš„æ„æ€æ˜¯ï¼š<span class="fb-black">â€œä¸ç»è¿‡è®¡ç®—å±æ€§ï¼Œæˆ‘ä»¬å¯ä»¥åœ¨ method ä¸­å®šä¹‰ä¸€ä¸ªç›¸åŒçš„å‡½æ•°æ¥æ›¿ä»£å®ƒã€‚å¯¹äºæœ€ç»ˆçš„ç»“æœï¼Œä¸¤ç§æ–¹å¼ç¡®å®æ˜¯ç›¸åŒçš„ã€‚ç„¶è€Œï¼Œä¸åŒçš„æ˜¯è®¡ç®—å±æ€§æ˜¯åŸºäºå®ƒçš„ä¾èµ–ç¼“å­˜ã€‚è®¡ç®—å±æ€§åªæœ‰åœ¨å®ƒçš„ç›¸å…³ä¾èµ–å‘ç”Ÿæ”¹å˜æ—¶æ‰ä¼šé‡æ–°å–å€¼ã€‚è¿™å°±æ„å‘³ç€åªè¦ message æ²¡æœ‰å‘ç”Ÿæ”¹å˜ï¼Œå¤šæ¬¡è®¿é—® reversedMessage è®¡ç®—å±æ€§ä¼šç«‹å³è¿”å›ä¹‹å‰çš„è®¡ç®—ç»“æœï¼Œè€Œä¸å¿…å†æ¬¡æ‰§è¡Œå‡½æ•°â€</span>ã€‚ç„¶ååŸæ–‡ä¸­åˆç»™å‡ºäº†ä¸€ä¸ªå…³äºDate.now()çš„demoï¼Œæˆ‘å°†å…¶æ‹“å±•äº†ä¸€ä¸‹ï¼š</p>
+<pre class="brush:xml;">
+	&lt;!-- HTML --&gt;
+	&lt;div id="example3" class="mb10"&gt;
+	  &lt;p&gt;
+	  	Methods Now: 
+	  	&lt;input type="text" value="{{ now() }}" class="input-normal"&gt;
+	  	&lt;a href="javascript:;" @click="showMethodsNow" class="ml10 btn-normal"&gt;ç‚¹æˆ‘è°ƒç”¨Methodsçš„now&lt;/a&gt;
+	  	&lt;input type="text" v-model="methodsnow" class="ml10 input-normal"&gt;
+	  	&lt;span class="ml10 click-tips"&gt;ç‚¹å‡»äº†{{count}}æ¬¡&lt;/span&gt;
+	  &lt;/p&gt;
+	&lt;/div&gt;
+
+	&lt;div id="example4" class="mb10"&gt;
+	  &lt;p&gt;
+	  	Computed Now: 
+	  	&lt;input type="text" value="{{ now }}" class="input-normal"&gt;
+	  	&lt;a href="javascript:;" @click="showComputedNow" class="ml10 btn-normal"&gt;ç‚¹æˆ‘è°ƒç”¨Computedçš„now&lt;/a&gt;
+	  	&lt;input type="text" v-model="computednow" class="ml10 input-normal"&gt;
+	  	&lt;span class="ml10 click-tips"&gt;ç‚¹å‡»äº†{{count}}æ¬¡&lt;/span&gt;
+	  &lt;/p&gt;
+	&lt;/div&gt;
+</pre>
+<pre class="brush:js;">
+	//JS methods now
+	var vm3 = new Vue({
+		el: '#example3',
+		data: {
+			message: 'Hello',
+			methodsnow: '',
+			count: 0
+		},
+		methods: {
+		  now: function () {
+		    return Date.now();
+		  },
+		  showMethodsNow: function(){
+		  	this.count++;
+		  	this.methodsnow = this.now();
+		  }
+		}
+	});
+
+	//JS computed now
+	var vm4 = new Vue({
+		el: '#example4',
+		data: {
+			message: 'Hello',
+			computednow: '',
+			count: 0
+		},
+		methods: {
+			showComputedNow: function(){
+				this.count++;
+				this.computednow = this.now;
+			}
+		},
+		computed: {
+		  now: function () {
+		    return Date.now();
+		  }
+		}
+	});
+</pre>
+<div id="example3" class="mb10">
+  <p>
+  	Methods Now: 
+  	<input type="text" value="{{ now() }}" class="input-normal">
+  	<a href="javascript:;" @click="showMethodsNow" class="ml10 btn-normal">ç‚¹æˆ‘è°ƒç”¨Methodsçš„now</a>
+  	<input type="text" v-model="methodsnow" class="ml10 input-normal">
+  	<span class="ml10 click-tips">ç‚¹å‡»äº†{{count}}æ¬¡</span>
+  </p>
+</div>
+<div id="example4" class="mb10">
+  <p>
+  	Computed Now: 
+  	<input type="text" value="{{ now }}" class="input-normal">
+  	<a href="javascript:;" @click="showComputedNow" class="ml10 btn-normal">ç‚¹æˆ‘è°ƒç”¨Computedçš„now</a>
+  	<input type="text" v-model="computednow" class="ml10 input-normal">
+  	<span class="ml10 click-tips">ç‚¹å‡»äº†{{count}}æ¬¡</span>
+  </p>
+</div>
+
+<p><span class="fb-black">ä»ä¸Šé¢çš„demoä¸­ï¼Œæˆ‘ä»¬å¯ä»¥çœ‹å‡ºï¼Œä¸ç®¡ä½ ç‚¹å‡»è°ƒç”¨å¤šå°‘æ¬¡showComputedNowæ–¹æ³•ï¼Œnowçš„å€¼ä¸€ç›´ä¸å˜ï¼ˆé™¤éä½ å°†å…¶é»˜è®¤å€¼æ”¹å˜ï¼Œæ³¨æ„ï¼šComputedé»˜è®¤åªæœ‰ getter ï¼Œä¸è¿‡åœ¨éœ€è¦æ—¶ä½ ä¹Ÿå¯ä»¥è‡ªå®šä¹‰æä¾›ä¸€ä¸ª setter ï¼‰ï¼Œæ‰€ä»¥èƒ½ç”¨Computedæ–¹å¼æ¥ç¼“å­˜è®¡ç®—ã€‚</span></p>
+<p>æˆ‘ä»¬ä¸ºä»€ä¹ˆéœ€è¦ç¼“å­˜ï¼Ÿå‡è®¾æˆ‘ä»¬æœ‰ä¸€ä¸ªé‡è¦çš„è®¡ç®—å±æ€§ A ï¼Œè¿™ä¸ªè®¡ç®—å±æ€§éœ€è¦ä¸€ä¸ªå·¨å¤§çš„æ•°ç»„éå†å’Œåšå¤§é‡çš„è®¡ç®—ã€‚ç„¶åæˆ‘ä»¬å¯èƒ½æœ‰å…¶ä»–çš„è®¡ç®—å±æ€§ä¾èµ–äº A ã€‚å¦‚æœæ²¡æœ‰ç¼“å­˜ï¼Œæˆ‘ä»¬å°†ä¸å¯é¿å…çš„å¤šæ¬¡æ‰§è¡Œ A çš„ getter ï¼å¦‚æœä½ ä¸å¸Œæœ›æœ‰ç¼“å­˜ï¼Œè¯·ç”¨ method æ›¿ä»£ã€‚</p>
+
 </section><br/>
 
-<h3><strong>Èı¡¢ÆäËû£º</strong></h3>
+<script>
+	var vm = new Vue({
+	  el: '#example',
+	  data: {
+	    message: 'Hello'
+	  },
+	  computed: {
+	    // a computed getter
+	    reversedMessage: function () {
+	      // `this` points to the vm instance
+	      return this.message.split('').reverse().join('')
+	    }
+	  }
+	});
+
+	var vm2 = new Vue({
+		el: '#example2',
+		data: {
+			message: 'Hello'
+		},
+		methods: {
+		  reverseMessage: function () {
+		    return this.message.split('').reverse().join('')
+		  }
+		}
+	});
+
+	//JS methods now
+	var vm3 = new Vue({
+		el: '#example3',
+		data: {
+			message: 'Hello',
+			methodsnow: '',
+			count: 0
+		},
+		methods: {
+		  now: function () {
+		    return Date.now();
+		  },
+		  showMethodsNow: function(){
+		  	this.count++;
+		  	this.methodsnow = this.now();
+		  }
+		}
+	});
+
+	//JS computed now
+	var vm4 = new Vue({
+		el: '#example4',
+		data: {
+			message: 'Hello',
+			computednow: '',
+			count: 0
+		},
+		methods: {
+			showComputedNow: function(){
+				this.count++;
+				this.computednow = this.now;
+			}
+		},
+		computed: {
+		  now: function () {
+		    return Date.now();
+		  }
+		}
+	});
+</script>
+
+<h3><strong>ä¸‰ã€å…¶ä»–ï¼š</strong></h3>
 <section>
-<p class="notes">ÒÔÉÏÁ½ÖÖ·½·¨£¬ÔÚÎÒ±¾µØÇ×²âÓĞĞ§¡£µ±È»£¬Äã¿ÉÒÔÑ¡Ôñ¸ü¶àÆäËûµÄ¹¤¾ßÀ´´¦Àí£¬ÊâÍ¾Í¬¹é£¬Anyway£¬ÈÃÎÒÃÇÒ»ÆğÀ´Óµ±§ES6°É£¡</p>
-<p>µ±È»£¬ÄãÒ²¿ÉÒÔÑ¡ÔñÔÚÏß×ªÂë£¨²âÊÔÌåÑéÓÃ£©£¬µØÖ·ÊÇ£º<a href="http://babeljs.cn/repl/" target="_blank" class="alink">http://babeljs.cn/repl/</a>¡£</p>
+
 </section><br/>
-
-
-
-
-
-
 
 
 
