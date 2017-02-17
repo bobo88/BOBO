@@ -221,7 +221,7 @@ $link->close();
                 <li>
                     <div class="pro-content">
                         <p class="goods-discount"><span class="db"><b>52</b>%</span>OFF</p>
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -240,7 +240,7 @@ $link->close();
                 <li>
                     <div class="pro-content">
                         <p class="goods-discount"><span class="db"><b>52</b>%</span>OFF</p>
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -259,7 +259,7 @@ $link->close();
                 <li>
                     <div class="pro-content">
                         <p class="goods-discount"><span class="db"><b>52</b>%</span>OFF</p>
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -278,7 +278,7 @@ $link->close();
                 <li>
                     <div class="pro-content">
                         <p class="goods-discount"><span class="db"><b>52</b>%</span>OFF</p>
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -308,7 +308,7 @@ $link->close();
                             <span class="js-timeCounter" data-time="121225" data-status="0">Ends In: <span>00</span>:<span>00</span>:<span>00</span>:<span>00</span></span>
                         </p>
 
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -338,7 +338,7 @@ $link->close();
                             <span class="js-timeCounter" data-time="9999" data-status="1">Ends In: <span>00</span>:<span>00</span>:<span>00</span>:<span>00</span></span>
                         </p>
 
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -368,7 +368,7 @@ $link->close();
                             <span class="js-timeCounter" data-time="0" data-status="2">Ends In: <span>00</span>:<span>00</span>:<span>00</span>:<span>00</span></span>
                         </p>
 
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -398,7 +398,7 @@ $link->close();
                             <span class="js-timeCounter" data-time="8888" data-status="1">Ends In: <span>00</span>:<span>00</span>:<span>00</span>:<span>00</span></span>
                         </p>
 
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -430,7 +430,7 @@ $link->close();
             <ul class="pro-list clearfix pro-coupon-list">
                 <li>
                     <div class="pro-content">
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -452,7 +452,7 @@ $link->close();
                 </li>
                 <li>
                     <div class="pro-content">
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -474,7 +474,7 @@ $link->close();
                 </li>
                 <li>
                     <div class="pro-content">
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -496,7 +496,7 @@ $link->close();
                 </li>
                 <li>
                     <div class="pro-content">
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -518,7 +518,7 @@ $link->close();
                 </li>
                 <li>
                     <div class="pro-content">
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -540,7 +540,7 @@ $link->close();
                 </li>
                 <li>
                     <div class="pro-content">
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -562,7 +562,7 @@ $link->close();
                 </li>
                 <li>
                     <div class="pro-content">
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -584,7 +584,7 @@ $link->close();
                 </li>
                 <li>
                     <div class="pro-content">
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -612,7 +612,7 @@ $link->close();
             
             <div class="collocation-product-box clearfix">
                 <div class="main-product">
-                    <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                    <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                     <p class="goods-title">
                         <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -628,11 +628,11 @@ $link->close();
                 </div>
 
                 <div class="plus-ico">
-                    <img src="images/demo_25/plus_ico.png" alt="">
+                    <img src="images/demo_25/plus_ico.png" alt="专题通用模板">
                 </div>
 
                 <div class="accessories-product">
-                    <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/beauty.jpg" alt=""></a></p>
+                    <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/beauty.jpg" alt="专题通用模板"></a></p>
 
                     <p class="goods-title">
                         <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -661,7 +661,7 @@ $link->close();
 
             <div class="collocation-product-box clearfix">
                 <div class="main-product">
-                    <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                    <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                     <p class="goods-title">
                         <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -677,11 +677,11 @@ $link->close();
                 </div>
 
                 <div class="plus-ico">
-                    <img src="images/demo_25/plus_ico.png" alt="">
+                    <img src="images/demo_25/plus_ico.png" alt="专题通用模板">
                 </div>
 
                 <div class="accessories-product">
-                    <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/beauty.jpg" alt=""></a></p>
+                    <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/beauty.jpg" alt="专题通用模板"></a></p>
 
                     <p class="goods-title">
                         <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -713,22 +713,22 @@ $link->close();
             <h3 class="sec-tit">Top Brands</h3>
 
             <ul class="brands-nav clearfix js-brandsNav">
-                <li class="active"><a href="javascript:;"><img src="images/demo_25/brand_logo1.jpg" alt=""></a></li>
-                <li><a href="javascript:;"><img src="images/demo_25/brand_logo2.jpg" alt=""></a></li>
-                <li><a href="javascript:;"><img src="images/demo_25/brand_logo3.jpg" alt=""></a></li>
-                <li><a href="javascript:;"><img src="images/demo_25/brand_logo5.jpg" alt=""></a></li>
-                <li><a href="javascript:;"><img src="images/demo_25/brand_logo4.jpg" alt=""></a></li>
-                <li><a href="javascript:;"><img src="images/demo_25/brand_logo6.jpg" alt=""></a></li>
-                <li><a href="javascript:;"><img src="images/demo_25/brand_logo8.jpg" alt=""></a></li>
-                <li><a href="javascript:;"><img src="images/demo_25/brand_logo7.jpg" alt=""></a></li>
-                <li><a href="javascript:;"><img src="images/demo_25/brand_logo9.jpg" alt=""></a></li>
-                <li><a href="javascript:;"><img src="images/demo_25/brand_logo2.jpg" alt=""></a></li>
-                <li><a href="javascript:;"><img src="images/demo_25/brand_logo1.jpg" alt=""></a></li>
-                <li><a href="javascript:;"><img src="images/demo_25/brand_logo3.jpg" alt=""></a></li>
-                <li><a href="javascript:;"><img src="images/demo_25/brand_logo6.jpg" alt=""></a></li>
-                <li><a href="javascript:;"><img src="images/demo_25/brand_logo5.jpg" alt=""></a></li>
-                <li><a href="javascript:;"><img src="images/demo_25/brand_logo7.jpg" alt=""></a></li>
-                <li><a href="javascript:;"><img src="images/demo_25/brand_logo4.jpg" alt=""></a></li>
+                <li class="active"><a href="javascript:;"><img src="images/demo_25/brand_logo1.jpg" alt="专题通用模板"></a></li>
+                <li><a href="javascript:;"><img src="images/demo_25/brand_logo2.jpg" alt="专题通用模板"></a></li>
+                <li><a href="javascript:;"><img src="images/demo_25/brand_logo3.jpg" alt="专题通用模板"></a></li>
+                <li><a href="javascript:;"><img src="images/demo_25/brand_logo5.jpg" alt="专题通用模板"></a></li>
+                <li><a href="javascript:;"><img src="images/demo_25/brand_logo4.jpg" alt="专题通用模板"></a></li>
+                <li><a href="javascript:;"><img src="images/demo_25/brand_logo6.jpg" alt="专题通用模板"></a></li>
+                <li><a href="javascript:;"><img src="images/demo_25/brand_logo8.jpg" alt="专题通用模板"></a></li>
+                <li><a href="javascript:;"><img src="images/demo_25/brand_logo7.jpg" alt="专题通用模板"></a></li>
+                <li><a href="javascript:;"><img src="images/demo_25/brand_logo9.jpg" alt="专题通用模板"></a></li>
+                <li><a href="javascript:;"><img src="images/demo_25/brand_logo2.jpg" alt="专题通用模板"></a></li>
+                <li><a href="javascript:;"><img src="images/demo_25/brand_logo1.jpg" alt="专题通用模板"></a></li>
+                <li><a href="javascript:;"><img src="images/demo_25/brand_logo3.jpg" alt="专题通用模板"></a></li>
+                <li><a href="javascript:;"><img src="images/demo_25/brand_logo6.jpg" alt="专题通用模板"></a></li>
+                <li><a href="javascript:;"><img src="images/demo_25/brand_logo5.jpg" alt="专题通用模板"></a></li>
+                <li><a href="javascript:;"><img src="images/demo_25/brand_logo7.jpg" alt="专题通用模板"></a></li>
+                <li><a href="javascript:;"><img src="images/demo_25/brand_logo4.jpg" alt="专题通用模板"></a></li>
             </ul>
 
             <ul class="pro-list clearfix js-brandsItem">
@@ -744,7 +744,7 @@ $link->close();
                 <li>
                     <div class="pro-content">
                         <p class="goods-discount"><span class="db"><b>52</b>%</span>OFF</p>
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -763,7 +763,7 @@ $link->close();
                 <li>
                     <div class="pro-content">
                         <p class="goods-discount"><span class="db"><b>52</b>%</span>OFF</p>
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -782,7 +782,7 @@ $link->close();
                 <li>
                     <div class="pro-content">
                         <p class="goods-discount"><span class="db"><b>52</b>%</span>OFF</p>
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -818,7 +818,7 @@ $link->close();
                             <span class="js-timeCounter" data-time="9999" data-status="1">Ends In: <span>00</span>:<span>00</span>:<span>00</span>:<span>00</span></span>
                         </p>
 
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -848,7 +848,7 @@ $link->close();
                             <span class="js-timeCounter" data-time="0" data-status="2">Ends In: <span>00</span>:<span>00</span>:<span>00</span>:<span>00</span></span>
                         </p>
 
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
@@ -878,7 +878,7 @@ $link->close();
                             <span class="js-timeCounter" data-time="8888" data-status="1">Ends In: <span>00</span>:<span>00</span>:<span>00</span>:<span>00</span></span>
                         </p>
 
-                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt=""></a></p>
+                        <p class="goods-img"><a href="#" target="special"><img src="http://www.yuanbo88.com/dist/images/domeimg/default_user.jpg" alt="专题通用模板"></a></p>
 
                         <p class="goods-title">
                             <a href="#" target="special">CubeWork 10 Flagship Tablet PC Ultrabook</a>
