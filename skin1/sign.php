@@ -8,7 +8,7 @@
 <body>
 	
 	<div id="sign-box" class="pr">
-		<div id="imgbg" data-imgsrc="dist/images/domeimg/sign/signbg_1.jpg|dist/images/domeimg/sign/signbg_2.jpg|dist/images/domeimg/sign/signbg_3.jpg|dist/images/domeimg/sign/signbg_4.jpg|dist/images/domeimg/sign/signbg_5.jpg|dist/images/domeimg/sign/signbg_6.jpg|dist/images/domeimg/sign/signbg_7.jpg|dist/images/domeimg/sign/signbg_8.jpg|dist/images/domeimg/sign/signbg_9.jpg|dist/images/domeimg/sign/signbg_10.jpg">
+		<div id="imgbg" data-imgsrc="dist/images/domeimg/sign/signbg_1.jpg|dist/images/domeimg/sign/signbg_2.jpg|dist/images/domeimg/sign/signbg_3.jpg|dist/images/domeimg/sign/signbg_5.jpg|dist/images/domeimg/sign/signbg_7.jpg|dist/images/domeimg/sign/signbg_8.jpg|dist/images/domeimg/sign/signbg_9.jpg|dist/images/domeimg/sign/signbg_10.jpg">
 			<img src="dist/images/domeimg/sign/signbg_2.jpg" width="100%" height="100%" alt="">	
 		</div>
 
