@@ -9,5 +9,5 @@
 </p>
 <h3>项目下载</h3>
 <pre>
-git clone git@github.com:bobo88/temp.git
+git clone git@github.com:bobo88/BOBO.git
 </pre>
