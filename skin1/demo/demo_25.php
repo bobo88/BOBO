@@ -146,7 +146,7 @@ $link->close();
         .b-status-received{ color: #ff6600; border: 1px solid #ff6600;}
         .b-status-expired{ color: #b4b4b4; border: 1px solid #b4b4b4;}
 
-        .active-nav{ position: fixed; z-index: 9999; top: 50%; left: 50%; margin-left: 520px; width: 160px; background: #ff6600;}
+        .active-nav{ display: none; position: fixed; z-index: 9999; top: 50%; left: 50%; margin-left: 520px; width: 160px; background: #ff6600;}
         .active-nav li{ height: 36px; line-height: 36px; border-bottom: 1px solid #ffa200; text-align: center;}
         .active-nav li a{ display: block; width: 100%; height: 36px; color: #fff; font-size: 14px;}
         .active-nav .floor-nav.active a, .active-nav .floor-nav:hover a{ background: #ffa200;}
