@@ -434,12 +434,16 @@ if($isNoResult){//如果没有数据，直接到404页面
 					<h3>Github开源项目</h3>
 					<ul>
 						<li>
-							<a href="https://github.com/bobo88/ForJS" target="_blank">ForJS</a>
-							<p>园博吧系列文章，所有案例与效果文章仅用来作来学习JavaScript使用。</p>
+							<a href="https://github.com/bobo88/BOBO" target="_blank">BOBO</a>
+							<p>园博吧网站源代码，需要建站的朋友可以在此基础上快速建立基于php的网站。</p>
 						</li>
 						<li>
-							<a href="https://github.com/bobo88/temp" target="_blank">temp</a>
-							<p>园博吧网站源代码，需要建站的朋友可以在此基础上快速建立基于php的网站。</p>
+							<a href="https://github.com/bobo88/Robo-Advisor.git" target="_blank">vue项目</a>
+							<p>vue + webpack结合做的一个智能投顾后台管理界面项目。</p>
+						</li>
+						<li>
+							<a href="https://github.com/bobo88/ForJS" target="_blank">ForJS</a>
+							<p>园博吧系列文章，所有案例与效果文章仅用来作来学习JavaScript使用。</p>
 						</li>
 						<li>
 							<a href="https://github.com/bobo88/plugin" target="_blank">plugin</a>
