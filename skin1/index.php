@@ -128,6 +128,36 @@ if($isNoResult){//如果没有数据，直接到404页面
 			</div>
 		</div><!-- .topBannerWrap -->
 
+		<section class="floor-line-con floor-0">
+			<div class="floor-title clearfix">
+				<span class="fl">
+					<span class="titletext">0</span>
+					<span class="subtitle">Github</span>
+				</span>
+				
+				<span class="fr more"><a href="https://github.com/bobo88" target="_blank">更多</a></span>
+			</div>
+
+			<ul class="github-list clearfix mt30">
+				<li>
+					<a href="https://github.com/bobo88/BOBO" target="_blank">BOBO</a>
+					<p>园博吧网站源代码，需要建站的朋友可以在此基础上快速建立基于php的网站。</p>
+				</li>
+				<li>
+					<a href="https://github.com/bobo88/Robo-Advisor.git" target="_blank">vue项目</a>
+					<p>vue + webpack结合做的一个智能投顾后台管理界面项目。</p>
+				</li>
+				<li>
+					<a href="https://github.com/bobo88/DEMO.git" target="_blank">DEMO</a>
+					<p>WEB前端开发相关的DEMO实例，主要研究技术原理本质以及一些实用技巧之类。</p>
+				</li>
+				<li>
+					<a href="https://github.com/bobo88/plugin" target="_blank">plugin</a>
+					<p>Javascript相关插件，有兴趣的朋友可以根据实际情况直接下载使用。</p>
+				</li>
+			</ul>
+		</section>
+
 		<section class="floor-line-con floor-1">
 			<div class="floor-title clearfix">
 				<span class="fl">

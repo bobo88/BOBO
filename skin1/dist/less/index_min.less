@@ -86,11 +86,19 @@
 }
 
 .floor-line-con{ margin: 30px auto 0; width: 1200px;
-	&.floor-0{
+	&.floor-0{ margin-bottom: 50px;
 		.floor-title{ border-bottom: 3px solid #0366d6;
 			.titletext{ background: #0366d6;}
 			.subtitle{ color: #0366d6;}
 			a:hover{ color: #0366d6;}
+		}
+		.github-list{
+			li{ float: left; margin-bottom: 20px; padding: 0 20px; width: 260px; height: 30px;}
+			a{ display: block; width: 260px; height: 30px; line-height: 30px; color: @colorf; font-size: 14px; text-align: center; background: #196127; background: #196127; 
+				text-decoration: none; overflow: hidden; text-overflow:ellipsis; white-space: nowrap; border-radius: 5px;
+				&:hover{ color: @colorf; background: #239a3b;}
+			}
+			p{ line-height: 20px; color: #000; text-align: center;}
 		}
 	}
 	&.floor-2{
