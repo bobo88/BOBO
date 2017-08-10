@@ -10,12 +10,12 @@ $link->close();
 <html lang="en">
 <head>
 
-	<? include 'top.html'; ?>
+	<?php include 'top.html'; ?>
 	<link rel="stylesheet" href="http://www.yuanbo88.com/dist/css/other_min.css">
 </head>
 <body>
 	<header id="header">
-		<? include 'public_top.php'; ?>
+		<?php include 'public_top.php'; ?>
 	</header>
 	
 	<div class="box-wrap-100percent">
@@ -30,7 +30,7 @@ $link->close();
 	</div>
 
 	<footer id="footer">
-		<? include 'foot.html'; ?>	
+		<?php include 'foot.html'; ?>	
 	</footer><!--end #footer -->
 
 	<script>

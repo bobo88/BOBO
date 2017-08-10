@@ -1,0 +1,29 @@
+//所有变量都在这个文件里
+@import url("mixins.less");  
+
+.header{
+	.top_r{ display: inline; float: right;
+		ul{ display: inline; float: left; padding: 10px 0; height: 12px;
+			li{ .border(right,1px,@colorc); display: inline; float: left; height: 12px; line-height: 12px; *height: 14px;*line-height: 14px;
+				&.last{ border: none;}
+				strong{ color: @color_main; font-weight: bold;}
+			}
+			a{ padding: 0 10px; color: @color6; text-decoration: none;
+				&:hover{ color: @color_main;}
+			}
+			.topr-qrcode{ position: relative; z-index: 19;
+				.qr-code-wrap{ padding-top: 11px; display: none; position: absolute; top: 11px; right: -20px; 
+					.triangle{ position: absolute; top: 5px; left: 50%; margin-left: -10px; z-index: 3;
+						&.triangle_t{.triangle(top,6px,@colore2);}
+						&.triangle_t2{.triangle(top,6px,@colorf); top: 6px;}
+					}
+					.txt{ height: 30px; line-height: 30px; color: @color6; font-size: 14px; font-weight: bold; text-align: center;}
+				}
+				.qr-code-box{.border(all,1px,@colore2); padding: 20px 30px 0; width: 150px; background: @color_bgf;}
+				&:hover{
+					.qr-code-wrap{ display: block;}
+				}
+			}
+		}
+	}
+}

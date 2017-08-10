@@ -199,12 +199,12 @@ if($isNoResult){//如果没有数据，直接到404页面
 <html lang="en">
 <head>
 
-	<? include 'top.html'; ?>
+	<?php include 'top.html'; ?>
 	<link rel="stylesheet" href="dist/css/category_min.css">
 </head>
 <body>
 	<header id="header">
-		<? include 'public_top.php'; ?>
+		<?php include 'public_top.php'; ?>
 	</header>
 		
 	<div class="category-main-wrap">
@@ -442,8 +442,8 @@ if($isNoResult){//如果没有数据，直接到404页面
 							<p>vue + webpack结合做的一个智能投顾后台管理界面项目。</p>
 						</li>
 						<li>
-							<a href="https://github.com/bobo88/ForJS" target="_blank">ForJS</a>
-							<p>园博吧系列文章，所有案例与效果文章仅用来作来学习JavaScript使用。</p>
+							<a href="https://github.com/bobo88/DEMO.git" target="_blank">DEMO</a>
+							<p>WEB前端开发相关的DEMO实例，主要研究技术原理本质以及一些实用技巧之类。</p>
 						</li>
 						<li>
 							<a href="https://github.com/bobo88/plugin" target="_blank">plugin</a>
@@ -459,7 +459,7 @@ if($isNoResult){//如果没有数据，直接到404页面
 	</div><!-- .category-main-wrap -->
 
 	<footer id="footer">
-		<? include 'foot.html'; ?>	
+		<?php include 'foot.html'; ?>	
 	</footer><!--end #footer -->
 
 	<script>

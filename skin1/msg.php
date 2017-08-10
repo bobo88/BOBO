@@ -5,12 +5,12 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<? include 'top.html'; ?>
+	<?php include 'top.html'; ?>
 	<link rel="stylesheet" href="dist/css/other_min.css">
 </head>
 <body>
 	<header id="header">
-		<? include 'public_top.php'; ?>
+		<?php include 'public_top.php'; ?>
 	</header>
 		
 	<div class="msg-main w1200">
@@ -27,7 +27,7 @@ session_start();
 	</div>
 
 	<footer id="footer">
-		<? include 'foot.html'; ?>	
+		<?php include 'foot.html'; ?>	
 	</footer><!--end #footer -->
 
 	<script>

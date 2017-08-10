@@ -63,12 +63,12 @@ if($isNoResult){//如果没有数据，直接到404页面
 <html lang="en">
 <head>
 
-	<? include 'top.html'; ?>
+	<?php include 'top.html'; ?>
 	<link rel="stylesheet" href="dist/css/other_min.css">
 </head>
 <body>
 	<header id="header">
-		<? include 'public_top.php'; ?>
+		<?php include 'public_top.php'; ?>
 	</header>
 
 	<div class="wei-wrap">
@@ -142,7 +142,7 @@ if($isNoResult){//如果没有数据，直接到404页面
 	
 
 	<footer id="footer">
-		<? include 'foot.html'; ?>	
+		<?php include 'foot.html'; ?>	
 	</footer><!--end #footer -->
 
 	<script>

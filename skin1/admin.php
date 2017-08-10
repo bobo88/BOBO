@@ -10,7 +10,7 @@ $link->close();
 <html lang="en">
 <head>
 
-	<? include 'top.html'; ?>
+	<?php include 'top.html'; ?>
 	<link rel="stylesheet" href="dist/css/sign_min.css">
 </head>
 <body>

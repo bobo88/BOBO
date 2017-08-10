@@ -35,7 +35,7 @@ if($isNoResult){//如果没有数据，直接到404页面
 	<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"  />
 	<meta content="false" id="twcClient" name="twcClient" />
 	<meta content="yes" name="apple-mobile-web-app-capable"  />
-	<? include 'top.html'; ?>
+	<?php include 'top.html'; ?>
 	<link rel="stylesheet" href="dist/css/other_min.css">
 	<style>
 		body{ width: 100%; overflow-x: hidden;}
@@ -114,7 +114,7 @@ if($isNoResult){//如果没有数据，直接到404页面
 	</div><!-- .dou-wrap -->
 	
 	<footer id="footer">
-		<? include 'foot.html'; ?>	
+		<?php include 'foot.html'; ?>	
 	</footer><!--end #footer -->
 	
 	<script>

@@ -127,7 +127,7 @@ if($isNoResult){//如果没有数据，直接到404页面
 <html lang="en">
 <head>
 
-	<? include 'top.html'; ?>
+	<?php include 'top.html'; ?>
 	<link rel="stylesheet" href="dist/css/other_min.css">
 	<script src="dist/minjs/shBrushPlug.min.js"></script>
 	<link rel="stylesheet" href="dist/css/shCore/shCoreDefault.css">
@@ -160,7 +160,7 @@ if($isNoResult){//如果没有数据，直接到404页面
 </head>
 <body>
 	<header id="header">
-		<? include 'public_top.php'; ?>
+		<?php include 'public_top.php'; ?>
 	</header>
 
 <!-- css , js(jscript/javascript) , php , sass(scss) , sql -->
@@ -243,7 +243,7 @@ if($isNoResult){//如果没有数据，直接到404页面
 <!-- article rid end -->
 
 	<footer id="footer">
-		<? include 'foot.html'; ?>	
+		<?php include 'foot.html'; ?>	
 	</footer><!--end #footer -->
 
 	<!-- Go to www.addthis.com/dashboard to customize your tools --> 
